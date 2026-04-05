@@ -1,7 +1,7 @@
 baseURL = 'https://nesbitt-bot.github.io/Station2141/'
 languageCode = 'en-us'
 title = 'Station 2141'
-theme = 'relearn'
+# No external theme - using custom layouts
 
 defaultContentLanguage = 'en'
 
