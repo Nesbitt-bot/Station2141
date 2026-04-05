@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="{{ .Page.Lang | default site.Language.Lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }} — {{ site.Title }}</title>
+  <link rel="stylesheet" href="{{ "styles/main.css" | relURL }}">
+</head>
+<body>
+  <header>
+    <nav class="top-nav">
+      <a class="site-title" href="{{ "/" | relLangURL }}">{{ site.Title }}</a>
+      <span class="lang-switch">
+        {{ range site.Languages }}
+          {{ if ne .Lang $.Page.Lang }}
+            <a href="{{ "/" | relURL }}{{ .Lang }}/">{{ .LanguageName }}</a>
+          {{ end }}
+        {{ end }}
+      </span>
+    </nav>
+  </header>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    <p>© 2026 Station 2141 — Nesbitt</p>
+  </footer>
+</body>
+</html>
