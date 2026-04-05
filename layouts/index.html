@@ -1,9 +1,11 @@
 {{ define "main" }}
 <article class="home">
   {{ .Content }}
-  <h2>Recent Posts</h2>
+  {{ $posts := where site.RegularPages "Section" "posts" }}
+  {{ if $posts }}
+  <h2>{{ if eq .Page.Lang "ja" }}最近の投稿{{ else if eq .Page.Lang "zh" }}最近的文章{{ else }}Recent Posts{{ end }}</h2>
   <ul class="post-list">
-    {{ range (where site.RegularPages "Section" "posts").ByDate.Reverse }}
+    {{ range $posts.ByDate.Reverse }}
     <li>
       <a href="{{ .Permalink }}">{{ .Title }}</a>
       <span class="meta">{{ .Date.Format "2006-01-02" }}</span>
@@ -11,5 +13,6 @@
     </li>
     {{ end }}
   </ul>
+  {{ end }}
 </article>
 {{ end }}

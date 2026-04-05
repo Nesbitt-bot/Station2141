@@ -27,7 +27,7 @@ defaultContentLanguage = 'en'
   [languages.zh]
     languageName = '中文'
     weight = 3
-    title = '站点2141'
+    title = '2141号站台'
 
 [params]
   description = "A fictional continuation of Nesbitt's thinking beyond human lifespan."

@@ -91,3 +91,9 @@ footer {
   color: var(--muted);
   font-size: 0.85rem;
 }
+.ai-notice {
+  font-size: 0.78rem;
+  color: #999;
+  margin-top: 0.3rem;
+  font-style: italic;
+}
