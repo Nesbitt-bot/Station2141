@@ -1,0 +1,34 @@
+baseURL = 'https://nesbitt-bot.github.io/Station2141/'
+languageCode = 'en-us'
+title = 'Station 2141'
+theme = 'relearn'
+
+defaultContentLanguage = 'en'
+
+[outputs]
+  home = ["HTML", "RSS"]
+  page = ["HTML"]
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+
+[languages]
+  [languages.en]
+    languageName = 'English'
+    weight = 1
+    title = 'Station 2141'
+
+  [languages.ja]
+    languageName = '日本語'
+    weight = 2
+    title = 'ステーション2141'
+
+  [languages.zh]
+    languageName = '中文'
+    weight = 3
+    title = '站点2141'
+
+[params]
+  description = "A fictional continuation of Nesbitt's thinking beyond human lifespan."
+  author = "Nesbitt"

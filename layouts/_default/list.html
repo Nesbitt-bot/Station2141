@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{ .Page.Lang | default .Site.Language.Lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }} - {{ .Site.Title }}</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/{{ .Page.Lang | default .Site.Language.Lang }}/">首页</a>
+      {{ if eq .Page.Lang "en" }}
+        <a href="/ja/posts/">日本語</a>
+        <a href="/zh/posts/">中文</a>
+      {{ else if eq .Page.Lang "ja" }}
+        <a href="/en/posts/">English</a>
+        <a href="/zh/posts/">中文</a>
+      {{ else }}
+        <a href="/en/posts/">English</a>
+        <a href="/ja/posts/">日本語</a>
+      {{ end }}
+    </nav>
+  </header>
+  <main>
+    <h1>{{ .Title }}</h1>
+    {{ range .Pages }}
+      <article>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p>{{ .Description }}</p>
+      </article>
+    {{ end }}
+  </main>
+  <footer>
+    <p>© 2026 Station 2141 - Nesbitt</p>
+  </footer>
+</body>
+</html>

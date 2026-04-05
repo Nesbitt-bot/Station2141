@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ .Page.Lang | default .Site.Language.Lang }}">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }} - {{ .Site.Title }}</title>
+  <link rel="stylesheet" href="/styles/main.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/{{ .Page.Lang | default .Site.Language.Lang }}/posts/">← 返回文章列表</a>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h1>{{ .Title }}</h1>
+      <p class="meta">{{ .Date.Format "2006-01-02" }}</p>
+      <div class="content">
+        {{ .Content }}
+      </div>
+    </article>
+  </main>
+  <footer>
+    <p>© 2026 Station 2141 - Nesbitt</p>
+  </footer>
+</body>
+</html>
