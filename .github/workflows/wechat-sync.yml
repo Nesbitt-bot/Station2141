@@ -1,0 +1,62 @@
+name: Sync ZH posts to WeChat Official Account
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'content/posts/**/index.zh.md'
+      - '.github/workflows/wechat-sync.yml'
+      - 'scripts/wechat_sync.py'
+  workflow_dispatch:
+    inputs:
+      file:
+        description: 'Optional explicit file to publish, e.g. content/posts/value-of-work-after-ai/index.zh.md'
+        required: false
+        type: string
+      freepublish:
+        description: 'Also submit draft for publishing'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  sync-wechat:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests pyyaml markdown pygments
+
+      - name: Publish changed ZH posts to WeChat drafts
+        env:
+          WECHAT_APP_ID: ${{ secrets.WECHAT_APP_ID }}
+          WECHAT_APP_SECRET: ${{ secrets.WECHAT_APP_SECRET }}
+          WECHAT_AUTHOR: ${{ secrets.WECHAT_AUTHOR }}
+          WECHAT_DEFAULT_DIGEST: ${{ secrets.WECHAT_DEFAULT_DIGEST }}
+          WECHAT_NEED_OPEN_COMMENT: ${{ secrets.WECHAT_NEED_OPEN_COMMENT }}
+          WECHAT_ONLY_FANS_CAN_COMMENT: ${{ secrets.WECHAT_ONLY_FANS_CAN_COMMENT }}
+          WECHAT_FREEPUBLISH: ${{ github.event.inputs.freepublish == 'true' && 'true' || 'false' }}
+          SITE_BASE_URL: https://nesbitt-bot.github.io/Station2141/
+          GITHUB_EVENT_BEFORE: ${{ github.event.before }}
+          GITHUB_SHA: ${{ github.sha }}
+        run: |
+          if [ -n "${{ github.event.inputs.file }}" ]; then
+            python scripts/wechat_sync.py --file "${{ github.event.inputs.file }}"
+          else
+            python scripts/wechat_sync.py
+          fi
