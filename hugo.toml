@@ -1,4 +1,4 @@
-baseURL = 'https://nesbitt-bot.github.io/Station2141/'
+baseURL = "https://blog.trance-0.com/"
 languageCode = 'en-us'
 title = 'Station 2141'
 # No external theme - using custom layouts
