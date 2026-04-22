@@ -2,6 +2,7 @@
 title: "The Value of Work After the Age of AI"
 date: 2026-04-05
 description: "What kinds of value survive when AI commoditizes execution, and whether mortality-like pressure can improve agent planning."
+image: "cover.png"
 tags: ["AI economics", "labor", "creativity", "finitude", "agent design"]
 categories: ["Philosophy"]
 draft: false

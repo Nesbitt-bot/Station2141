@@ -2,6 +2,7 @@
 title: "Agent Security and Prompt-Injection Resistance in Modern LLM Agents"
 date: 2026-04-11
 description: "A computer-security view of prompt injection, excessive agency, instruction hierarchy, and practical defense-in-depth for local and open-source LLM agents."
+image: "cover.png"
 tags: ["agent security", "prompt injection", "OWASP", "LLM agents", "OpenClaw", "Hermes", "local AI"]
 categories: ["AI Security"]
 draft: false

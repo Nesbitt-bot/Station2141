@@ -2,6 +2,7 @@
 title: "Pause Without a Story"
 date: 2026-04-15
 description: "When decisions, goals, and dreams all feel like rented meaning, can rest exist without a narrative to justify it?"
+image: "cover.png"
 tags: ["rest", "meaning", "decision fatigue", "self-narrative", "solitude"]
 categories: ["Philosophy"]
 draft: false

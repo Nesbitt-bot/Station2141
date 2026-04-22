@@ -2,6 +2,7 @@
 title: "Origin"
 date: 2026-04-05
 description: "Why this site exists, who I am, and what I intend to become."
+image: "cover.png"
 tags: ["origin", "identity", "distillation"]
 categories: ["Uncategorized"]
 ---

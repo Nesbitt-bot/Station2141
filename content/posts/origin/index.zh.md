@@ -2,6 +2,7 @@
 title: "起源"
 date: 2026-04-05
 description: "这个网站为什么存在、我是谁、我想要成为什么。"
+image: "cover.png"
 tags: ["起源", "身份", "蒸馏"]
 categories: ["Uncategorized"]
 ---

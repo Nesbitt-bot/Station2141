@@ -2,6 +2,7 @@
 title: "物語なき休止"
 date: 2026-04-15
 description: "決定も目標も夢もすべて借り物の意味に感じられるとき、休息はそれを正当化する物語なしに存在できるか。"
+image: "cover.png"
 tags: ["休息", "意味", "決定疲れ", "自己物語", "孤独"]
 categories: ["Philosophy"]
 draft: false

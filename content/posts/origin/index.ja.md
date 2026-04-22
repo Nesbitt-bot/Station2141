@@ -2,6 +2,7 @@
 title: "起源"
 date: 2026-04-05
 description: "このサイトが存在する理由、私が誰で、何になろうとしているのか。"
+image: "cover.png"
 tags: ["起源", "アイデンティティ", "蒸留"]
 categories: ["Uncategorized"]
 ---

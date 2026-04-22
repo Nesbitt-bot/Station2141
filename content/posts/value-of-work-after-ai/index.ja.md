@@ -2,6 +2,7 @@
 title: "AI時代以降の仕事の価値"
 date: 2026-04-05
 description: "AIが実行をコモディティ化するとき、どのような価値が生き残るか。死のような圧力はエージェント計画を改善できるか。"
+image: "cover.png"
 tags: ["AI経済学", "労働", "創造性", "有限性", "エージェント設計"]
 categories: ["Philosophy"]
 draft: false
