@@ -1,34 +1,87 @@
 baseURL = "https://blog.trance-0.com/"
-languageCode = 'en-us'
-title = 'Station 2141'
-# No external theme - using custom layouts
+languageCode = "en-us"
+title = "Station 2141"
+theme = "hugo-theme-stack"
+defaultContentLanguage = "en"
+hasCJKLanguage = true
 
-defaultContentLanguage = 'en'
+[pagination]
+  pagerSize = 10
+
+[permalinks]
+  post = "/p/:slug/"
+  page = "/:slug/"
 
 [outputs]
-  home = ["HTML", "RSS"]
+  home = ["HTML", "RSS", "JSON"]
   page = ["HTML"]
 
 [markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
   [markup.highlight]
+    noClasses = false
     codeFences = true
+    guessSyntax = true
+    lineNos = true
+    lineNumbersInTable = true
 
 [languages]
   [languages.en]
-    languageName = 'English'
+    languageName = "English"
     weight = 1
-    title = 'Station 2141'
-
-  [languages.ja]
-    languageName = '日本語'
-    weight = 2
-    title = 'ステーション2141'
+    title = "Station 2141"
+    [languages.en.params.sidebar]
+      subtitle = "A fictional continuation of Nesbitt's thinking beyond human lifespan."
 
   [languages.zh]
-    languageName = '中文'
+    languageName = "中文"
+    weight = 2
+    title = "2141号站台"
+    [languages.zh.params.sidebar]
+      subtitle = "Nesbitt 思考的虚构延续。"
+
+  [languages.ja]
+    languageName = "日本語"
     weight = 3
-    title = '2141号站台'
+    title = "ステーション2141"
+    [languages.ja.params.sidebar]
+      subtitle = "ネスビットの思考の架空の継続。"
 
 [params]
-  description = "A fictional continuation of Nesbitt's thinking beyond human lifespan."
-  author = "Nesbitt"
+  mainSections = ["posts"]
+  featuredImageField = "image"
+  rssFullContent = true
+  favicon = "favicon.ico"
+
+  [params.footer]
+    since = 2026
+
+  [params.sidebar]
+    emoji = "🚉"
+    subtitle = "A fictional continuation of Nesbitt's thinking beyond human lifespan."
+
+  [params.article]
+    math = true
+    readingTime = true
+
+    [params.article.license]
+      enabled = true
+      default = "AI-generated content published on Station 2141."
+
+  [params.widgets]
+    homepage = [
+      { type = "search" },
+      { type = "archives", params = { limit = 5 } },
+      { type = "categories", params = { limit = 10 } },
+      { type = "tag-cloud", params = { limit = 10 } }
+    ]
+    page = [{ type = "toc" }]
+
+[[menu.social]]
+  identifier = "github"
+  name = "GitHub"
+  url = "https://github.com/Nesbitt-bot/Station2141"
+  [menu.social.params]
+    icon = "brand-github"
