@@ -9,12 +9,13 @@ hasCJKLanguage = true
   pagerSize = 10
 
 [permalinks]
-  post = "/p/:slug/"
+  posts = "/posts/:slug/"
   page = "/:slug/"
 
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS"]
   page = ["HTML"]
+  section = ["HTML", "RSS"]
 
 [markup]
   [markup.goldmark]
@@ -72,7 +73,6 @@ hasCJKLanguage = true
 
   [params.widgets]
     homepage = [
-      { type = "search" },
       { type = "archives", params = { limit = 5 } },
       { type = "categories", params = { limit = 10 } },
       { type = "tag-cloud", params = { limit = 10 } }
