@@ -1,0 +1,2 @@
+{{- $css := resources.Get "css/station2141.css" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">

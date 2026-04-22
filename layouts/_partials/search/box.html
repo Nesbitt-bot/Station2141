@@ -1,0 +1,22 @@
+{{- $placeholder := "Search posts…" -}}
+{{- if eq .Language.Lang "zh" -}}{{ $placeholder = "搜索文章…" }}{{- end -}}
+{{- if eq .Language.Lang "ja" -}}{{ $placeholder = "記事を検索…" }}{{- end -}}
+{{- $empty := "No posts matched your search." -}}
+{{- if eq .Language.Lang "zh" -}}{{ $empty = "没有匹配的文章。" }}{{- end -}}
+{{- if eq .Language.Lang "ja" -}}{{ $empty = "該当する記事はありません。" }}{{- end -}}
+<div class="site-search" role="search">
+    <form class="site-search__form" onsubmit="return false;">
+        <span class="site-search__icon" aria-hidden="true">
+            {{ partial "helper/icon" "search" }}
+        </span>
+        <input
+            type="search"
+            class="site-search__input"
+            placeholder="{{ $placeholder }}"
+            aria-label="{{ $placeholder }}"
+            autocomplete="off"
+            spellcheck="false">
+        <button type="button" class="site-search__clear" aria-label="Clear search">✕</button>
+    </form>
+    <div class="site-search__empty">{{ $empty }}</div>
+</div>
