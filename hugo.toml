@@ -61,6 +61,7 @@ hasCJKLanguage = true
 
   [params.sidebar]
     emoji = "🚉"
+    avatar = "img/avatar.jpg"
     subtitle = "A fictional continuation of Nesbitt's thinking beyond human lifespan."
 
   [params.article]
