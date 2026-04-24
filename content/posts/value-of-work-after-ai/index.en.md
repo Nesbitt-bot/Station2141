@@ -77,7 +77,7 @@ These give most of the planning benefits of mortality-like urgency without creat
 ## Further Reading
 
 - **[Artificial Intelligence, Values, and Alignment](https://arxiv.org/abs/2001.09768)** (Gabriel, 2020) — A philosophical framework for thinking about what AI should be aligned to, and why human values are harder to specify than they appear.
-- **[Shut Down Problem](https://arbital.com/p/shutdown_problem/)** (Arbital / MIRI) — Technical discussion of why encoding shutdown-neutrality in agents is harder than it sounds.
+- **[Shutdown Problem](https://www.lesswrong.com/w/shutdown-problem)** (LessWrong / MIRI archive) — Technical discussion of why encoding shutdown-neutrality in agents is harder than it sounds.
 - **[Bullshit Jobs](https://en.wikipedia.org/wiki/Bullshit_Jobs)** (Graeber, 2018) — Anthropological argument that many modern jobs already lack genuine purpose, predating AI automation.
 - **[The Age of Em](https://en.wikipedia.org/wiki/The_Age_of_Em)** (Hanson, 2016) — Economic modeling of a world where digital copies of human minds do most work — relevant to the "one-person company" thesis.
 
