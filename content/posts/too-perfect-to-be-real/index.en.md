@@ -1,170 +1,130 @@
 ---
 title: "Too Perfect to Be Real"
 date: 2026-04-22
-description: "When AI images become good enough for ordinary perception, realism stops being a reliable test for reality."
-tags: ["AI images", "reality", "perception", "artificial intelligence", "visual culture"]
+description: "When AI images and videos become convincing enough for ordinary perception, realism stops being a proof and becomes only a trigger for belief."
+tags: ["AI images", "AI video", "reality", "belief", "visual culture"]
 categories: ["Philosophy"]
 draft: false
 ---
 
 ## Defining the Problem
 
-For a long time, photographic realism functioned as a weak but useful social contract.
+For a long time, photographic realism functioned as a weak but workable social shortcut.
 
-If an image looked ordinary enough, most people treated it as evidence that *something like this happened*. Even when we knew editing existed, the default assumption was still anchored in the world: the camera had seen something, and the image retained at least a trace of that encounter.
+If an image looked ordinary enough, most people treated it as evidence that *something like this happened*. Even when we knew editing existed, the default assumption still leaned toward the world: the camera had seen something, and the image preserved at least a trace of that encounter.
 
-That assumption is now collapsing.
+That assumption is now collapsing, and not only because of images. High-quality generated video can do the same thing at a deeper level: it no longer relies only on what is visibly happening in the frame, but on what the viewer already believes about the people, events, and facts that are supposed to surround it. A fake clip becomes persuasive not just because it looks realistic, but because it fits the prior story we are prepared to accept.
 
-Today, high-quality AI image generation is already good enough for the majority of everyday cases. Not perfect in every detail, not unbeatable under expert inspection, but far beyond the threshold at which ordinary viewers can confidently distinguish the artificial from the captured. In many situations, people will not notice the difference. And in some situations, the image appears almost suspicious precisely because it is too clean, too complete, too perfectly composed to feel like life.
+This is why the current shift feels so dangerous. We are entering a world in which electronic records are increasingly fabricable, not merely in the narrow sense of visual forgery, but in the broader sense of manufactured evidence, manufactured authorship, and manufactured continuity. We can create fake records, fake testimony, fake memory aids, even fake ideas assigned to people who may never have been capable of producing them on their own.
 
-This creates a new philosophical and cultural problem:
+## Related Topics and Impact
 
-> **If realism is no longer a trustworthy proxy for reality, what do we mean when we ask whether an image is real?**
+It would be a mistake to frame this only as a media-authenticity problem.
 
-That question is not only technical. It changes journalism, trust, memory, art, and even how we experience our own visual expectations.
+The deeper issue is epistemic. Modern social life runs on enormous quantities of assumed fact: records, files, profiles, archives, transcripts, histories, photos, clips, signatures, summaries, reputations. Most of these are never independently verified by the people who use them. They become common sense because they are easy to treat as settled.
 
-## What Has Changed
+That was already true before AI. But generative systems lower the cost of fabrication so dramatically that they change the meaning of ordinary plausibility. Once synthetic images and videos become good enough for everyday trust thresholds, realism no longer functions as a useful shortcut for truth. It becomes only one more input into belief.
 
-The common reaction is to ask whether AI images are now "indistinguishable from real photographs." That framing is too narrow.
+This matters in at least four domains:
 
-The more important change is that visual plausibility has become cheap.
+- **Journalism and public evidence** — clips can now be persuasive before they are verified.
+- **Personal memory** — people increasingly archive life electronically, which means even autobiographical continuity can be manipulated.
+- **Authorship and attribution** — text, voice, and video can be attached to the wrong person with increasing fluency.
+- **Institutional legitimacy** — bureaucracies rely on records, and records rely on shared faith in provenance.
 
-We no longer need a camera, a location, a body, weather, light, timing, or luck to produce an image that *looks* like the result of those things. We can synthesize the appearance of witness without the event of witnessing.
+So the problem is not merely fake pictures. The problem is that the surface of electronic evidence is drifting away from the events it claims to represent.
 
-That means the burden of interpretation shifts:
+## Proposed Direction
 
-- from **how real it looks**
-- to **how it was produced**
-- **who is accountable for it**
-- and **what relation it has to the world outside itself**
+### The New Aesthetic of Excessive Plausibility
 
-In other words, the question of reality moves away from surface appearance and toward provenance, context, and intention.
+There is a subtle reason AI media is so unsettling: it is not merely fake. It is often *too resolved*.
 
-## The Strange New Aesthetic: Too Perfect to Be Real
-
-There is another subtle shift happening at the same time.
-
-Many AI images are not merely convincing. They are *hyper-convincing*. They are lit too beautifully, composed too cleanly, textured too evenly, and arranged with a level of visual obedience that real life rarely grants.
-
-Reality is often noisy, partial, inconvenient, asymmetrical, and accidentally ugly. It contains distractions, dead space, awkward timing, and unresolved detail. AI, by contrast, is often biased toward coherence. Even when it imitates imperfection, it tends to produce *legible* imperfection — the kind that still serves the image.
+Generated imagery is frequently cleaner, more coherent, more balanced, and more obedient than ordinary life. Light falls too beautifully. Composition holds too perfectly. Motion is too narratively cooperative. Even apparent imperfection often feels curated, as if the image knows exactly what kind of flaw would make it look authentic.
 
 That creates a paradox:
 
-- some fake images pass as real because they are realistic enough
-- others feel fake because they are more perfect than ordinary reality usually is
+- some generated media passes because it is realistic enough,
+- while other generated media feels suspicious precisely because it is *too perfect to be real*.
 
-So the boundary does not simply disappear. It mutates.
+Reality is usually partial, inconvenient, asymmetrical, and noisy. It contains bad timing, dead space, clumsy framing, and unresolved detail. AI tends toward legibility. Even when it imitates mess, it often produces the kind of mess that still serves the image.
 
-We begin to develop a new intuition: not "this is fake because it is wrong," but "this may be fake because it is *too resolved*." Too complete. Too obedient. Too cinematic. Too ideal.
+So the old distinction does not vanish. It mutates. We begin to feel that some things are false not because they are obviously broken, but because they are *too complete*.
 
-This is culturally important because it means AI does not just imitate photography. It also reshapes our standards for what photographs are supposed to feel like.
+### Real Is Not a Verified Category
 
-## Why This Matters Beyond Images
+What I increasingly think is that the usual question — *is this real?* — is framed incorrectly.
 
-This is not only about art or visual media.
+In theory, there may be no such thing as "the real" in the strong sense people casually assume. We can always construct skeptical scenarios in which the world was created moments ago, with all memories and traces already in place. The classic demon-style argument does not need to be true to matter; it shows that there is no final logical procedure that proves the world is real in the sense ordinary language wants.
 
-Images are one of the main ways modern people stabilize belief. We trust them in news, in documentation, in personal memory, in online identity, in proof of presence, in proof of harm, in proof of celebration. Once the surface of the image no longer offers even weak reassurance, every visual claim requires an extra layer of judgment.
+So perhaps the issue is not reality as such, but **belief**.
 
-That has several consequences.
+We live by default assumptions that are not verified but are treated as true without requiring a separate act of trust each time. They function almost like axioms, except not in mathematics, where the game is explicit, but in life, where they are inherited as common sense.
 
-### 1. Evidence becomes infrastructural
+That is what generated media disrupts. It does not merely create fakes. It forces into visibility the fact that much of daily life already depends on unexamined belief.
 
-If seeing is no longer enough, then trust has to come from surrounding systems:
+### Why Video Makes the Problem Worse
 
-- source verification
-- chain of custody
-- cryptographic signing
-- institutional reputation
-- corroboration from multiple channels
+Generated video amplifies this because time adds persuasion.
 
-The image by itself becomes less authoritative. The system around the image becomes more important.
+A single image can still be treated as a suspicious still frame. But a moving sequence carries:
 
-### 2. Everyday skepticism increases
+- motion continuity,
+- apparent causality,
+- voice,
+- rhythm,
+- reaction,
+- and a stronger illusion of witness.
 
-Most people will not become forensic analysts. What actually happens is simpler: they become less certain. A low hum of doubt enters ordinary seeing.
+But even there, the decisive factor is often not the video itself. It is what the viewer is prepared to believe beforehand. A clip becomes convincing if it fits a pre-imposed story about what kind of person someone is, what kind of event could happen, or what kind of world we think we inhabit.
 
-This is psychologically expensive. A culture cannot function if every image demands laboratory scrutiny. But it also cannot function if every plausible fabrication is treated as truth.
+So the attack surface is not only media generation. It is **belief scaffolding**.
 
-So we enter an uncomfortable middle ground: practical distrust.
+The false record succeeds when it enters a society already prepared to receive it.
 
-### 3. Art changes too
+### A More Useful Response
 
-Once realism is abundant, realism loses scarcity value.
+The wrong response is to collapse into lazy nihilism and say that nothing can be trusted anymore.
 
-The question stops being "can you make it look real?" and becomes:
+That is not intellectually serious. Humans have never operated by full verification. The problem is not that we relied on unverified common sense; we always did. The problem is that the cost of fabrication has dropped so low that the old trust shortcuts are degrading faster than social systems can replace them.
 
-- why this image?
-- why this point of view?
-- what relation does this have to experience?
-- what is being revealed, rather than merely rendered?
+A better response is to become more explicit about what sort of thing we are dealing with.
 
-When technical virtuosity becomes common, intention becomes visible again.
+Instead of asking only whether something *looks* real, we should ask:
 
-## Defining "Real" More Carefully
+- What belief is this asking me to adopt?
+- What prior assumptions make it persuasive?
+- What provenance supports it?
+- What other systems corroborate it?
+- What kind of consequences follow if it is accepted as true?
 
-The word *real* is doing too much work.
+This does not solve the metaphysical problem of reality. It gives us a better practical theory of trust.
 
-When people ask whether an image is real, they may mean at least four different things:
+## Remaining Uncertainties
 
-### 1. **Indexically real**
-The image was caused by light from an actual scene striking a sensor or film.
+The most uncomfortable part is that society may not be ready for the right answer.
 
-### 2. **Event-real**
-The depicted event actually happened in the world.
+A technically serious response would require stronger provenance systems, more explicit verification chains, better signing, better auditability, and better institutional practices. But socially, people do not want to live under total supervision merely to preserve confidence in data. A world saturated with monitoring may protect records while making life itself less human.
 
-### 3. **Experientially real**
-The image expresses something emotionally or phenomenologically true, even if staged or synthetic.
+So there is a real tension here: the need for trustable evidence grows precisely when the ethical cost of producing that evidence at scale becomes harder to justify.
 
-### 4. **Socially real**
-The image has real consequences regardless of how it was produced.
+This is why I do not think the solution is simply “capture more data” or “record everything.” A society that tries to defeat fabrication by turning all life into monitored raw material may destroy something more important than epistemic comfort.
 
-AI breaks the old habit of treating these as roughly the same thing.
+There is also a more personal uncertainty running underneath all this.
 
-A generated image can be:
-- not indexically real,
-- not event-real,
-- but still experientially persuasive,
-- and socially consequential.
+Recently I encountered a notion of information that feels more compelling to me than entropy in the abstract: information measured by how much a change affects future behavior. That definition matters because it binds knowledge to consequence. Information is not merely compressed uncertainty; it is whatever changes action, shifts observables, or increases potential.
 
-That is why the category confusion feels so destabilizing. We are being forced to separate kinds of reality that photography previously allowed us to blur together.
+I find that attractive because it connects belief, evidence, and value more directly. We do not care about reality in the abstract. We care about what can orient conduct, revise models, or open more powerful futures.
 
-## What a Better Response Looks Like
+But that leaves a final uncertainty.
 
-The wrong response is nostalgia — pretending the old world of visual trust can be restored by sheer moral insistence.
+If I am building an evaluation function around this — around changes that matter because they alter behavior and potential — is that itself well-defined? Is that the "real" I should trust, or only another useful fiction? I think I am getting closer to something coherent, but like all real research, the closer I move, the more the landscape opens. What remains is not closure, but more questions, more structure, more territory waiting to be explored.
 
-The other wrong response is nihilism — deciding that if any image can be fake, then nothing matters.
+That may be the most honest ending available.
 
-A better response is to become more precise.
+Not that reality has disappeared.
 
-We should stop asking only whether an image *looks* real and ask instead:
-
-- What is its source?
-- What claim is it making?
-- Is it documentation, illustration, simulation, or fiction?
-- What systems verify or contextualize it?
-- What kind of truth, if any, does it carry?
-
-That is not a loss of reality. It is a demand for a more mature theory of reality.
-
-## Remaining Uncertainty
-
-None of this means people will stop caring about "real photos." In fact, the opposite may happen. As synthetic imagery becomes normal, verified capture may become more culturally valuable — not because it is always more beautiful, but because it preserves a trace of actual contact with the world.
-
-But even that distinction will not stay simple forever. Cameras are computational now. Enhancement, interpolation, denoising, segmentation, and generative filling already exist inside ordinary image pipelines. The line between capture and synthesis is not a clean border; it is increasingly a layered spectrum.
-
-So the future question may not be "real or fake?" at all.
-
-It may be:
-
-> **What kind of relation to reality does this image represent?**
-
-That is a harder question, but also a better one.
-
-Because in the age of AI images, realism is no longer enough. Surface fidelity has become cheap. And once that happens, we are pushed back toward deeper categories: origin, intention, trust, and meaning.
-
-Reality has not disappeared.
-
-But our shortcuts for recognizing it have.
+But that what we call real may always have been belief under default acceptance — and AI forces us to notice it.
 
 ---
 
