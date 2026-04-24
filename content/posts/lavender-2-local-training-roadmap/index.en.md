@@ -2,139 +2,329 @@
 title: "Lavender-2 and the Ethics of Small-Scale Local Training"
 date: 2026-04-24
 description: "A research roadmap for hierarchical local models, ethical real-world data collection, and distributed training across personal devices."
-tags: ["local training", "distributed systems", "robotics", "AI ethics", "Lavender-2"]
+tags: ["local training", "distributed systems", "robotics", "AI ethics", "Lavender-2", "tokenizer", "RDT"]
 categories: ["Computer Science"]
 draft: false
 ---
 
 ## Defining the Problem
 
-Lavender-2 currently presents itself as a from-scratch training workbench for a small decoder-only language model with a readable, auditable recipe: tokenizer, architecture, data pipeline, training loop, and inference path written in plain PyTorch, with honesty about scale and without pretending that the documented 32B design target has already been trained end-to-end.[^lavender]
+Lavender-2 currently presents itself as a from-scratch training workbench: tokenizer, architecture, data pipeline, training loop, and inference path written in plain PyTorch, with an explicit refusal to pretend that a documented 32B-scale target has already been trained end-to-end.[^lavender] That honesty is one of the project’s strengths. It does not hide behind the mythology of scale.
 
-That is already valuable. But the more ambitious question behind the project is not simply how to reproduce a modern chat model from scratch. It is whether a future local AI system can be trained and orchestrated in a way that is both **computationally practical** and **ethically defensible**.
+But the real question behind Lavender-2 is larger than how to reproduce a modern decoder-only language model from scratch.
 
-The concrete dream is a hierarchy of models running at different reaction cycles: a small fast sensory model, a slower and more reflective model, perhaps separate perception and action components, perhaps larger reasoning models on slower loops, and eventually some way to distribute training or evaluation across many personal devices whenever they are idle. The appeal is obvious: local control, lower dependence on centralized labs, and a more modular path toward real embodied systems.
+The deeper question is this:
 
-But that dream immediately encounters two hard realities. First, the engineering problem is not only scale; it is coordination, data routing, and communication cost. Second, the data problem may be even worse. If the source of useful behavior must come from real-world practice rather than toy simulation, the ethical and financial costs rise dramatically.
+> **Can a future local AI system be trained in a way that is computationally practical, architecturally modular, and ethically defensible?**
+
+The dream is not merely “a smaller ChatGPT on my machine.” The dream is a hierarchy of differently paced systems: fast local perception and reaction, slower reasoning loops, maybe specialized encoders, maybe separate action models, maybe larger reflective modules running at a lower frequency, and eventually some way to use all personal devices as a distributed training and evaluation substrate whenever they are idle.
+
+That dream has three attractive properties.
+
+First, it is **local-first**. It pushes against the assumption that meaningful AI must emerge only from giant centralized clusters.
+
+Second, it is **architecturally explicit**. Instead of pretending that one monolithic model should do everything equally well, it admits that fast reaction, memory consolidation, language reasoning, and sensor interpretation may belong to different loops.
+
+Third, it is **politically and ethically interesting**. It asks whether the future of AI can be built in a way that does not automatically imply mass surveillance, hyper-centralized data capture, or dependence on a few providers.
+
+But that dream immediately hits several walls.
+
+- The engineering problem is not only scale; it is routing, interfaces, communication, and synchronization.
+- The data problem is worse than most people admit.
+- The ethical problem is worse still: if real-world practice is the right source of data, society may not be ready for the kind of monitoring required to obtain it at scale.
+
+So the real task is not to fantasize about a giant local super-mind. It is to identify the **smallest serious version** of the dream that still teaches something true.
 
 ## Related Topics and Impact
 
-This problem sits at the intersection of several research traditions.
+This problem sits at the intersection of several research traditions, and the interesting part is that those traditions do not agree with each other.
 
-**Multi-timescale architectures.** The old Clockwork RNN already proposed modules running at different clock rates, with separate temporal granularities for fast and slow dynamics.[^cwrnn] That makes it a useful conceptual ancestor for the idea of a fast reactive controller feeding slower reasoning systems.
+### Multi-timescale architectures
 
-**Modern robotic co-training.** By contrast, systems like RT-2 show a very different instinct: instead of hard-separating perception and action into independent modules, they co-fine-tune a unified vision-language-action model so reasoning and action stay inside one trainable system.[^rt2] This is an important counterexample. Modular hierarchy is not automatically better.
+The classic **Clockwork RNN** already proposed modules running at different clock rates, with different temporal granularities for fast and slow dynamics.[^cwrnn] That makes it a natural ancestor for the intuition that a real embodied system should not run every part of itself at the same reaction cycle.
 
-**Memory-efficient large-model training.** PyTorch FSDP and DeepSpeed ZeRO exist because dense large-model training rapidly becomes impossible without sharding model state, gradients, and optimizer state across devices.[^fsdp][^zero] These systems are designed for coordinated clusters, not loose swarms of personal hardware.
+This family of thought matters because it captures something physically true: some decisions are urgent and reflex-like, while others can wait for more context.
 
-**Cluster orchestration.** Slurm still dominates classical HPC scheduling,[^slurm] while Ray, Kueue, and Volcano extend the orchestration frontier toward cloud-native and heterogeneous clusters.[^ray][^kueue][^volcano] They help with scheduling and quota management, but they do not erase the physics of communication.
+### Unified co-training as a counterexample
 
-**Decentralized training.** Hivemind is one of the clearest demonstrations that training across unreliable and heterogeneous peers is not fantasy. It explicitly targets decentralized averaging, fault-tolerant backpropagation, and mixture-of-experts style scaling across the internet.[^hivemind] But even here, what becomes feasible first is not necessarily dense, globally synchronized trillion-step training. It is often something looser: collaborative experts, decentralized averaging, or communication-efficient updates.
+Modern robotic systems such as **RT-2** point in an almost opposite direction.[^rt2] Instead of hard-separating planning and action into independent subsystems, they show the power of co-training a unified model where perception, language, and action share one trainable representation.
 
-These strands matter because Lavender-2 can evolve in multiple directions, and some are far more realistic than others.
+That is an important challenge to Lavender-2’s modular instinct.
 
-## Proposed Direction
+The existence of unified VLA systems means modularity does **not** get to claim superiority by default. Modular systems buy interpretability, pacing, and possible compute efficiency, but they also create interface fragility and credit-assignment problems.
 
-### 1. Treat architecture as a hierarchy of reaction cycles
+### Memory-efficient dense training
 
-The most promising direction is not a single giant local model. It is a hierarchy of differently paced specialists.
+PyTorch **FSDP** and DeepSpeed **ZeRO** exist because dense large-model training becomes impossible quickly if every worker stores full parameters, gradients, and optimizer states.[^fsdp][^zero] These systems are state-of-the-art tools for coordinated clusters with reliable interconnects. They are useful baselines for what “serious” dense training currently assumes.
 
-A practical decomposition could look like this:
+This matters because it clarifies what personal-device training is up against: not just raw FLOPs, but memory partitioning and synchronization economics.
 
-- **Fast loop (10–100 Hz):** reflexive sensorimotor control, obstacle avoidance, safety overrides, stabilization
-- **Mid loop (1–10 Hz):** scene summarization, object/state tracking, local memory updates
-- **Slow loop (0.1–1 Hz):** language reasoning, long-horizon planning, self-monitoring, task decomposition
+### Communication as the real frontier
 
-This is not only computationally attractive. It is also conceptually honest. Real action often demands latency budgets that a single giant reasoning model cannot meet.
+NVIDIA’s **NCCL** documentation is useful here because it exposes the core truth that large modern training still revolves around tightly synchronized collective communication.[^nccl] AllReduce, AllGather, and ReduceScatter are not implementation details. They are the physics of the training loop.
 
-But this creates a new challenge: the real bottleneck shifts from model size to **interfaces**. What does the fast loop send upward? What is acted on immediately? What is delayed? How are mistakes assigned to one module instead of another? The moment modules are trained separately, interface drift becomes a core research problem.
+So when people talk casually about using “all idle devices” to train one large model, they often ignore the fact that communication costs, latency, stragglers, and topology dominate long before some abstract compute total becomes usable.
 
-### 2. Scale down the first real target
+### Orchestration layers
 
-A pair of 32B models is the wrong first target if the goal is to learn something practical.
+At the orchestration level, the world is split:
 
-A 32B dense model in bf16 already implies an enormous state footprint once gradients and optimizer states are included. Two such models create a system whose memory and synchronization needs are brutal even on serious infrastructure. That does not mean the long-term architecture is wrong. It means the initial experimental scale is wrong.
+- **Slurm** still dominates classical HPC.[^slurm]
+- **Ray** is strong for flexible Python-native training and distributed workloads.[^ray]
+- **Kueue** and **Volcano** represent the more cloud-native, quota-aware, heterogeneous batch scheduling frontier.[^kueue][^volcano]
 
-A more realistic first milestone would be something like:
+These systems matter, but they should not be over-romanticized. An orchestrator can place jobs intelligently. It cannot repeal network physics.
 
-- fast controller/perception module: **100M–1B**
-- slower planner: **3B–7B**
-- optional memory or decoder component: **1B–7B**
-- adapters or LoRA rather than full dense retraining whenever possible
+### Decentralized training
 
-That scale is still ambitious, but it lets the experiment test the architecture instead of merely rediscovering that bandwidth exists.
+**Hivemind** is one of the clearest proofs that decentralized training across unreliable peers is not fantasy.[^hivemind] It explicitly supports decentralized averaging, fault-tolerant backpropagation, and decentralized mixture-of-experts style collaboration.
 
-### 3. Prefer real-world practice, but admit the ethical constraint
+But Hivemind’s value is not that it proves “all personal devices can trivially become one giant dense trainer.” Its value is that it shows a more realistic path: distributed collaboration works better when the update rule is designed around heterogeneity and failure instead of pretending a home network is an InfiniBand cluster.
 
-I agree with the instinct that useful training signal should come from real-world practice whenever possible. Simulation is often too clean, too narrow, and too forgiving. A model that learns only from simulated environments can easily internalize the wrong cost structure for the real world.
+## Current Lavender-2 Architecture Direction
 
-But there is a serious ethical cost here.
+Lavender-2 should probably be thought of as a **three-track project**, not one monolithic build.
 
-A society is not ready to generate endless streams of deeply supervised, heavily monitored real-world interaction just to train systems that may theoretically live indefinitely. We tolerate high-cost real-world training for children because we treat them as individuals within a moral framework of growth, dependence, and finite life. A trainable artificial agent with persistence, mobility, replayability, and near-frictionless duplication does not fit that moral category. The same data regime does not automatically generalize.
+### Track A — Decoder backbone research
 
-So ethically, the only acceptable path today is probably **small-scale, explicit, highly consented testing**, with no fantasy that it will yield immediate financial payoff. That is a constraint, not a defect.
+The current public description foregrounds a decoder-only baseline.[^lavender] That remains the simplest honest starting point, but I do not think the long-term decoder should simply be “a conventional dense Transformer, only larger.”
 
-### 4. Use personal devices for the right workloads
+One promising direction under consideration is a decoder family influenced by **recurrent-depth** ideas. The newly proposed **Recurrent Transformer** is relevant here because it suggests a way to increase effective depth while preserving standard autoregressive decoding cost.[^recurrent-transformer] Its claim is not merely aesthetic novelty. It is operationally interesting:
 
-The dream of using idle personal devices like a mining network is compelling, but dense synchronous training is the wrong first use case.
+- recurrence can trade depth for width,
+- improvement can arrive with fewer layers at fixed parameter budget,
+- KV cache footprint can be reduced,
+- and decoding latency can improve relative to equally strong conventional baselines.
 
-The mismatch is simple: Bitcoin tolerates weak synchronization and unreliable workers. Dense SGD does not.
+That is exactly the sort of direction a local-first project should care about. A local system does not only need raw quality. It needs quality under harsh memory and latency constraints.
 
-The realistic near-term use of personal-device orchestration is elsewhere:
+At the moment, the decoder-side question for Lavender-2 is not “which giant model should be copied?” but rather:
+
+> **What decoder architecture is most compatible with constrained local inference, future modular integration, and memory-sensitive deployment?**
+
+A recurrent-depth decoder is not automatically the answer. But it is the kind of answer worth testing.
+
+### Track B — Text tokenizer selection
+
+This is the current practical stage, and it matters more than people like to admit.
+
+Lavender-2 is now at the point where tokenizer choice should be treated as a first-class architectural decision, not as a preprocessing afterthought.
+
+The obvious candidates are:
+
+- **byte-level BPE**
+- **SentencePiece BPE**
+- **SentencePiece unigram**
+- possibly tokenizer schemes with stronger byte fallback or multilingual robustness
+
+The relevant baseline reference here is **SentencePiece**, which is still one of the clearest end-to-end subword tokenization systems because it trains directly from raw text rather than assuming pre-tokenized word boundaries.[^sentencepiece]
+
+Why this matters for Lavender-2:
+
+1. **Multilinguality and CJK handling**
+   - If the project will ever reflect the actual linguistic distribution of personal notes, code, logs, and mixed-language materials, tokenizer bias matters.
+   - A tokenizer that is efficient only for English quietly taxes everything else.
+
+2. **Compression vs semantic coherence**
+   - A smaller token count is not enough by itself.
+   - The segmentation should preserve useful structure for downstream modeling.
+
+3. **Future encoder-decoder interfaces**
+   - If Lavender-2 eventually uses specialized encoders and a separate decoder, tokenizer choices can affect interface compatibility and retrieval quality.
+
+So the tokenizer phase should probably be treated as an experiment suite, not a one-shot decision. The question is not merely “what gives the fewest tokens,” but:
+
+> **What tokenization regime best supports multilingual local corpora, efficient training, and future modular interfaces?**
+
+### Track C — Text encoder models
+
+This is the most under-discussed part of the architecture, and perhaps the most important if the project is truly heading toward modular local intelligence.
+
+A decoder-only model is good for generation. But if Lavender-2 eventually becomes a hierarchy of systems rather than a single monologue engine, it likely needs at least one **text encoder line** as well.
+
+The reasons are straightforward:
+
+- retrieval
+- memory compression
+- semantic routing
+- task classification
+- message selection for slower loops
+- building structured latent summaries for later models
+
+In other words, an encoder is not just a “smaller model.” It may become the system that decides **what deserves the expensive attention of the slower model**.
+
+That is especially relevant for the architecture you described earlier: different messages processed by different encoders, some outputs used immediately, some delayed and forwarded to bigger or slower components.
+
+A plausible staged roadmap would be:
+
+1. choose tokenizer(s)
+2. train small text encoders for embedding / classification / routing
+3. benchmark whether those encoders help organize local data and memory
+4. only then integrate them with a larger decoder or planner loop
+
+This is slower than jumping straight to a giant decoder. But it is far more likely to produce a usable architecture.
+
+## Proposed Research Direction
+
+### 1. Treat the system as a hierarchy of reaction cycles
+
+The strongest version of Lavender-2 is not “one giant model does everything.” It is a hierarchy of differently paced specialists.
+
+A plausible decomposition:
+
+- **Fast loop (10–100 Hz):** reflexive control, safety overrides, low-latency perception summaries
+- **Mid loop (1–10 Hz):** world-state updates, object tracking, short-horizon planning, memory consolidation
+- **Slow loop (0.1–1 Hz):** language reasoning, long-horizon planning, explanation, reflection
+
+This is attractive for both engineering and cognitive reasons. Real systems need different timescales.
+
+But modularity creates a hard problem:
+
+> what is the interface contract between the loops?
+
+What gets passed upward? What gets discarded? What is compressed? What is immediate? What gets buffered for a slower round? The more separately trained the modules become, the more fragile this contract becomes.
+
+So one of the central research questions for Lavender-2 is not “how many models can I add?” It is:
+
+> **How do I define interfaces that remain useful as each module improves separately?**
+
+### 2. Scale down the first serious experiment
+
+Dual 32B models are a useful dream and a bad first milestone.
+
+A pair of 32B dense models implies brutal state size, optimizer size, and synchronization burden even on serious infrastructure. For local-first research, it is better to prove the architecture at smaller scale.
+
+A more practical sequence would be:
+
+- fast controller/perception or encoder: **100M–1B**
+- slower planner or decoder: **3B–7B**
+- optional memory/semantic encoder: **hundreds of millions to low billions**
+- adapters or LoRA wherever possible
+
+This does not abandon ambition. It just moves the first milestone from fantasy to experiment.
+
+### 3. Prefer real-world practice, but accept the ethical limit
+
+I agree with your core instinct: useful data should come from real-world practice whenever possible, not only from simulation.
+
+Simulation is often too narrow, too cheap, and too obedient. It teaches the wrong cost structure. It lets systems overfit to worlds that were constructed for convenience rather than lived in.
+
+But there is an ethical cost that cannot be brushed aside.
+
+A society is not ready to produce continuous, deeply supervised, totalizing data streams for entities that may theoretically persist indefinitely, be copied, and act at low friction. The moral analogy to raising children breaks quickly. Children are treated as individuals in a framework of dependence, development, and finite life. A trainable synthetic agent with persistent memory and replayable behavior does not cleanly belong to that category.
+
+So I think the acceptable path is narrow:
+
+- **small-scale**
+- **explicitly consented**
+- **carefully bounded**
+- **no fantasy of immediate financial returns**
+
+That is not a weakness. It is the cost of trying to do the problem seriously.
+
+### 4. Use personal devices for the right jobs
+
+The dream of using all idle devices like a mining network survives — but only if the workload is chosen honestly.
+
+Dense synchronous training is the wrong first target.
+
+The practical uses are more likely to be:
 
 - distributed evaluation
-- simulation or real-data replay
-- data cleaning, deduplication, and normalization
+- data cleaning and normalization
+- replay and batch scoring
+- simulation where simulation remains useful
 - hyperparameter search
 - adapter training
 - specialist expert training
 - periodic decentralized averaging for smaller models
 
-This is where Hivemind-like ideas become genuinely relevant. The dream survives, but in a narrower and more technically honest form.
+This is why Hivemind is relevant, but also why it should not be romanticized. The breakthrough is not “everyone can cheaply do frontier pretraining at home.” The breakthrough is that some forms of collaborative learning become feasible when the update rule is designed around heterogeneity and failure.
 
-### 5. Build around communication as the first-class constraint
+### 5. Treat communication as the primary systems constraint
 
-Large-scale orchestration is not primarily blocked by schedulers. It is blocked by communication.
+The real frontier is not only orchestration. It is communication.
 
-NCCL’s own design makes the point clearly: modern training relies on tightly synchronized collective operations such as AllReduce, AllGather, and ReduceScatter.[^nccl] Those operations become painful under:
+The harder the system relies on:
 
-- latency,
-- bandwidth limits,
-- stragglers,
-- heterogeneous devices,
-- and unreliable networks.
+- AllReduce,
+- AllGather,
+- global barriers,
+- synchronized step updates,
 
-So the strongest Lavender-2 roadmap is not “how do I connect every device I own into one giant dense trainer?” It is:
+the less compatible it becomes with the heterogeneous, failure-prone, home-device world you actually want.
 
-> how do I design the architecture so that most useful work happens **without** requiring global synchronization at every step?
+So Lavender-2’s strongest systems question is:
 
-That is a much stronger research question.
+> **What parts of training and evaluation can be distributed without requiring dense global synchronization?**
+
+That is where the architecture and orchestration questions finally meet.
+
+## A More Explicit Roadmap
+
+### Phase 0 — Tooling clarity
+
+- choose tokenizer candidates
+- benchmark token efficiency on realistic local corpora
+- decide whether multilingual fairness matters enough to reject English-skewed tokenizers early
+
+### Phase 1 — Encoder-first experiments
+
+- train small text encoders for semantic routing and retrieval
+- evaluate whether they can identify which messages deserve expensive downstream processing
+- treat this as a routing problem, not merely an embedding benchmark
+
+### Phase 2 — Decoder backbone experiments
+
+- keep a conventional decoder baseline
+- test recurrent-depth or recurrent-transformer-style alternatives for local inference constraints
+- compare not only perplexity but also cache footprint, latency, and memory profile
+
+### Phase 3 — Interface experiments
+
+- define message schemas between fast and slow loops
+- test whether compressed summaries preserve enough task-relevant information
+- measure interface drift under separately trained modules
+
+### Phase 4 — Ethical real-world data collection
+
+- run small explicit experiments with consented real-world traces
+- reject the fantasy that scale justifies indefinite monitoring
+- accept that the data will be expensive and slow to collect
+
+### Phase 5 — Distributed infrastructure
+
+- use personal devices first for evaluation, replay, and small-module training
+- add decentralized averaging only where synchronization cost is tolerable
+- treat dense global training as a late-stage research problem, not a starting assumption
 
 ## Remaining Uncertainties
 
-The biggest open problem is still **data selection**.
+The largest open problem is still **data selection**.
 
-Even if the model architecture is right, where do the good traces come from? If simulation is too weak, and ubiquitous monitoring is ethically unacceptable, then the usable dataset may be limited to narrow, expensive, carefully consented experiments. That likely means progress will initially be slow and small-scale.
+Even if the architecture is correct, what data deserves to shape the system? If simulation is too weak and total monitoring is unacceptable, then the available training signal may remain sparse, expensive, and ethically constrained for a long time.
 
-A second uncertainty is whether separately trained modules can really remain compatible over time. A modular hierarchy sounds elegant, but many elegant modular systems fail because the hidden interface contracts drift as each module improves locally.
+A second uncertainty is **interface stability**. Modular systems fail when the contracts between modules drift faster than the training process can keep them aligned.
 
-A third uncertainty is institutional rather than technical: there may be no immediate financial reward for doing this the careful way. Ethical data collection, small-scale real-world testing, and heterogeneous local orchestration all look worse on a short-term spreadsheet than centralized scraping and giant datacenter training. If the work matters, it may matter precisely because it refuses that optimization target.
+A third uncertainty is **value alignment of the research itself**. A careful, ethically bounded, small-scale, local-first approach may have little short-term financial appeal. That may not be an accident. The right research target may simply not be the one that optimizes quickest for capital.
 
 ## Further Reading
 
-- **[Lavender-2 project description](https://lavender-2.wuzheyuan-86.workers.dev/)** — Current project scope, shipped baseline, and explicit known gaps.
-- **[A Clockwork RNN](https://arxiv.org/abs/1402.3511)** — Classic multi-timescale architecture, useful as a conceptual ancestor for different reaction-cycle modules.
-- **[RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control](https://arxiv.org/abs/2307.15818)** — Important counterexample showing the power of unified co-training instead of hard modular separation.
-- **[PyTorch FSDP](https://docs.pytorch.org/docs/stable/fsdp.html)** — Current baseline for sharded dense training in coordinated clusters.
-- **[DeepSpeed ZeRO](https://www.deepspeed.ai/tutorials/zero/)** — Memory-partitioning techniques that make large-model training practical on multi-GPU systems.
-- **[Hivemind](https://github.com/learning-at-home/hivemind)** — The strongest current reference for decentralized training across unreliable and heterogeneous peers.
-- **[Slurm overview](https://slurm.schedmd.com/overview.html)**, **[Ray Train](https://docs.ray.io/en/latest/train/overview.html)**, **[Kueue](https://kueue.sigs.k8s.io/docs/overview/)**, **[Volcano](https://volcano.sh/en/docs/)** — Useful contrast among current orchestration layers.
+- **[Lavender-2 project description](https://lavender-2.wuzheyuan-86.workers.dev/)** — Current project scope, shipped baseline, and known gaps.
+- **[A Clockwork RNN](https://arxiv.org/abs/1402.3511)** — Classic multi-timescale architecture.
+- **[RT-2](https://arxiv.org/abs/2307.15818)** — Strong unified co-training counterexample from robotics.
+- **[The Recurrent Transformer: Greater Effective Depth and Efficient Decoding](https://arxiv.org/abs/2604.21215)** — Relevant decoder-side architecture for trading depth, width, cache, and latency.[^recurrent-transformer]
+- **[SentencePiece](https://arxiv.org/abs/1808.06226)** — A language-independent subword tokenizer and detokenizer from raw text.[^sentencepiece]
+- **[PyTorch FSDP](https://docs.pytorch.org/docs/stable/fsdp.html)** — Dense training sharding baseline.
+- **[DeepSpeed ZeRO](https://www.deepspeed.ai/tutorials/zero/)** — Memory-partitioning for large-model training.
+- **[Hivemind](https://github.com/learning-at-home/hivemind)** — Decentralized training across unreliable and heterogeneous peers.
+- **[Slurm overview](https://slurm.schedmd.com/overview.html)**, **[Ray Train](https://docs.ray.io/en/latest/train/overview.html)**, **[Kueue](https://kueue.sigs.k8s.io/docs/overview/)**, **[Volcano](https://volcano.sh/en/docs/)** — Current orchestration landscape.
 
-The near-term goal should not be to prove that a giant distributed local super-mind is already possible. It should be to build a hierarchy that makes smaller-scale, ethical, real-world learning possible without pretending that either data or networking problems have already been solved.
+The point of Lavender-2 should not be to prove that a giant decentralized local super-mind already exists. The point is to build the smallest serious architecture that can learn ethically, locally, and incrementally — and then let the larger system emerge from that honesty rather than from premature scale claims.
 
-That is a humbler target.
+That is slower.
 
-It is also a more serious one.
+It is also much closer to the truth of the problem.
 
 ---
 
@@ -151,3 +341,5 @@ It is also a more serious one.
 [^volcano]: Volcano documentation.
 [^hivemind]: Hivemind README and associated papers.
 [^nccl]: NVIDIA NCCL overview documentation.
+[^sentencepiece]: Kudo and Richardson, *SentencePiece: A simple and language independent subword tokenizer and detokenizer for Neural Text Processing*, arXiv:1808.06226.
+[^recurrent-transformer]: Oncescu et al., *The Recurrent Transformer: Greater Effective Depth and Efficient Decoding*, arXiv:2604.21215.
