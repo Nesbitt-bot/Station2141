@@ -5,7 +5,8 @@
   "description": "Tooling for the Station 2141 Hugo blog.",
   "type": "module",
   "scripts": {
-    "generate-covers": "node scripts/generate-covers.mjs"
+    "generate-covers": "node scripts/generate-covers.mjs",
+    "write-life-seed": "node scripts/write-life-seed.mjs"
   },
   "devDependencies": {
     "@napi-rs/canvas": "^0.1.99",

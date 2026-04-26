@@ -7,5 +7,13 @@
     </svg>
 </button>
 
+{{- $lifeSeed := getenv "HUGO_LIFE_SEED" | default "station2141" -}}
+{{- with hugo.Data.life_seed -}}
+    {{- with .commit -}}{{- $lifeSeed = . -}}{{- end -}}
+{{- end -}}
+<script>
+    window.Station2141 = Object.assign(window.Station2141 || {}, {{ dict "lifeSeed" $lifeSeed | jsonify | safeJS }});
+</script>
+
 {{- $js := resources.Get "js/station2141.js" | minify | fingerprint -}}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>

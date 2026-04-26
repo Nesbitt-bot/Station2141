@@ -18,9 +18,21 @@
     font: inherit;
     display: inline-flex;
     align-items: center;
+    flex-direction: row;
     gap: var(--menu-icon-separation);
     cursor: pointer;
     line-height: 1;
+    white-space: nowrap;
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
+}
+
+.i18n-switch-current {
+    display: inline-block;
+    min-width: max-content;
+    white-space: nowrap;
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
 }
 
 .i18n-switch-trigger:focus-visible {
@@ -74,8 +86,50 @@
     color: var(--card-text-color-main);
     text-decoration: none;
     white-space: nowrap;
+    writing-mode: horizontal-tb;
+    text-orientation: mixed;
     font-size: 1.4rem;
     transition: background-color 0.1s ease, color 0.1s ease;
+}
+
+/* ---------- Conway background ---------- */
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    background: #f5f5fa;
+}
+
+[data-scheme="dark"] body {
+    background: #303030;
+}
+
+.station-life-background {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+}
+
+.main-container,
+body > footer {
+    position: relative;
+    z-index: 1;
+}
+
+.left-sidebar {
+    text-shadow: 0 1px 2px #f5f5fa;
+}
+
+[data-scheme="dark"] .left-sidebar {
+    text-shadow: 0 1px 2px #303030;
 }
 
 .i18n-switch-menu a:hover,
