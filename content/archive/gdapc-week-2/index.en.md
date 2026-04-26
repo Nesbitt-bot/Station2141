@@ -2,6 +2,7 @@
 title: "GDAPC — Week 2"
 date: 2026-04-26T07:26:26.000Z
 description: "Analytical skills: Qualities and characteristics associated with solving problems using facts. CuriosityUnderstanding context (condition)Having a technical…"
+image: "cover.png"
 tags: ["GDAPC","Google Data Analytics","Coursera","Week 2"]
 categories: ["Google data analytics professional certificates"]
 draft: false

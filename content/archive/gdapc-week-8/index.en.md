@@ -2,6 +2,7 @@
 title: "GDAPC — Week 8"
 date: 2026-04-26T07:26:36.000Z
 description: "When you write a formula in math, it generally ends with an equal sign (2 + 3 = ?). But with formulas, they always start with one instead (=A2+A3)."
+image: "cover.png"
 tags: ["GDAPC","Google Data Analytics","Coursera","Week 8"]
 categories: ["Google data analytics professional certificates"]
 draft: false

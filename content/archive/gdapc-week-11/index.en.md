@@ -2,6 +2,7 @@
 title: "GDAPC — Week 11"
 date: 2026-04-26T07:26:20.000Z
 description: "Analyze data for bias and credibility. Data ethics: Well-founded standards of right and wrong that dictate how data is collected, shared, and used."
+image: "cover.png"
 tags: ["GDAPC","Google Data Analytics","Coursera","Week 11"]
 categories: ["Google data analytics professional certificates"]
 draft: false

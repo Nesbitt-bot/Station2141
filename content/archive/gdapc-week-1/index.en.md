@@ -2,6 +2,7 @@
 title: "GDAPC — Week 1"
 date: 2026-04-26T07:26:18.000Z
 description: "Find out the question and be ready to solve it. Prepare the forms, questions to ask. Process Collect, store, manage, and protect data."
+image: "cover.png"
 tags: ["GDAPC","Google Data Analytics","Coursera","Week 1"]
 categories: ["Google data analytics professional certificates"]
 draft: false

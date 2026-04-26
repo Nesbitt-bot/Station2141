@@ -2,6 +2,7 @@
 title: "GDAPC — Week 17"
 date: 2026-04-26T07:26:24.000Z
 description: "Spreadsheets and SQL both have their advantages and disadvantages: Features of Spreadsheets Features of SQL Databases Smaller data sets Larger datasets Enter…"
+image: "cover.png"
 tags: ["GDAPC","Google Data Analytics","Coursera","Week 17"]
 categories: ["Google data analytics professional certificates"]
 draft: false

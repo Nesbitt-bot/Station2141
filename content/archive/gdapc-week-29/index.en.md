@@ -2,6 +2,7 @@
 title: "GDAPC — Week 29"
 date: 2026-04-26T07:26:32.000Z
 description: "Argument: Information that a function in R needs in order to run. Variable: A representation of a value in R that can be stored for use later during…"
+image: "cover.png"
 tags: ["GDAPC","Google Data Analytics","Coursera","Week 29"]
 categories: ["Google data analytics professional certificates"]
 draft: false
