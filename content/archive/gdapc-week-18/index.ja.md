@@ -1,0 +1,13 @@
+---
+title: "GDAPC Week 18 — <a id=\"_xcm6eg6jcdcf\"></a>__Correct the most common problems__"
+date: 2026-04-26T07:26:24.000Z
+image: "cover.png"
+description: "翻訳待ち"
+draft: false
+---
+
+> 翻訳待ち
+
+この記事は現在 **英語** のみで公開されています。
+
+[原文を読む →](/archive/gdapc-week-18/)

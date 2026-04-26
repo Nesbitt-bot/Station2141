@@ -1,13 +1,54 @@
 ---
-title: "Linux 常用指令"
+title: "Common Linux Commands"
+image: "cover.png"
 date: 2021-07-04T03:00:42Z
 lastmod: 2021-07-06T01:21:10Z
-image: "cover.png"
-description: "Translation pending"
+categories: ["Network"]
 draft: false
 ---
-> Translation pending
 
-This post is currently only available in **Chinese**.
+Move a file:
 
-[Read the original →](/zh/archive/linux-commands-zh/)
+```
+mv /original_directory /target_directory
+```
+
+Run silently in the background:
+
+```
+nohup command &
+```
+
+Read the output of a silent run:
+
+```
+cat nohup.out
+```
+
+List processes:
+
+```
+ps aux | grep process_name
+```
+
+Kill a process:
+
+```
+kill pid
+```
+
+Show file/folder permissions:
+
+```
+ls -l
+```
+
+Extract a tarball:
+
+```
+tar xvfz something.tar.gz
+```
+
+```
+tar xvf something.tar
+```
