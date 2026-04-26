@@ -1,5 +1,5 @@
 ---
-title: "Lecture 2"
+title: "CSE 132 — Lecture 2"
 image: "cover.png"
 date: 2023-02-18T04:49:22Z
 categories: ["CSE 132"]

@@ -240,6 +240,7 @@ for (const post of posts) {
     const found = new Set();
     for (const match of html.matchAll(urlPattern)) found.add(match[0]);
 
+    const failedUrls = new Set();
     for (const url of found) {
         const fname = safeFilename(decodeURIComponent(url.split('/').pop()).split('?')[0]);
         const dest = join(bundleDir, fname);
@@ -250,11 +251,7 @@ for (const post of posts) {
                 console.log(`  + ${slug}/${fname}  (${buf.length} B)`);
             } catch (err) {
                 console.warn(`  ! ${slug}: ${url} -> ${err.message}`);
-                // Still rewrite the body to a local-style reference so Hugo
-                // doesn't try resources.GetRemote on a broken URL at build time.
-                // The local file won't exist, but Stack's image helper will
-                // silently skip rather than warn.
-                mediaMap.set(url, fname);
+                failedUrls.add(url);
                 continue;
             }
         }
@@ -267,6 +264,17 @@ for (const post of posts) {
     for (const url of sortedUrls) {
         const fname = mediaMap.get(url);
         html = html.split(url).join(fname);
+    }
+    // For URLs we couldn't fetch, replace any <img> tag whose src is that
+    // URL with a static placeholder so the rendered page doesn't carry
+    // broken-image markers or unresolvable srcs.
+    for (const url of failedUrls) {
+        const escaped = url.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        const imgRe = new RegExp(
+            `<img\\b[^>]*src=["']${escaped}["'][^>]*\\/?\\s*>`,
+            'gi'
+        );
+        html = html.replace(imgRe, '<em>(diagram unavailable)</em>');
     }
 
     // Featured image -> cover.<ext>

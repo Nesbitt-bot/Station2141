@@ -1,5 +1,5 @@
 ---
-title: "Class 2"
+title: "CSE 247 — Class 2"
 image: "cover.png"
 date: 2023-02-18T03:57:57Z
 lastmod: 2023-02-18T04:40:42Z

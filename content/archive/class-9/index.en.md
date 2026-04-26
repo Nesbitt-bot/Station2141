@@ -1,5 +1,5 @@
 ---
-title: "Class 9"
+title: "CSE 247 — Class 9"
 image: "cover.png"
 date: 2023-02-18T04:44:26Z
 categories: ["CSE 247"]

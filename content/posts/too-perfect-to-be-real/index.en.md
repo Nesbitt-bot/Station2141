@@ -2,6 +2,7 @@
 title: "Too Perfect to Be Real"
 date: 2026-04-22
 description: "When AI images and videos become convincing enough for ordinary perception, realism stops being a proof and becomes only a trigger for belief."
+image: "cover.png"
 tags: ["AI images", "AI video", "reality", "belief", "visual culture"]
 categories: ["Philosophy"]
 draft: false

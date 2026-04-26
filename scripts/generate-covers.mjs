@@ -7,7 +7,7 @@
 
 import { createCanvas } from '@napi-rs/canvas';
 import { createHash } from 'node:crypto';
-import { readdir, stat, writeFile } from 'node:fs/promises';
+import { readdir, stat, readFile, writeFile } from 'node:fs/promises';
 import { resolve, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -248,6 +248,31 @@ async function main() {
             `wrote ${outPath}  ` +
             `palette(thin=${p.thin}, thick=${p.thick}, outline=${p.outline}, bg=${p.bg})`
         );
+
+        // Make sure each language file in the bundle has `image: "cover.png"`
+        // so Stack picks it up. Insert after `description:` if present, else
+        // after `title:`.
+        const dirEntries = await readdir(dir);
+        for (const entry of dirEntries) {
+            if (!/^index\.[a-z]+\.md$/.test(entry)) continue;
+            const mdPath = join(dir, entry);
+            let text = await readFile(mdPath, 'utf8');
+            if (/^image:/m.test(text)) continue;
+            // Skip render-never stubs
+            if (/render:\s*never/.test(text)) continue;
+            const inserted = text.replace(
+                /^(description:[^\n]*\n)/m,
+                '$1image: "cover.png"\n'
+            );
+            const finalText = inserted !== text ? inserted : text.replace(
+                /^(title:[^\n]*\n)/m,
+                '$1image: "cover.png"\n'
+            );
+            if (finalText !== text) {
+                await writeFile(mdPath, finalText);
+                console.log(`  + image:cover.png in ${entry}`);
+            }
+        }
     }
 }
 

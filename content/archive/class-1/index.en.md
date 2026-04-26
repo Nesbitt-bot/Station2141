@@ -1,5 +1,5 @@
 ---
-title: "Class 1"
+title: "CSE 247 — Class 1"
 image: "cover.png"
 date: 2023-02-18T03:55:03Z
 categories: ["CSE 247"]

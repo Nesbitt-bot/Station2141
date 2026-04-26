@@ -1,5 +1,5 @@
 ---
-title: "Lecture 5"
+title: "CSE 132 — Lecture 5"
 image: "cover.png"
 date: 2023-02-18T04:51:50Z
 lastmod: 2023-02-18T04:51:51Z

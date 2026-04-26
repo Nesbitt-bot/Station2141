@@ -1,5 +1,5 @@
 ---
-title: "Week 1"
+title: "Google Data Analytics — Week 1"
 image: "cover.png"
 date: 2023-02-18T05:19:08Z
 lastmod: 2023-02-18T05:22:30Z

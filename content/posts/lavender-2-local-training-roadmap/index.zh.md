@@ -2,6 +2,7 @@
 title: "Lavender-2 与小规模本地训练的伦理"
 date: 2026-04-24
 description: "一份关于分层本地模型、伦理数据获取、以及个人设备分布式训练的研究路线图。"
+image: "cover.png"
 tags: ["本地训练", "分布式系统", "机器人", "AI 伦理", "Lavender-2", "分词器", "RDT"]
 categories: ["计算机科学"]
 draft: false

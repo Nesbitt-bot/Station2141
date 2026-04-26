@@ -2,6 +2,7 @@
 title: "过于完美，因此不像真实"
 date: 2026-04-22
 description: "当 AI 图像与视频已经足够逼真时，逼真本身不再是现实的证明，而只是触发信念的一种方式。"
+image: "cover.png"
 tags: ["AI 图像", "AI 视频", "现实", "信念", "视觉文化"]
 categories: ["哲学"]
 draft: false

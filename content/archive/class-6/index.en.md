@@ -1,5 +1,5 @@
 ---
-title: "Class 6"
+title: "CSE 247 — Class 6"
 image: "cover.png"
 date: 2023-02-18T04:22:56Z
 lastmod: 2023-02-18T04:42:40Z

@@ -2,6 +2,7 @@
 title: "Lavender-2 and the Ethics of Small-Scale Local Training"
 date: 2026-04-24
 description: "A research roadmap for hierarchical local models, ethical real-world data collection, and distributed training across personal devices."
+image: "cover.png"
 tags: ["local training", "distributed systems", "robotics", "AI ethics", "Lavender-2", "tokenizer", "RDT"]
 categories: ["Computer Science"]
 draft: false

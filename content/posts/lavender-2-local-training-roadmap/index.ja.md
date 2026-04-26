@@ -2,6 +2,7 @@
 title: "Lavender-2 と小規模ローカル学習の倫理"
 date: 2026-04-24
 description: "階層的なローカルモデル、倫理的な実世界データ取得、そして個人デバイス上の分散学習に関する研究ロードマップ。"
+image: "cover.png"
 tags: ["ローカル学習", "分散システム", "ロボティクス", "AI 倫理", "Lavender-2", "トークナイザー", "RDT"]
 categories: ["Computer Science"]
 draft: false

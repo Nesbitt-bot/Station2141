@@ -2,7 +2,7 @@
 
 ## Archive translations
 
-Each migrated post currently exists in its detected source language only. The next migration round should add the missing translation file (e.g. an `index.zh.md` written next to a post that is currently `index.en.md`-only).
+Each archive post has a "Translation pending" stub in every site language so the language switcher always works. The table below tracks which post still needs a real translation written by hand (or by a later, higher-quality translation pass) — currently 54 posts.
 
 | Slug | Have | Need |
 | --- | --- | --- |

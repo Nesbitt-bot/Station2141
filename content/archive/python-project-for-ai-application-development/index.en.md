@@ -1,5 +1,5 @@
 ---
-title: "Python Project for AI &amp; Application Development"
+title: "Python Project for AI & Application Development"
 image: "cover.png"
 date: 2023-03-28T22:27:28Z
 lastmod: 2023-03-28T22:27:34Z
