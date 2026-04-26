@@ -13,25 +13,25 @@ aliases:
 
 The default Node,js framework provides a limited set of features for building web applications For example, Node.js does not provide parsing function for extensible markup language (XML) messages
 
--   In simple messages, you can parse out an XML message with JavaScript string functions
--   You can also use an XML document object, but the object is not efficient in parsing a stream of XML data
+- In simple messages, you can parse out an XML message with JavaScript string functions
+- You can also use an XML document object, but the object is not efficient in parsing a stream of XML data
 
 Developers rely on third-party packages to extend Node.js features Parsing XML using sting is difficult and may not be robust as external packages
 
 ### Parsing XML elements to JavaScript
 
--   The xml2js Node.js packages parses a string of XML elements into a JavaScript object
--   Unlike other XML parsing Node.js packages, xml2js uses only JavaScript
--   It does not require an XML parsing library that is written in another language
--   Third-party packages might have a different software license than the Node.js framework
--   Confirm that the licensing terms work with your company and your application before installing the package
+- The xml2js Node.js packages parses a string of XML elements into a JavaScript object
+- Unlike other XML parsing Node.js packages, xml2js uses only JavaScript
+- It does not require an XML parsing library that is written in another language
+- Third-party packages might have a different software license than the Node.js framework
+- Confirm that the licensing terms work with your company and your application before installing the package
 
 ## Introduction to Web Framework
 
 ### Runtime Environments
 
--   Node.js is not a web framework but a runtime environment that executes JavaScript on a server
--   Runtime environments are the hardware and software that can execute programs with a particular codebase.
+- Node.js is not a web framework but a runtime environment that executes JavaScript on a server
+- Runtime environments are the hardware and software that can execute programs with a particular codebase.
 
 ### Node framework
 
@@ -41,80 +41,80 @@ Web frameworks are the skeletons on which an application is built Fundamental st
 
 Application is divided into Model, View, and Controller.
 
--   Model: Manages data and interacts with database and handles data logic.
--   Controller: Regulates data flow and processes data provided by user.
--   View: Renders presentation of the data.
+- Model: Manages data and interacts with database and handles data logic.
+- Controller: Regulates data flow and processes data provided by user.
+- View: Renders presentation of the data.
 
 Used for apps that need separation of the data, form the data presentation, and from the manipulation of data (Koa, Django, Express, NestJS)
 
 ##### Express
 
--   One of the most popular node frameworks
--   Primarily used for routing and middleware
--   Small learning curve because it uses JavaScript
--   Easy to implement an MVC architecture pattern
--   Provides debugging mechanisms
+- One of the most popular node frameworks
+- Primarily used for routing and middleware
+- Small learning curve because it uses JavaScript
+- Easy to implement an MVC architecture pattern
+- Provides debugging mechanisms
 
 Advantages
 
--   Handles multiple operation requests concurrently
--   Has HTTP helpers for handling HTTP requests
--   Helps facilitate communicational between client and server
--   Efficiently provides HTTP headers to URLS to get needed data requested by the client
+- Handles multiple operation requests concurrently
+- Has HTTP helpers for handling HTTP requests
+- Helps facilitate communicational between client and server
+- Efficiently provides HTTP headers to URLS to get needed data requested by the client
 
 ##### Koa
 
--   Designed by the same team that designed Express
--   More robust foundation for web applications and APIs
--   Use Async functions such that callbacks are not necessary
--   Increased error-handling ability
--   Appropriate for applications that are
-    -   High-performance
-    -   Demanding
-    -   Complex
-    -   Developed by large experienced teams
+- Designed by the same team that designed Express
+- More robust foundation for web applications and APIs
+- Use Async functions such that callbacks are not necessary
+- Increased error-handling ability
+- Appropriate for applications that are
+    - High-performance
+    - Demanding
+    - Complex
+    - Developed by large experienced teams
 
 ##### NestJS
 
--   Appropriate for dynamic, scalable, enterprise applications
--   Flexible
--   Multitude of libraries
--   Easy to implement an MVC architecture
--   Built on top of Express
--   Compatible with TypeScript
--   Works in conjunction with the Angular framework
--   Combines object-oriented and functional reactive programming
+- Appropriate for dynamic, scalable, enterprise applications
+- Flexible
+- Multitude of libraries
+- Easy to implement an MVC architecture
+- Built on top of Express
+- Compatible with TypeScript
+- Works in conjunction with the Angular framework
+- Combines object-oriented and functional reactive programming
 
 #### Representational state transfer application programming interface (REST API)
 
 Allow multiple web services to communicate with each other and the client RESTful APIs:
 
--   Client and server code are independent of each other
--   Clients does not know the state of the server and vice versa (stateless)
--   Communicate via operation on resources
--   Communication does not rely on an implementation of the API
+- Client and server code are independent of each other
+- Clients does not know the state of the server and vice versa (stateless)
+- Communicate via operation on resources
+- Communication does not rely on an implementation of the API
 
 ##### Socket.io
 
--   Best for apps with real-time bidirectional data exchange between clients and servers
--   Utilize WebSocket rather than HTTP for communication
--   Server push data without a request from the client
--   Works well for applications such as
-    -   Chat rooms
-    -   Texting
-    -   Video conferencing
-    -   Multiplayer games
+- Best for apps with real-time bidirectional data exchange between clients and servers
+- Utilize WebSocket rather than HTTP for communication
+- Server push data without a request from the client
+- Works well for applications such as
+    - Chat rooms
+    - Texting
+    - Video conferencing
+    - Multiplayer games
 
 ##### Hapi.js
 
--   Open source
--   Lots of built-in security
--   Many built-in plugins so no need for unofficial middleware
--   Good for developing
-    -   Proxy servers
-    -   API servers
-    -   HTTP proxy applications
-    -   REST APIs
+- Open source
+- Lots of built-in security
+- Many built-in plugins so no need for unofficial middleware
+- Good for developing
+    - Proxy servers
+    - API servers
+    - HTTP proxy applications
+    - REST APIs
 
 ## Express Web Application Framework
 
@@ -124,33 +124,33 @@ Express is a third-party module that provides a framework for building web appli
 
 #### As an API
 
--   An Express API sets up an HTTP interface to interact with the data layer of the application
--   Data is sent back to the client in JSON format using a response, or res, object
--   The res.json() method:
-    -   Notified the client of the content type being sent
-    -   Stringify data
+- An Express API sets up an HTTP interface to interact with the data layer of the application
+- Data is sent back to the client in JSON format using a response, or res, object
+- The res.json() method:
+    - Notified the client of the content type being sent
+    - Stringify data
 
 #### Setup templates with server-side rendering (SSR)
 
--   SSR is used to screate templates
--   Data is sent from the client to the server
--   Templates use that data to create HTML, CSS, JavaScript
--   Use the res.render() method
+- SSR is used to screate templates
+- Data is sent from the client to the server
+- Templates use that data to create HTML, CSS, JavaScript
+- Use the res.render() method
 
 ### Application framework for Node.js
 
--   Express implements an app class that you map to a web resource path
--   The standard Node.js framework treats HTTP requests at a lower network level
--   The http.createServer() function relies on a custom callback function to parse through the web resource path
+- Express implements an app class that you map to a web resource path
+- The standard Node.js framework treats HTTP requests at a lower network level
+- The http.createServer() function relies on a custom callback function to parse through the web resource path
 
 ### How express works
 
 1.  Declare Express as a dependency in the package manifest of a Node.js projectCreate a package.json file in your project folder The package.json file stores information about the contents of a Node.js module
-    -   Name
-    -   Version
-    -   Description
-    -   Main
-    -   Dependencies
+    - Name
+    - Version
+    - Description
+    - Main
+    - Dependencies
 2.  Run the npm command to download any missing modules
 3.  Import the Express module and create an Express application
 4.  Create a new route handler
@@ -164,24 +164,24 @@ In this article, we will discuss the terms _middleware_ and _routes_. Middleware
 
 #### Application-level middleware
 
--   Bound with app.use();
--   Mainly used for authentication;
+- Bound with app.use();
+- Mainly used for authentication;
 
 #### Router-level middleware
 
--   Bound with router.use();
+- Bound with router.use();
 
 #### Error-handling middleware
 
--   Bound with app.use or router.use();
+- Bound with app.use or router.use();
 
 #### Built-in middleware
 
--   Static files, cookie parser, JSON
+- Static files, cookie parser, JSON
 
 #### Third-party middleware
 
--   Open source, user defined.
+- Open source, user defined.
 
 Express is a messaging framework used to handle routes and write middleware. The front end of an application uses Express to facilitate communication between components on the back end without the front-end and back-end services needing to use the same language. The front end communicates with the middleware, not directly with the back end. Messaging frameworks like Express commonly contain JSON, REST APIs, and web services. Older messaging frameworks may contain extensible markup language (XML) and simple object access protocols (SOAP) instead of JSON and REST APIs, respectively. The messaging framework provides a standardized way to handle data transfer among different applications.
 
@@ -235,44 +235,44 @@ Status code range Meaning 200-299 Everything is OK 300-399 Resource has moved 40
 
 Web framework directory structures
 
--   Most web frameworks have required directory structures
--   Express does not have require a particular directory structure
--   Best to define a structure in advance for growth and maintenance
+- Most web frameworks have required directory structures
+- Express does not have require a particular directory structure
+- Best to define a structure in advance for growth and maintenance
 
 ### Suggested Express folder structure
 
 Project
 
--   node\_modulesContains application's modules and packages. It is automatically created after running the npm install command
--   configContains configuration files such as
-    -   Database connections
-    -   Environment variables
-    -   Credential files including API keys for external services
--   modelsContains data models which specify the type of data store defined by an ORM library
--   routesSpecified routes for all entities. One file for each logical set of routes
--   viewsContains templates which dynamically write HTML, CSS, and JavaScript for the client
--   publicContains static content such as images, CSS, and JavaScript Helpful to have a sub-folder for each type of content
--   app.jsMain configuration file for your application
--   routes.jsCentral location to access routes Imports all files from routes folder Exports them as a single module to app.js Creates a single point of entry for all routes
--   package.jsonContains metadata used to manage dependencies
+- node\_modulesContains application's modules and packages. It is automatically created after running the npm install command
+- configContains configuration files such as
+    - Database connections
+    - Environment variables
+    - Credential files including API keys for external services
+- modelsContains data models which specify the type of data store defined by an ORM library
+- routesSpecified routes for all entities. One file for each logical set of routes
+- viewsContains templates which dynamically write HTML, CSS, and JavaScript for the client
+- publicContains static content such as images, CSS, and JavaScript Helpful to have a sub-folder for each type of content
+- app.jsMain configuration file for your application
+- routes.jsCentral location to access routes Imports all files from routes folder Exports them as a single module to app.js Creates a single point of entry for all routes
+- package.jsonContains metadata used to manage dependencies
 
 ### API directory structure
 
 Project
 
--   node\_modules
--   config
--   models
--   routes
--   app.js
--   route.js
--   package.json
+- node\_modules
+- config
+- models
+- routes
+- app.js
+- route.js
+- package.json
 
 Testing REST APIs
 
--   Black-box test REST APIs
--   Test as a whole without stubbed dependencies
--   Mocha framework contains a module called SuperTest
+- Black-box test REST APIs
+- Test as a whole without stubbed dependencies
+- Mocha framework contains a module called SuperTest
 
 ### API authentication
 
@@ -282,8 +282,8 @@ Use JWT based stateless authentication User properties are provided on the clien
 
 Provide appropriate documentation for your REST APIs Documentation open-source projects:
 
--   API Blueprint
--   Swagger
+- API Blueprint
+- Swagger
 
 ### Naming conventions
 

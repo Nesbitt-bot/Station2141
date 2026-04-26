@@ -13,9 +13,9 @@ aliases:
 
 ### Function-based and class-based view
 
--   Function-based view was the original view implementation in Django for specific functionalities.
--   Class-based view was added to improve extensibility and reusability
--   Both Function-based and Class-based views are essentially Python functions
+- Function-based view was the original view implementation in Django for specific functionalities.
+- Class-based view was added to improve extensibility and reusability
+- Both Function-based and Class-based views are essentially Python functions
 
 ### Class-based view
 
@@ -49,8 +49,8 @@ urlpatterns = [
 
 ### Generic class-based view
 
--   Built-in view classes provided by Django
--   Help to solve common tasks for developers
+- Built-in view classes provided by Django
+- Help to solve common tasks for developers
 
 A course detail view
 
@@ -65,31 +65,31 @@ class CourseView(generic.DetailView): # extends DetailView
 
 Common generic class-based views
 
--   ListView: represents a list of objects
--   DetailView: represents the details of an object
--   FormView: represents a form for submitting data
--   Group of Date views: handles date-based data
+- ListView: represents a list of objects
+- DetailView: represents the details of an object
+- FormView: represents a form for submitting data
+- Group of Date views: handles date-based data
 
 Function-based views: Pros and cons
 
--   Pros:
-    -   Simple and easy to understand
-    -   Explicit code
-    -   Mainly built for a specific functionality
--   Cons:
-    -   Difficult to extend or reuse
-    -   Handles requests using conditional statements; may increase code complexity
+- Pros:
+    - Simple and easy to understand
+    - Explicit code
+    - Mainly built for a specific functionality
+- Cons:
+    - Difficult to extend or reuse
+    - Handles requests using conditional statements; may increase code complexity
 
 Class-based views: Pros and cons
 
--   Pros:
-    -   Reusable: Code for some common tasks can be reused following the OOP paradigm
-    -   Extendible: add logic with minimal code changes
-    -   Handle requests using class methods
-    -   Leverage built-in generic class-based views
--   Cons:
-    -   Code is harder to read
-    -   Implicit code is hidden from developers
+- Pros:
+    - Reusable: Code for some common tasks can be reused following the OOP paradigm
+    - Extendible: add logic with minimal code changes
+    - Handle requests using class methods
+    - Leverage built-in generic class-based views
+- Cons:
+    - Code is harder to read
+    - Implicit code is hidden from developers
 
 ## Django Authentication System
 
@@ -97,7 +97,7 @@ Authentication: Identify who you are. Authorization: Verify what you can access.
 
 ### Django User objects
 
--   User model provides basic information about users
+- User model provides basic information about users
 
 ### User login form in template
 
@@ -134,8 +134,8 @@ def login_request(request):
 
 Check for authentication in session
 
--   Django session framework stored stateful data for the authenticated user visiting the site.
--   **sessionid** is also stored in browser cookie.
+- Django session framework stored stateful data for the authenticated user visiting the site.
+- **sessionid** is also stored in browser cookie.
 
 ```python
 sessionid = request.COOKIES.get('sessionid')
@@ -199,10 +199,10 @@ Permission, User, and Group
 
 Assign permissions on objects for user
 
--   View permission
--   Add permission
--   Change permission
--   Delete permission
+- View permission
+- Add permission
+- Change permission
+- Delete permission
 
 #### Groups
 
@@ -257,7 +257,7 @@ A free web front-end framework facilitating web app development Provides common 
 
 #### Container
 
--   There are two types of containers in Bootstrap
+- There are two types of containers in Bootstrap
 
 ```html
 <div class="container">
@@ -320,9 +320,9 @@ A free web front-end framework facilitating web app development Provides common 
 
 Add static files to an app Example: An onlinecourse app static file structure onlinecourse/ static/ onlinecourse/ images/ background.png course.css
 
--   Create static file folders under your app (Stored in STATICFILES\_DIRS = \[dir1, dir2, dir3,...\])
--   Create a subfolder using the same app name for name spacing
--   Django uses the name space to uniquely refer to static files across multiple apps To collect all the static files in app, you need to call
+- Create static file folders under your app (Stored in STATICFILES\_DIRS = \[dir1, dir2, dir3,...\])
+- Create a subfolder using the same app name for name spacing
+- Django uses the name space to uniquely refer to static files across multiple apps To collect all the static files in app, you need to call
     
     ```shell
     collectstatic
@@ -335,18 +335,18 @@ An example structure under STATIC\_ROOT /static/ admin/ css/ fonts/ img/ ... onl
 
 ### Django Development
 
--   In Django development, a 'runserver' command line starts a minimal development web server
--   To deploy reliable, scalable, and maintainable Django apps, we need to deploy them on web servers
--   Most web severs such as Apache HTTP server and Nginx are not written in Python...
+- In Django development, a 'runserver' command line starts a minimal development web server
+- To deploy reliable, scalable, and maintainable Django apps, we need to deploy them on web servers
+- Most web severs such as Apache HTTP server and Nginx are not written in Python...
 
 Web Server Gateway Interface (WSGI) application callable in wsgi.py
 
--   Gunicorn
--   uWSGI
--   Apache and mod\_wsgi
+- Gunicorn
+- uWSGI
+- Apache and mod\_wsgi
 
 Asynchronous Server Gateway (ASGI) application callable in asgi.py
 
--   Daphne
--   Hypercorn
--   Uvicorn
+- Daphne
+- Hypercorn
+- Uvicorn

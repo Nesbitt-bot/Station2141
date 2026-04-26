@@ -10,13 +10,13 @@ draft: false
 
 Week 24
 
-Data visualization: The graphic representation and presentation of data.
+**Data visualization**: The graphic representation and presentation of data.
 
 # Effective data visualizations
 
 A data visualization, sometimes referred to as a “data viz,” allows analysts to properly interpret data. A good way to think of data visualization is that it can be the difference between utter confusion and really grasping an issue. Creating effective data visualizations is a complex task; there is a lot of advice out there, and it can be difficult to grasp it all. In this reading, you are going to learn some tips and tricks for creating effective data visualizations. First, you'll review two frameworks that are useful for thinking about how you can organize the information in your visualization. Second, you'll explore pre-attentive attributes and how they can be used to affect the way people think about your visualizations. From there, you'll do a quick review of the design principles that you should keep in mind when creating your visualization. You will end the reading by reviewing some practices that you can use to avoid creating misleading or inaccurate visualizations.
 
-## __Frameworks for organizing your thoughts about visualization__
+## **Frameworks for organizing your thoughts about visualization**
 
 Frameworks can help you organize your thoughts about data visualization and give you a useful checklist to reference. Here are two frameworks that may be useful for you as you create your own data viz:
 
@@ -29,7 +29,7 @@ You learned about the David McCandless method in the first lesson on effective d
 3. Goal: a specific objective or function for the visual
 4. Visual form: an effective use of metaphor or visual expression
 
-Note: One useful way of approaching this framework is to notice the parts of the graphic where there is incomplete overlap between all four elements. For example, visual form without a goal, story, or data could be a sketch or even art. Data plus visual form without a goal or function is eye candy. Data with a goal but no story or visual form is boring. All four elements need to be at work to create an effective visual.
+**Note**: One useful way of approaching this framework is to notice the parts of the graphic where there is incomplete overlap between all four elements. For example, visual form without a goal, story, or data could be a sketch or even art. Data plus visual form without a goal or function is eye candy. Data with a goal but no story or visual form is boring. All four elements need to be at work to create an effective visual.
 
 2)[ Kaiser Fung’s Junk Charts Trifecta Checkup](https://junkcharts.typepad.com/junk_charts/junk-charts-trifecta-checkup-the-definitive-guide.html)
 
@@ -39,13 +39,13 @@ This approach is a useful set of questions that can help consumers of data visua
 2. What does the data say?
 3. What does the visual say?
 
-Note: This checklist helps you think about your data viz from the perspective of your audience and decide if your visual is communicating your data effectively to them or not. In addition to these frameworks, there are some other building blocks that can help you construct your data visualizations.
+**Note**: This checklist helps you think about your data viz from the perspective of your audience and decide if your visual is communicating your data effectively to them or not. In addition to these frameworks, there are some other building blocks that can help you construct your data visualizations.
 
-## __Pre-attentive attributes: marks and channels__
+## **Pre-attentive attributes: marks and channels**
 
 Creating effective visuals means leveraging what we know about how the brain works, and then using specific visual elements to communicate the information effectively. Pre-attentive attributes are the elements of a data visualization that people recognize automatically without conscious effort. The essential, basic building blocks that make visuals immediately understandable are called marks and channels.
 
-### __Marks__
+### **Marks**
 
 M​arks are basic visual objects like points, lines, and shapes. Every mark can be broken down into four qualities:
 
@@ -65,7 +65,7 @@ M​arks are basic visual objects like points, lines, and shapes. Every mark can
 
 ![a bar chart with a red, green, yellow, grey, and blue bar](image-4.png)
 
-### __Channels__
+### **Channels**
 
 C​hannels are visual aspects or variables that represent characteristics of the data. Channels are basically marks that have been used to visualize data. Channels will vary in terms of how effective they are at communicating data based on three elements:
 
@@ -89,7 +89,7 @@ Consider the proximity, similarity, enclosure, connectedness, and continuity of 
 
 But, remember: the more you emphasize different things, the less that emphasis counts. The more you emphasize one single thing, the more that counts.
 
-## __Design principles__
+## **Design principles**
 
 Once you understand the pre-attentive attributes of data visualization, you can go on to design principles for creating effective visuals. These design principles are important to your work as a data analyst because they help you make sure that you are creating visualizations that communicate your data effectively to your audience. By keeping these rules in mind, you can plan and evaluate your data visualizations to decide if they are working for you and your goals. And, if they aren’t, you can adjust them!
 
@@ -117,7 +117,7 @@ Numbers of things
 
 Think about how many elements you include in any visual. If your visualization uses lines, try to plot five or fewer. If that isn’t possible, use color or hue to emphasize important lines. Also, when using visuals like pie charts, try to keep the number of segments to less than seven since too many elements can be distracting.
 
-## __Avoiding misleading or deceptive charts ![A line graph with several colorful lines going in different directions. It is intentionally difficult to read](image-8.png)__
+## **Avoiding misleading or deceptive charts ![A line graph with several colorful lines going in different directions. It is intentionally difficult to read](image-8.png)**
 
 As you are considering what kind of visualization to create and how to design it, you will want to be sure that you are not creating misleading or deceptive charts. As you have been learning, data analysis provides people with insights and knowledge they can use to make decisions. So, it is important that the visualizations you create are communicating your data accurately and truthfully. Here are some common errors to avoid so that your visualizations aren’t accidentally misleading:
 
@@ -155,7 +155,7 @@ Adding smooth trend lines between points in a scatter plot can make it easier to
 
 Finally, keep in mind that data visualization is an art form, and it takes time to develop these skills. Over your career as a data analyst, you will not only learn how to design good data visualizations, but you will also learn how to evaluate good data visualizations. Use these tips to think critically about data visualization—both as a creator and as an audience member.
 
-## __Further reading__
+## **Further reading**
 
 - [The beauty of data visualization](https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization?language=en#t-150183): In this video, David McCandless explains the need for design to not just be beautiful, but for it to be meaningful as well. Data visualization must be able to balance function and form for it to be relevant to your audience.
 - [‘The McCandless Method’ of data presentation](https://artscience.blog/home/the-mccandless-method-of-data-presentation): At first glance, this blog appears to be written by a David McCandless fan, and it is. However, it contains very useful information and provides an in-depth look at the 5-step process that McCandless uses to present his data.
@@ -163,13 +163,13 @@ Finally, keep in mind that data visualization is an art form, and it takes time 
 - [Beautiful daily news](https://informationisbeautiful.net/beautifulnews/): In this McCandless collection, explore uplifting trends and statistics that are beautifully visualized for your creative enjoyment. A new chart is released every day so be sure to visit often to absorb the amazing things happening all over the world.
 - [The Wall Street Journal Guide to Information Graphics: The Dos and Don'ts of Presenting Data, Facts, and Figures](https://www.amazon.com/Street-Journal-Guide-Information-Graphics/dp/0393072959): This is a comprehensive guide to data visualization, including chapters on basic data visualization principles and how to create useful data visualizations even when you find yourself in a tricky situation. This is a useful book to add to your data visualization library, and you can reference it over and over again.
 
-Bar graphs: Use size contrast to compare two or more values.
+**Bar graphs**: Use size contrast to compare two or more values.
 
-Line graphs: Help your audience understand shifts or changes in your data.
+**Line graphs**: Help your audience understand shifts or changes in your data.
 
-Pie charts: Show how much each part of something makes up the whole.
+**Pie charts**: Show how much each part of something makes up the whole.
 
-Maps: Help organize data geographically.
+**Maps**: Help organize data geographically.
 
 # The beauty of visualizing
 
@@ -179,7 +179,7 @@ You will find that organizing your data and communicating your results are signi
 
 ## Inspiration is in the air
 
-__Data visualization__ is the graphical representation of data. But why should data analysts care about data visualization? Well your audience won’t always have the ability to interpret or understand the complex information that you relay to them so your job is to inform them of your analysis in a way that is meaningful, engaging, and easy to understand. Part of why data visualization is so effective is because people’s eyes are drawn to colors, shapes, and patterns, which makes those visual elements perfect for telling a story that goes beyond just the numbers.
+**Data visualization** is the graphical representation of data. But why should data analysts care about data visualization? Well your audience won’t always have the ability to interpret or understand the complex information that you relay to them so your job is to inform them of your analysis in a way that is meaningful, engaging, and easy to understand. Part of why data visualization is so effective is because people’s eyes are drawn to colors, shapes, and patterns, which makes those visual elements perfect for telling a story that goes beyond just the numbers.
 
 Of course, one of the best ways to understand the importance of data visualization is to go through different examples of it. As a junior data analyst, you want to have several visualization options for your creative process whenever you need. Below is a list of resources that can inspire your next data-driven decisions, as well as teach you how to make your data more accessible to your audience:
 
@@ -193,11 +193,11 @@ Of course, one of the best ways to understand the importance of data visualizati
 
 Remember: an important component of being a data analyst is the ability to communicate your findings in a way that will appeal to your audience. Data visualization has the ability to make complex (and even monotonous) information easily understood, and knowing how to utilize data visualization is a valuable skill to have. Your goal is always to help the audience have a conversation with the data so your visuals draw them into the conversation. This is especially true when you have to help your audience engage with a large amount of data, such as the flow of goods from one country to other parts of the world.
 
-Histogram: A chart that shows how often data values fall into certain ranges.
+**Histogram**: A chart that shows how often data values fall into certain ranges.
 
-Correlation charts: Show relationships among data.
+**Correlation charts**: Show relationships among data.
 
-Causation: Occurs when an action directly leads to an outcome.
+**Causation**: Occurs when an action directly leads to an outcome.
 
 # Correlation and causation
 
@@ -208,21 +208,21 @@ In this reading, you will examine correlation and causation in more detail. Let�
 
 ![This illustration is a thermometer pointing to an ice cream cone and a lightning bolt pointing to a thundercloud.](image-10.png)
 
-## __Why is differentiating between correlation and causation important? __
+## **Why is differentiating between correlation and causation important?**
 
 When you make conclusions from data analysis, you need to make sure that you don’t assume a causal relationship between elements of your data when there is only a correlation. When your data shows that outdoor temperature and ice cream consumption both go up at the same time, it might be tempting to conclude that hot weather causes people to eat ice cream. But, a closer examination of the data would reveal that every change in temperature doesn’t lead to a change in ice cream purchases. In addition, there might have been a sale on ice cream at the same time that the data was collected, which might not have been considered in your analysis.
 
 Knowing the difference between correlation and causation is important when you make conclusions from your data since the stakes could be high. The next two examples illustrate the high stakes to health and human services.
 
-### __Cause of disease__
+### **Cause of disease**
 
 For example, pellagra is a disease with symptoms of dizziness, sores, vomiting, and diarrhea. In the early 1900s, people thought that the disease was caused by unsanitary living conditions. Most people who got pellagra also lived in unsanitary environments. But, a closer examination of the data showed that pellagra was the result of a lack of niacin (Vitamin B3). Unsanitary conditions were related to pellagra because most people who couldn’t afford to purchase niacin-rich foods also couldn’t afford to live in more sanitary conditions. But, dirty living conditions turned out to be a correlation only.
 
-### __Distribution of aid__
+### **Distribution of aid**
 
 Here is another example. Suppose you are working for a government agency that provides food stamps. You noticed from the agency’s Google Analytics that people who qualify for food stamps are browsing the official website, but they are leaving the site without signing up for benefits. You think that the people visiting the site are leaving because they aren’t finding the information they need to sign up for food stamps. Google Analytics can help you find clues (correlations), like the same people coming back many times or how quickly people leave the page. One of those correlations might lead you to the actual cause, but you will need to collect additional data, like in a survey, to know exactly why people coming to the site aren’t signing up for food stamps. Only then can you figure out how to increase the sign-up rate.
 
-## __Key takeaways __
+## **Key takeaways**
 
 In your data analysis, remember to:
 
@@ -230,22 +230,22 @@ In your data analysis, remember to:
 - Examine the data’s context to determine if a causation makes sense (and can be supported by all of the data)
 - Understand the limitations of the tools that you use for analysis
 
-## __Further information__
+## **Further information**
 
 You can explore the following article and training for more information about correlation and causation:
 
 - [Correlation is not causation](https://towardsdatascience.com/correlation-is-not-causation-ae05d03c1f53): This article describes the impact to a business when correlation and causation are confused.
 - [Correlation and causation](https://www.khanacademy.org/test-prep/praxis-math/praxis-math-lessons/gtp--praxis-math--lessons--statistics-and-probability/a/gtp--praxis-math--article--correlation-and-causation--lesson) (Khan Academy lesson): This lesson describes correlation and causation along with a working example. Follow the examples of the analysis and notice if there is a positive correlation between frostbite and sledding accidents.
 
-Static visualizations: Do not change over time unless they’re edited.
+**Static visualizations**: Do not change over time unless they’re edited.
 
-Dynamic visualizations: Visualizations that ar5e interactive or change over time.
+**Dynamic visualizations**: Visualizations that ar5e interactive or change over time.
 
 # The wonderful world of visualizations
 
 As a data analyst, you will often be tasked with relaying information and data that your audience might not readily understand. Presenting your data visually is an effective way to communicate complex information and engage your stakeholders. One question to ask yourself is: “what is the best way to tell the story within my data?” This reading includes several options for you to choose from (although there are many more).
 
-## __Line chart __
+## **Line chart**
 
 A line chart is used to track changes over short and long periods of time. When smaller changes exist, line charts are better to use than bar graphs. Line charts can also be used to compare changes over the same period of time for more than one group.
 
@@ -283,7 +283,7 @@ Maybe your data is more specific than above. For example, let’s say you are ta
 
 ![This is a line graph of percent rate of high school graduation for male and female students over the years from 2008 to 2012](image-12.png)
 
-## __Column chart __
+## **Column chart**
 
 Column charts use size to contrast and compare two or more values, using height or lengths to represent the specific values.
 
@@ -321,13 +321,13 @@ What would this column chart entail if we wanted to add the sales data for a com
 
 ![A double bar graph of monthly car sales for two different car brands from August to December](image-14.png)
 
-## __Heatmap __
+## **Heatmap**
 
 Similar to bar charts, heatmaps also use color to compare categories in a data set. They are mainly used to show relationships between two variables and use a system of color-coding to represent different values. The following heatmap plots temperature changes for each city during the hottest and coldest months of the year.
 
 ![A heatmap of varying climates for different cities around the world between June to January](image-15.png)
 
-## __Pie chart__
+## **Pie chart**
 
 The pie chart is a circular graph that is divided into segments representing proportions corresponding to the quantity it represents, especially when dealing with parts of a whole.
 
@@ -371,7 +371,7 @@ Sci-fi- 3%
 
 Drama- 11%
 
-## __Scatter plot__
+## **Scatter plot**
 
 Scatter plots show relationships between different variables. Scatter plots are typically used for two variables for a set of data, although additional variables can be displayed.
 
@@ -381,7 +381,7 @@ For example, you might want to show data of the relationship between temperature
 
 As you may notice, the higher the temperature got, the more demand there was for ice cream – so the scatter plot is great for showing the relationship between the two variables.
 
-## __Distribution graph__
+## **Distribution graph**
 
 A distribution graph displays the spread of various outcomes in a dataset.
 
@@ -401,7 +401,7 @@ Reviewing each of these visual examples, where do you notice that they fit in re
 - Ranking: This is a position in a scale of achievement or status. Data that requires ranking is best represented by a column chart.
 - Correlation: This shows a mutual relationship or connection between two or more things. A scatter plot is an excellent way to represent this type of data pattern.
 
-## __Studying your data__
+## **Studying your data**
 
 Data analysts are tasked with collecting and interpreting data as well as displaying data in a meaningful and digestible way. Determining how to visualize your data will require studying your data’s patterns and converting it using visual cues. Feel free to practice your own charts and data in spreadsheets. Simply input your data in the spreadsheet, highlight it, then insert any chart type and view how your data can be visualized based on what you choose.
 
@@ -421,7 +421,7 @@ A decision tree is a decision-making tool that allows you, the data analyst, to 
 
 -Do relationships between the data need to be shown? Scatter plot or heatmap
 
-## __Begin with your story__
+## **Begin with your story**
 
 Start off by evaluating the type of data you have and go through a series of questions to determine the best visual source:
 
@@ -441,7 +441,7 @@ Start off by evaluating the type of data you have and go through a series of que
 
 ![A scatterplot measuring the rise in test scores corresponding with the increase of minutes spent studying](image-24.png)
 
-## __A​dditional resources__
+## **A​dditional resources**
 
 The decision tree example used in this reading is one of many. There are multiple decision trees out there with varying levels of details that you can use to help guide your visual decisions. If you want more in-depth insight into more visual options, explore the following resources:
 
@@ -462,7 +462,7 @@ In this reading, you are going to learn more about using the elements of art and
 
 After we go through the various design principles, spend some time examining the visual examples to ensure that you have a thorough understanding of how the principle is put into practice. Let’s get into it!
 
-## __Nine basic principles of design __
+## **Nine basic principles of design**
 
 There are nine basic principles of design that data analysts should think about when building their visualizations.
 
@@ -506,7 +506,7 @@ These first six principles of design are key considerations that you can make wh
 
 Being a data analyst means learning to think in a lot of different ways. These nine principles of design can help guide you as you create effective and interesting visualizations.
 
-Data composition: Combining the individual parts in a visualization and displaying them together as a whole.
+**Data composition**: Combining the individual parts in a visualization and displaying them together as a whole.
 
 ![](image-31.png)
 
@@ -526,7 +526,7 @@ At this point, you might be asking yourself: What makes a good visualization? Is
 
 ![Four overlapping ovals outlining the four different parts of data visualization: information, story, goal, and visual form](image-34.png)
 
-## __Four elements of successful visualizations__
+## **Four elements of successful visualizations**
 
 The Venn diagram by David McCandless identifies four elements of successful visualizations:
 
@@ -539,7 +539,7 @@ All four of these elements are important on their own, but a successful data vis
 
 In the next part of this reading, you will use these elements to examine two data visualization examples and evaluate why they are successful.
 
-## __Example 1: Visualization of dog breed comparison![Data visualization titled “Best in Show: The Ultimate Data Dog” with dog breeds measured by data score and popularity.](image-35.png)__
+## **Example 1: Visualization of dog breed comparison![Data visualization titled “Best in Show: The Ultimate Data Dog” with dog breeds measured by data score and popularity.](image-35.png)**
 
 It uses two axes, popularity and data score, to place different dog breeds on a four-square chart. The squares are labelled “Inexplicably Overrated,” “The Rightly Ignored,” “Hot Dogs!,” and “Overlooked Treasures.” Different dog breeds, visualized with plotted points shaped like dogs, are distributed on the chart based on their popularity and their data score.
 
@@ -549,7 +549,7 @@ __IIB-LICENSED_Best-in-Show.pdf__PDF File
 
 [Open file](https://d18ky98rnyall9.cloudfront.net/9_ukt6X2QOu7pLel9tDrfw_359529dc0bd647de843a11274ca5ace9_IIB-LICENSED_Best-in-Show.pdf?Expires=1642032000&Signature=cZ7up1bHUk9u6h9KxtlqebRylVUoyw41X4PJCrDL1e8bkO1DaytpTaK7upIkNNoGof544030b~onjy1v~~oY7~8NKgAjHdeo0Jnf0wwmsoyATB2KyAYeQ-z4G1F~4sbokI2AmUtvcbIrrMSDfNWJ162ML06HiYG4BiAFsuAToRU_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 
-### __View the data__
+### **View the data**
 
 The Best in Show visualization uses data about different dog breeds from the American Kennel Club. The data has been compiled in a spreadsheet. Click the link below and select "Use Template" to view the data.
 
@@ -557,11 +557,11 @@ Link to the template:[ KIB - Best in Show](https://docs.google.com/spreadsheets/
 
 Or, if you don't have a Google account, download the file below.
 
-__KIB - Best in Show (public)__XLSX File
+**KIB - Best in Show (public)**XLSX File
 
 [Download file](https://d18ky98rnyall9.cloudfront.net/-tlQpnbgR2-ZUKZ24GdvPg_5754482a15824030bab88668386dde06_KIB---Best-in-Show-public-.xlsx?Expires=1642032000&Signature=PeacZ9gwf5~5Yvwa9GLMIIzdPQKxOHRJib~oAcanTWRGrqZSXlNk6BhUMfKxXLZkYUD7nwIpw5AoUKDT9g1Nm26kyy9x9wKAaVl8ucSdmA3a2KtnJzO3LtmaBvwVHGLe7tMQMnZlDyZQXlYdYGlpcpCTCwSiZMSFg3LtrDH9L~A_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 
-### __Examine the four elements__
+### **Examine the four elements**
 
 This visualization compares the popularity of different dog breeds to a more objective data score. Consider how it uses the elements of successful data visualization:
 
@@ -570,7 +570,7 @@ This visualization compares the popularity of different dog breeds to a more obj
 - Goal (function): The visualization is interested in exploring the relationship between popularity and the objective data scores for different dog breeds. By comparing these data points, you can learn more about how different dog breeds are perceived.
 - Visual form (metaphor): In addition to the actual four-square structure of this visualization, other visual cues are used to communicate information about the dataset. The most obvious is that the data points are represented as dog symbols. Further, the size of a dog symbol and the direction the dog symbol faces communicate other details about the data.
 
-## __Example 2: Visualization of rising sea levels![Visualization titled “When Sea Levels Attack!” ](image-36.png)__
+## **Example 2: Visualization of rising sea levels![Visualization titled “When Sea Levels Attack!” ](image-36.png)**
 
 demonstrates how much sea levels are projected to rise over the course of 8,000 years. On the y-axis, it lists both the number of years and the sea level in meters. From right to left, starting with the lowest sea level, the chart includes silhouettes of different cities around the world to demonstrate how long it would take for most of the world to be underwater. It also includes inset maps of the continents and how they would appear at different times as sea levels continue to rise.
 
@@ -580,7 +580,7 @@ __IIB-LICENSED_Sea-Levels.pdf__PDF File
 
 [Open file](https://d18ky98rnyall9.cloudfront.net/5eB5YE1QSPSgeWBNUKj0MQ_64cb4212fa57404a9a1d0274cc8ae8ba_IIB-LICENSED_Sea-Levels.pdf?Expires=1642032000&Signature=HOYj2j5X32wQn-8GWnb~JTBg87XfhBGP9~Al~y1SuEzNgXJg8WO9aL1mshK0feW4t0F3vbO5j0vYQF4Q4M9-3rc0c044LJBlf36a-YwTg-RT5urO6fyw78AXY5agSGr8mgXf5MMDOYuvSPrLbTVpWO9lkM0rorLKv4pWHTdLvdk_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A)
 
-### __Examine the four elements__
+### **Examine the four elements**
 
 This When Sea Levels Attack visualization illustrates how much sea levels are projected to rise over the course of 8,000 years. The silhouettes of different cities with different sea levels, rising from right to left, helps to drive home how much of the world will be affected as sea levels continue to rise. Here is how this data visualization stacks up using the four elements of successful visualization:
 
@@ -589,11 +589,11 @@ This When Sea Levels Attack visualization illustrates how much sea levels are pr
 - Goal (function): The goal of this project is to demonstrate how soon rising sea levels are going to affect us on a global scale. Using both data and the visual form, this visualization makes rising sea levels feel more real to the audience.
 - Visual form (metaphor): The city silhouettes in this visualization are a beautiful way to drive home the point of the visualization. It gives the audience a metaphor for how rising sea levels will affect the world around them in a way that showing just the raw numbers can’t do. And for a more global perspective, the visualization also uses inset maps.
 
-## __Key takeaways__
+## **Key takeaways**
 
 Notice how each of these visualizations balance all four elements of successful visualization. They clearly incorporate data, use storytelling to make that data meaningful, focus on a specific goal, and structure the data with visual forms to make it beautiful and communicative. The more you practice thinking about these elements, the more you will be able to include them in your own data visualizations.
 
-Design thinking: A process used to solve complex problems in a user-centric way.
+**Design thinking**: A process used to solve complex problems in a user-centric way.
 
 Five phases of the design process:
 
@@ -629,7 +629,7 @@ Design thinking for data visualization involves five phases:
 
 As interactive dashboards become more popular for data visualization, new importance has been placed on efficiency and user-friendliness. In this reading, you will learn how design thinking can improve an interactive dashboard. As a junior analyst, you wouldn’t be expected to create an interactive dashboard on your own, but you can use design thinking to suggest ways that developers can improve data visualizations and dashboards.
 
-## __An example: online banking dashboard__
+## **An example: online banking dashboard**
 
 Suppose you are an analyst at a bank that has just released a new dashboard in their online banking application. This section describes how you might explore this dashboard like a new user would, consider a user’s needs, and come up with ideas to improve data visualization in the dashboard. The dashboard in the banking application has the following data visualization elements:
 
@@ -639,7 +639,7 @@ Suppose you are an analyst at a bank that has just released a new dashboard in t
 
 ![This illustration shows a dashboard for online banking that has a donut chart to track spending versus budget.](image-37.png)
 
-### __E​mpathize__
+### **E​mpathize**
 
 First, empathize by putting yourself in the shoes of a customer who has a checking account with the bank.
 
@@ -649,7 +649,7 @@ First, empathize by putting yourself in the shoes of a customer who has a checki
 
 What is the main purpose of the data visualization? If you answered that it was to help customers stay within budget or to save money, you are right! Saving money was a top customer need for the dashboard.
 
-### __D​efine__
+### **D​efine**
 
 Now, imagine that you are helping dashboard designers define other things that customers might want to achieve besides saving money.
 
@@ -661,7 +661,7 @@ What other data visualizations might be needed?
 
 Can you think of anything else?
 
-### __I​deate__
+### **I​deate**
 
 Next, ideate additional features for the dashboard and share them with the software development team.
 
@@ -671,15 +671,15 @@ Next, ideate additional features for the dashboard and share them with the softw
 
 Can you think of anything else?
 
-### __P​rototype__
+### **P​rototype**
 
 Finally, developers can prototype the next version of the dashboard with new and improved data visualizations.
 
-### __T​est__
+### **T​est**
 
 Developers can close the cycle by having you (and others) test the prototype before it is sent to stakeholders for review and approval.
 
-## __Key takeaways__
+## **Key takeaways**
 
 This design thinking example showed how important it is to:
 
@@ -692,11 +692,11 @@ You can refer to the following articles for more information about design thinki
 - [Three Critical Aspects of Design Thinking for Big Data Solutions](https://dataconomy.com/2019/05/three-critical-aspects-of-design-thinking-for-big-data-solutions/)
 - [Data and Design Thinking: Why Use Data in the Design Process?](https://www.enginess.io/insights/data-and-design-thinking)
 
-Headline: A line of words printed in large letters at the top of the visualization to communicate what data is being presented.
+**Headline**: A line of words printed in large letters at the top of the visualization to communicate what data is being presented.
 
-Subtitle: Supports the headline by adding more context and description.
+**Subtitle**: Supports the headline by adding more context and description.
 
-Legend: Identified the meaning of various elements in data visualization.
+**Legend**: Identified the meaning of various elements in data visualization.
 
 # Pro tips for highlighting key information
 
@@ -704,7 +704,7 @@ Headlines, subtitles, labels, and annotations help you turn your data visualizat
 
 If you already know what headlines, subtitles, labels and annotations do, go to the guidelines and style checks at the end of this reading. If you don’t, these next sections are for you.
 
-## __Headlines that pop__
+## **Headlines that pop**
 
 A headline is a line of words printed in large letters at the top of a visualization to communicate what data is being presented. It is the attention grabber that makes your audience want to read more. Here are some examples:
 
@@ -719,7 +719,7 @@ Turns out, this illustration is showing average rents in the tri-city area. So, 
 
 ![This illustration is an unfinished stacked line chart with a headline added that reads “Average Rents in the Tri-City Area.”](image-39.png)
 
-## __Subtitles that clarify__
+## **Subtitles that clarify**
 
 A subtitle supports the headline by adding more context and description. Adding a subtitle will help the audience better understand the details associated with your chart. Typically, the text for subtitles has a smaller font size than the headline.
 
@@ -729,7 +729,7 @@ We are actually reporting the data for the tri-city area near San Diego. So addi
 
 ![This is an unfinished stacked line chart and headline and now an added  subtitle that reads “Oceanside, Vista, and Carlsbad.”](image-40.png)
 
-## __Labels that identify__
+## **Labels that identify**
 
 A label in a visualization identifies data in relation to other data. Most commonly, labels in a chart identify what the x-axis and y-axis show. Always make sure you label your axes. We can add “Months (January - June 2020)” for the x-axis and “Average Monthly Rents ($)” for the y-axis in the average rents chart.
 
@@ -741,7 +741,7 @@ We can add direct labels in the average rents chart. The audience can then ident
 
 ![This is an unfinished stacked line chart, headline, subtitle, and newly added labels for the individual data lines.](image-42.png)
 
-## __Annotations that focus__
+## **Annotations that focus**
 
 An annotation briefly explains data or helps focus the audience on a particular aspect of the data in a visualization.
 
@@ -749,7 +749,7 @@ Suppose in the average rents chart that we want the audience to pay attention to
 
 ![This is a finished chart with headline, subtitle, labels, and newly added annotations for the highest rents in each city.](image-43.png)
 
-## __Guidelines and pro tips__
+## **Guidelines and pro tips**
 
 Refer to the following table for recommended guidelines and style checks for headlines, subtitles, labels, and annotations in your data visualizations. Think of these guidelines as guardrails. Sometimes data visualizations can become too crowded or busy. When this happens, the audience can get confused or distracted by elements that aren’t really necessary. The guidelines will help keep your data visualizations simple, and the style checks will help make your data visualizations more elegant.
 
@@ -857,14 +857,14 @@ Choosing to represent your data via a chart is usually the most simple and effic
 
 Follow this high level 60-minute chart to guide your thinking whenever you begin working on a data visualization.
 
-Prep (5 min): Create the mental and physical space necessary for an environment of comprehensive thinking. This means allowing yourself room to brainstorm *how* you want your data to appear while considering the amount and type of data that you have.
+**Prep (5 min)**: Create the mental and physical space necessary for an environment of comprehensive thinking. This means allowing yourself room to brainstorm *how* you want your data to appear while considering the amount and type of data that you have.
 
-Talk and listen (15 min): Identify the object of your work by getting to the “ask behind the ask” and establishing expectations. Ask questions and really concentrate on feedback from stakeholders regarding your projects to help you hone how to lay out your data.
+**Talk and listen (15 min)**: Identify the object of your work by getting to the “ask behind the ask” and establishing expectations. Ask questions and really concentrate on feedback from stakeholders regarding your projects to help you hone how to lay out your data.
 
-Sketch and design (20 min): Draft your approach to the problem. Define the timing and output of your work to get a clear and concise idea of what you are crafting.
+**Sketch and design (20 min)**: Draft your approach to the problem. Define the timing and output of your work to get a clear and concise idea of what you are crafting.
 
-Prototype and improve (20 min): Generate a visual solution and gauge its effectiveness at accurately communicating your data. Take your time and repeat the process until a final visual is produced. It is alright if you go through several visuals until you find the perfect fit.
+**Prototype and improve (20 min)**: Generate a visual solution and gauge its effectiveness at accurately communicating your data. Take your time and repeat the process until a final visual is produced. It is alright if you go through several visuals until you find the perfect fit.
 
-## __Key takeaway__
+## **Key takeaway**
 
 This is a great overview you can use when you need to create a visualization in a short amount of time. As you become more experienced in data visualization, you will find yourself creating your own process. You will get a more detailed description of different visualization options in the next reading, including line charts, bar charts, scatter plots, and more. No matter what you choose, always remember to take the time to prep, identify your objective, take in feedback, design, and create.

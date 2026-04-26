@@ -22,23 +22,23 @@ Common calculations formulas
 
 =COUNTIF(range,conditions)
 
-Summary table: A table used to summarize statistical information about data.
+**Summary table**: A table used to summarize statistical information about data.
 
-SUMIF: A function that adds numeric data based on one condition.
+**SUMIF**: A function that adds numeric data based on one condition.
 
 Syntax: =SUMIF(range, condition,sum_range)![](image-1.png)
 
-SUMPRODUCT: A function that multiplies arrays and returns the sum of those products.
+**SUMPRODUCT**: A function that multiplies arrays and returns the sum of those products.
 
 Syntax: =SUMPRODUCT(array1,array2,....)
 
-Array: A collection of values in cells.
+**Array**: A collection of values in cells.
 
-Profit margin: A percentage that indicates how many cents of profit has been generated for each dollar of sale.
+**Profit margin**: A percentage that indicates how many cents of profit has been generated for each dollar of sale.
 
-Pivot tables: Let you view data in multiple ways to find insights and trends.
+**Pivot tables**: Let you view data in multiple ways to find insights and trends.
 
-Calculated field: A new field within a pivot table that carries out certain calculations based on the values of other fields.
+**Calculated field**: A new field within a pivot table that carries out certain calculations based on the values of other fields.
 
 # Elements of a pivot table
 
@@ -66,7 +66,7 @@ Finally, the filters section of a pivot table enables you to apply filters based
 
 Being able to use all four parts of the pivot table editor will allow you to compare different metrics from your data and execute calculations, which will help you gain valuable insights.
 
-## __Using pivot tables for analysis__
+## **Using pivot tables for analysis**
 
 Pivot tables can be a useful tool for answering specific questions about a dataset so you can quickly share answers with stakeholders. For example, a data analyst working at a department store was asked to determine the total sales for each department and the number of products they each sold. They were also interested in knowing exactly which department generated the most revenue.
 
@@ -78,7 +78,7 @@ In this reading, you will learn how to create and use pivot tables for data anal
 
 Pivot tables allow you to make sense of large data sets by giving you tools to easily compare metrics, quickly perform calculations, and generate readable reports. You can create a pivot table to help you answer specific questions about your data. For example, if you were analyzing sales data, you could use pivot tables to answer questions like, “Which month had the most sales?” and “What products generated the most revenue this year?” When you need answers to questions about your data, pivot tables can help you cut through the clutter and focus on only the data you need.
 
-## __Create your pivot table__
+## **Create your pivot table**
 
 Before you can analyze data with pivot tables, you will need to create a pivot table with your data. The following includes the steps for creating a pivot table in Google Sheets, but most spreadsheet programs will have similar tools.
 
@@ -98,11 +98,11 @@ Generally, you will want to create a new sheet for your pivot table to keep your
 
 This is where you will be able to customize your pivot table, including what variables you want to include for your analysis.
 
-## __Use your pivot table for analysis__
+## **Use your pivot table for analysis**
 
 You can perform a wide range of analysis tasks with your pivot tables to quickly draw meaningful insights from your data, including performing calculations, sorting, and filtering your data. Below is a list of online resources that will help you learn about performing basic calculations in pivot tables as well as resources for learning about sorting and filtering data in your pivot tables.
 
-### __Perform calculations__
+### **Perform calculations**
 
 Microsoft Excel
 
@@ -120,7 +120,7 @@ Google Sheets
 
 [Pivot tables in Google Sheets](https://www.benlcollins.com/spreadsheets/pivot-tables-google-sheets/): This beginner’s guide covers the basics of pivot tables and calculated fields in Google Sheets and uses examples and how-to videos to help demonstrate these concepts.
 
-### __Sort your data__
+### **Sort your data**
 
 Microsoft Excel
 
@@ -138,7 +138,7 @@ Google Sheets
 
 [Pivot table ascending and descending order](https://medium.com/actiondesk/pivot-table-ascending-descending-order-in-google-sheets-and-excel-1-minute-ultimate-beginners-8f9f4c560492): This 1-minute beginner’s guide is a great way to brush up on sorting in pivot tables if you are interested in a quick refresher.
 
-### __Filter your data__
+### **Filter your data**
 
 Microsoft Excel
 
@@ -152,7 +152,7 @@ Google Sheets
 
 [Filter multiple values in a pivot table](https://infoinspired.com/google-docs/spreadsheet/filter-multiple-values-in-pivot-table-sheets/): This guide includes details about how to filter for multiple values in Google Sheet pivot tables. This resource expands some of the functionality that you have already learned and sets you up to create more complex filters in Google Sheets.
 
-### __Format your data__
+### **Format your data**
 
 Microsoft Excel
 
@@ -178,19 +178,19 @@ Now they know that the Toys department generated the most revenue!
 
 Pivot tables are an effective tool for data analysts working with spreadsheets because they highlight key insights from the spreadsheet data without having to make changes to the spreadsheet. Coming up, you will create your pivot table to analyze data and identify trends that will be highly valuable to stakeholders.
 
-Operator: A symbol that names the type of operating or calculation to be performed in a formula.
+**Operator**: A symbol that names the type of operating or calculation to be performed in a formula.
 
 ![](image-11.png)
 
 The syntax of a query is its structure.
 
-Modulo: An operator (%) that returns the remainder when one number is divided by another.
+**Modulo**: An operator (%) that returns the remainder when one number is divided by another.
 
-GROUP BY: A command that groups rows that have the same values from a table into summary rows.
+**GROUP BY**: A command that groups rows that have the same values from a table into summary rows.
 
-EXTRACT: A command lets us pull one part of a given date to use.
+**EXTRACT**: A command lets us pull one part of a given date to use.
 
-Data validation process: Checking and rechecking the quality of your data so that it is completely accurate, secure, and consistent.
+**Data validation process**: Checking and rechecking the quality of your data so that it is completely accurate, secure, and consistent.
 
 # Types of data validation
 
@@ -234,7 +234,7 @@ As a junior data analyst, you might not perform all of these validations. But yo
 - Example: Common problems discovered during code validation include: more than one data type allowed, data range checking not done, or ending of text strings not well defined.
 - Limitations: Code validation might not validate all possible variations with data input.
 
-Temporary table: A database table that is created and exists temporarily on a database server.
+**Temporary table**: A database table that is created and exists temporarily on a database server.
 
 ![](image-18.png)
 

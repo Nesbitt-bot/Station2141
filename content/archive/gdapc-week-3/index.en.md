@@ -12,7 +12,7 @@ Week 3
 
 Learning about data phases and tools
 
-__Data life cycle:PlanningCapture (send various data to database)Manage (secure data)Analyze__
+**Data life cycle:PlanningCapture (send various data to database)Manage (secure data)Analyze**
 
 Ask: understanding expectations of stakeholders, find obstacles.
 
@@ -28,9 +28,8 @@ Act:
 
 ![](image-1.png)
 
-__Archive (save data when no longer need)Destroy (protect private info)__
-
-Stakeholders: People who have invested time and resources into a project and are interested in the outcome.
+### Archive (save data when no longer need)Destroy (protect private info)
+**Stakeholders**: People who have invested time and resources into a project and are interested in the outcome.
 
 Data analyst tools
 

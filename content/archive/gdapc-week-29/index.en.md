@@ -9,9 +9,9 @@ draft: false
 
 Week 29
 
-Argument: Information that a function in R needs in order to run.
+**Argument**: Information that a function in R needs in order to run.
 
-Variable: A representation of a value in R that can be stored for use later during programming.
+**Variable**: A representation of a value in R that can be stored for use later during programming.
 
 - Functions
 - Comments

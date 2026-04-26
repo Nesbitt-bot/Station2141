@@ -10,7 +10,7 @@ draft: false
 
 Week 25
 
-Tableau: A business intelligence and analytics platform that helps people see, understand, and make decisions with data.
+**Tableau**: A business intelligence and analytics platform that helps people see, understand, and make decisions with data.
 
 # Logging in to Tableau Public
 
@@ -18,7 +18,7 @@ Tableau Public is a free platform to publicly share and explore data visualizati
 
 In this reading, we will discuss how you can create a profile for using Tableau Public. We will also introduce you to some of the existing public data galleries available to you. Finally, we will end the reading with a list of resources that you can use to continue to learn about Tableau on your own.
 
-## __Creating a Tableau Public profile__
+## **Creating a Tableau Public profile**
 
 Coming up, you are going to be using Tableau Public to explore data visualizations yourself. But first, you are going to learn how to sign up for a Tableau Public profile and how to access the Google Career Certificates Gallery. This will give you access to the data visualizations created in the lesson videos. Keep in mind that once you create a profile, you can use it to access both Tableau Public as well as Tableau desktop.
 
@@ -28,7 +28,7 @@ To get started, go to the Tableau Public home page at[ public.tableau.com](https
 
 Once you have created your account, you will be able to explore public datasets and check out other creators’ work.
 
-## __Visualization galleries __
+## **Visualization galleries**
 
 One of the coolest features of Tableau Public is the public gallery, where you can explore what visualizations other people have created. In addition, you have the option to explore the data behind the visualizations, as well as download visualizations that you may want to explore in detail later on. You can find the gallery from the header on the home page, or use the search function, which appears as a magnifying glass icon, to explore data and vizzes about particular topics.
 
@@ -47,7 +47,7 @@ Here are a few useful links within Tableau Public:
 
 This reading summarizes the seven primary chart types: column, line, pie, horizontal bar, area, scatter, and combo. Then, it describes how visualizations in spreadsheets compare to those in Tableau.
 
-## __Primary chart types in spreadsheets__
+## **Primary chart types in spreadsheets**
 
 In spreadsheets, charts are graphical representations of data from one or more sheets. Although there are many variations to choose from, we will focus on the most broadly applicable charts to give you a sense of what is possible in a spreadsheet. As you review these examples, keep in mind that these are meant to give you an overview of visualizations rather than a detailed tutorial. Another reading in this program will describe the applicable steps and process to create a chart more specifically. When you are in an application, you can always select Help from the menu bar for more information.
 
@@ -89,7 +89,7 @@ You can find more information about other charts here:
 - [Types of charts and graphs in Google Sheets:](https://support.google.com/docs/answer/190718?hl=en) a Google Help Center page with a list of chart examples you can download.
 - [Excel Charts](https://www.tutorialspoint.com/excel_charts/excel_charts_types.htm): a tutorial outlining all of the different chart types in Excel, including some subcategories.
 
-## __How visualizations differ in Tableau__
+## **How visualizations differ in Tableau**
 
 As you have also learned, Tableau is an analytics platform that helps data analysts display and understand data. Most if not all of the charts that you can create in spreadsheets are available in Tableau. But, Tableau offers some distinct charts that aren’t available in spreadsheets. These are handy guides to help you select chart types in Tableau:
 
@@ -109,7 +109,7 @@ The following are visualizations that are more specialized in Tableau with links
 - Bullet graphs compare a primary measure with another and can be used instead of dial gauge charts. Review the[ steps to build a bullet graph](https://help.tableau.com/current/pro/desktop/en-us/qs_bullet_graphs.htm).
 - Packed bubble charts display data in clustered circles. Review the[ steps to build a packed bubble chart](https://help.tableau.com/current/pro/desktop/en-us/buildexamples_bubbles.htm).
 
-## __Key takeaway__
+## **Key takeaway**
 
 This reading described the chart types you can create in spreadsheets and introduced visualizations that are more unique to Tableau.
 

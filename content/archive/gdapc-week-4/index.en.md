@@ -12,11 +12,11 @@ Week 4
 
 Attribute: a characteristic or quality of data used to label a column in a table.
 
-Observation: All of the attributes for something contained in a row of the data table.
+**Observation**: All of the attributes for something contained in a row of the data table.
 
 Formula: a set of instructions that performs a specific action using the data in a spreadsheet.
 
-Query: A request for data or information from a database.
+**Query**: A request for data or information from a database.
 
 SELECT element_a, element_b FROM database_name WHERE conditions_a AND conditions_b
 
@@ -52,4 +52,4 @@ Aliases
 
 You can also make it easier on yourself by assigning a new name or alias to the column or table names to make them easier to work with (and avoid the need for comments). This is done with a SQL AS clause. In the example below, the alias last_name has been assigned to field1 and the alias customers assigned to table. These aliases are good for the duration of the query only. An alias doesn’t change the actual name of a column or table in the database.
 
-### __Example of a query with aliases![Image of a screen shot with alias examples: field1 AS last_name and table AS customers. Each alias has a comment with --.](image-2.png)__
+## __Example of a query with aliases![Image of a screen shot with alias examples: field1 AS last_name and table AS customers. Each alias has a comment with --.](image-2.png)__

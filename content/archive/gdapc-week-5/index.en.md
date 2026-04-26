@@ -11,11 +11,11 @@ Week 5
 
 Data can be used everywhere
 
-Issue: Atopic or subject ot investigate.
+**Issue**: Atopic or subject ot investigate.
 
-Question: Designed to discover infromation.
+**Question**: Designed to discover infromation.
 
-Problem: An obstacle or complication that needs to be worked out.
+**Problem**: An obstacle or complication that needs to be worked out.
 
 Data is people, do them ethically.
 

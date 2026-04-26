@@ -15,7 +15,7 @@ Benefits of organizing data:
 - Helps you avoid making mistakes during your analysis
 - Helps to protect your data
 
-Naming conventions: Consistent guidelines that describe the content, date, or version of a file in its name.
+**Naming conventions**: Consistent guidelines that describe the content, date, or version of a file in its name.
 
 Best practices when organizing data:
 

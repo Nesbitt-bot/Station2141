@@ -13,12 +13,12 @@ aliases:
 
 Asynchronous I/O
 
--   Network operations run in an asynchronous manner
--   For example, the response from a web service call might not return immediately
--   When an application blocks (or waits) for a network operation to complete, that application wastes processing time on the server
--   Node.js makes all network operations in a non-blocking manner
--   Every network operation returns immediately
--   To handle the result from a network call, you can write a callback function that Node.js calls when the network operation completes
+- Network operations run in an asynchronous manner
+- For example, the response from a web service call might not return immediately
+- When an application blocks (or waits) for a network operation to complete, that application wastes processing time on the server
+- Node.js makes all network operations in a non-blocking manner
+- Every network operation returns immediately
+- To handle the result from a network call, you can write a callback function that Node.js calls when the network operation completes
 
 Eg. sending an HTTP request
 
@@ -53,8 +53,8 @@ http.request( options,
 
 ### Propagating errors
 
--   Node.js makes extensive used of callback functions to return the result to the calling function
--   Node.js modules pass an error object as the first parameter in a callback function
+- Node.js makes extensive used of callback functions to return the result to the calling function
+- Node.js modules pass an error object as the first parameter in a callback function
 
 Eg. calling back with error handling
 
@@ -79,8 +79,8 @@ response.end("... ${temp_f}...")
 
 If the main application calls a function that call http.request(), two callback functions are involved:
 
--   The custom module has a callback function to handle the HTTP response message from http.request()
--   The main application has a callback function that processed the result that is captures in the first callback function
+- The custom module has a callback function to handle the HTTP response message from http.request()
+- The main application has a callback function that processed the result that is captures in the first callback function
 
 Eg. module with resultCallback. Main application callback
 
@@ -126,9 +126,9 @@ exports.current =  function ( location, resultCallback ){
 
 ### Callback functions
 
--   A function passed as an argument to another function
--   Used to ensure an action is executed only after a result is produces.
--   Help develop asynchronous JavaScript
+- A function passed as an argument to another function
+- Used to ensure an action is executed only after a result is produces.
+- Help develop asynchronous JavaScript
 
 ### "Callback hell"
 
@@ -146,21 +146,21 @@ firstFunction(args, function(){
 
 ### Inversion of control (IoC)
 
--   Execution is external to your code
--   Callbacks hand over control to a third-party service
--   That code may have errors
--   Cause you to write additional code
--   Ensure third-party code does not:
-    -   Get called too many or too few times
-    -   Get called too early or too late
-    -   Lose context
-    -   Pass back incorrect arguments
+- Execution is external to your code
+- Callbacks hand over control to a third-party service
+- That code may have errors
+- Cause you to write additional code
+- Ensure third-party code does not:
+    - Get called too many or too few times
+    - Get called too early or too late
+    - Lose context
+    - Pass back incorrect arguments
 
 ## Promises
 
--   An object returned by an asynchronous method
--   States: pending, resolved, rejected
--   Uses: API requests, I/O operations
+- An object returned by an asynchronous method
+- States: pending, resolved, rejected
+- Uses: API requests, I/O operations
 
 Axios package can be used to process http requests
 
@@ -230,8 +230,8 @@ req.then(resp => {
 
 Congratulations! You have completed this module. At this point in the course, you know:
 
--   Asynchronous network operations can be handled using callback functions in order to prevent blocking JavaScript code
--   A callback function must invoke another callback function to pass a message from the Node.js module back to the main application after the Node.js module receives a response message
--   Nested callbacks can be difficult to read and debug. Inversion of control causes trust issues when dealing with third-party code
--   Promise objects are most useful for operations that are time-consuming and can block resources
--   JSON.parse() and JSON.stringify() are two methods used to parse JSON objects
+- Asynchronous network operations can be handled using callback functions in order to prevent blocking JavaScript code
+- A callback function must invoke another callback function to pass a message from the Node.js module back to the main application after the Node.js module receives a response message
+- Nested callbacks can be difficult to read and debug. Inversion of control causes trust issues when dealing with third-party code
+- Promise objects are most useful for operations that are time-consuming and can block resources
+- JSON.parse() and JSON.stringify() are two methods used to parse JSON objects

@@ -45,7 +45,7 @@ Your connections will help you increase your knowledge and skills. Making and ke
 
 Find a mentor could increase your growing speed dramatically.
 
-Mentor: A professional who shares their knowledge, skills, and experience to help you develop and grow.
+**Mentor**: A professional who shares their knowledge, skills, and experience to help you develop and grow.
 
 (Skill up)
 
@@ -57,6 +57,6 @@ MicroMentor.org
 
 Mentorship
 
-Sponsor: A professional advocate who’s committed to moving a sponsee’s career forward within an organization
+**Sponsor**: A professional advocate who’s committed to moving a sponsee’s career forward within an organization
 
 (Move up)

@@ -13,18 +13,18 @@ aliases:
 
 Model-View-Controller (MVC) Django Model-View-Template (MVT)
 
--   In the Django framework implementation, there is not explicit Controller
--   The Django server itself performs the controller function
+- In the Django framework implementation, there is not explicit Controller
+- The Django server itself performs the controller function
 
 Django model
 
--   Django models are classed mapped to database tables
--   Django Model APIs allow developers to perform CRUD on objects
--   Developers can also write business logic in Django model classes as functions
+- Django models are classed mapped to database tables
+- Django Model APIs allow developers to perform CRUD on objects
+- Developers can also write business logic in Django model classes as functions
 
 Django View Web request -> Python function -> Web response Django template
 
--   Django used a template to generate dynamic Web pages which are rendered in a user's browser.
+- Django used a template to generate dynamic Web pages which are rendered in a user's browser.
 
 ## Create a Django App
 
@@ -32,28 +32,28 @@ Django app Development process
 
 ### Initialization
 
--   Create project and app
+- Create project and app
 
 ### Core Development
 
--   Testing
--   Build UI
--   Map URLs
--   Create views
--   Create models
+- Testing
+- Build UI
+- Map URLs
+- Create views
+- Create models
 
 ### Add-ons
 
--   Admin Site
--   Security
--   Third Party Frontend
--   Configuration
--   Localization
--   Logging
+- Admin Site
+- Security
+- Third Party Frontend
+- Configuration
+- Localization
+- Logging
 
 ### Deployment and Monitoring
 
--   Performance+ Packaging and Deployment
+- Performance+ Packaging and Deployment
 
 #### Run start project command
 
@@ -229,7 +229,7 @@ class CourseAdmin(admin.ModelAdmin):
 
 ### Customize the change list
 
--   Determine the field to appear in the table
+- Determine the field to appear in the table
     
     ```python
     class CourseAdmin(admin.ModelAdmin):
@@ -240,7 +240,7 @@ class CourseAdmin(admin.ModelAdmin):
 
 ### Add search and filters
 
--   Add a search\_fields and list\_filter fields
+- Add a search\_fields and list\_filter fields
     
     ```python
     class CourseAdmin(admin.ModelAdmin):
@@ -297,8 +297,8 @@ HTML elements + tags and variables Django template file structure /project/ ... 
 
 ### Rendering with a context
 
--   Replaces variables with values
--   Executes tags
+- Replaces variables with values
+- Executes tags
 
 ### A Django template example
 

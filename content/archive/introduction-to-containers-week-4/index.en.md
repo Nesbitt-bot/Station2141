@@ -13,47 +13,47 @@ aliases:
 
 OpenShift is an enterprise-ready Kubernetes container platform built for an open hybrid cloud strategy.
 
--   Consistent application platform to manage hybrid-cloud, multicloud, and edge deployment
--   Built on Linux, containers, and automation
--   Provides full-stack automation & self-service provisioning for efficient development and deployment
--   Additional tooling for the complete lifecycle of an app
+- Consistent application platform to manage hybrid-cloud, multicloud, and edge deployment
+- Built on Linux, containers, and automation
+- Provides full-stack automation & self-service provisioning for efficient development and deployment
+- Additional tooling for the complete lifecycle of an app
 
 ### Kubernetes and OpenShift
 
 Both Kubernetes and OpenShift are container orchestration platforms.
 
--   Kubernetes is a crucial component of Openshift
--   Use OpenShift as an extension of Kubernetes to provide a more robust and comprehensive container platform
+- Kubernetes is a crucial component of Openshift
+- Use OpenShift as an extension of Kubernetes to provide a more robust and comprehensive container platform
 
 ### OpenShift features
 
 Here is a selection of OpenShift features
 
--   Scalable
--   Flexible
--   Open sourcce
--   Portable containers
--   Enhanced developer experience
--   Automated install & upgrades
--   Automation & streamlining
--   Edge architecture support
--   Multi cluster management
--   Advanced security & compliance
--   Persistent storage
--   Robust partner ecosystem
+- Scalable
+- Flexible
+- Open sourcce
+- Portable containers
+- Enhanced developer experience
+- Automated install & upgrades
+- Automation & streamlining
+- Edge architecture support
+- Multi cluster management
+- Advanced security & compliance
+- Persistent storage
+- Robust partner ecosystem
 
 ### OpenShift Platform Architecture
 
 OpenShift runs on top of a Kubernetes cluster, with object data stored in the etcd key-value store. It has a microservices-based architecture.
 
--   Docker provides the abstraction for lightweight, Linux-based container images
--   Kubernetes provides cluster management and orchestrates containers on multiple hosts.
--   OpenShift adds:
-    -   Source code management, builds, and deployments for developers
-    -   Managing and promoting images at scale as they flow through your system
-    -   Application management at scale
-    -   Team and user tracking management of a large developer organization
-    -   Networking infrastructure that supports the cluster
+- Docker provides the abstraction for lightweight, Linux-based container images
+- Kubernetes provides cluster management and orchestrates containers on multiple hosts.
+- OpenShift adds:
+    - Source code management, builds, and deployments for developers
+    - Managing and promoting images at scale as they flow through your system
+    - Application management at scale
+    - Team and user tracking management of a large developer organization
+    - Networking infrastructure that supports the cluster
 
 ### OpenShift CLI
 
@@ -63,13 +63,13 @@ OpenShift offers a set of command line interface (CLI) tools that let users perf
 
 Since OpenShift runs on top of Kubernetes cluster, a copy of kubectl is also included with OC. The OC and kubectl binary offer the same capabilities, but OC is further extended to natively support OpenShift features:
 
--   OC supports:
-    -   DeploymentConfigs
-    -   BuildConfigs
-    -   Routes
-    -   ImageStreams and ImageStreamTags
--   In-built log-in command for authentication
--   Additional commands that make it easier to get new apps started
+- OC supports:
+    - DeploymentConfigs
+    - BuildConfigs
+    - Routes
+    - ImageStreams and ImageStreamTags
+- In-built log-in command for authentication
+- Additional commands that make it easier to get new apps started
 
 ## Builds
 
@@ -77,51 +77,51 @@ Since OpenShift runs on top of Kubernetes cluster, a copy of kubectl is also inc
 
 A Build is the process of transforming inputs into a resultant object. For example, transforming source code to a container image.
 
--   A Build configuration file (BuildConfig) defines the build strategy and input sources
+- A Build configuration file (BuildConfig) defines the build strategy and input sources
 
 Commonly used Build strategies are:
 
--   Source to Image (S2I)
--   Docker
--   Custom
+- Source to Image (S2I)
+- Docker
+- Custom
 
 ### Build input sources
 
 You can use the following build inputs, listed in order of precedence:
 
--   Inline Dockerfile definitions
--   Content extracted from existing images
--   Git repositories
--   Binary (Local) inputs
--   Input secrets
--   External artifacts
+- Inline Dockerfile definitions
+- Content extracted from existing images
+- Git repositories
+- Binary (Local) inputs
+- Input secrets
+- External artifacts
 
 * * *
 
--   You can combine multiple inputs into a single build
--   An inline Docker file takes precedence and overwrites any external Dockerfile
+- You can combine multiple inputs into a single build
+- An inline Docker file takes precedence and overwrites any external Dockerfile
 
 ### What is an ImageStream
 
 An ImageStream is an abstraction for referencing container images within OpenShift
 
--   Continuously creates and updates container images
--   Does not contain actual image data but is merely a pointer
--   Can store source images in different registries or ImageSteams
--   Can trigger builds and deployments when a new image is available
+- Continuously creates and updates container images
+- Does not contain actual image data but is merely a pointer
+- Can store source images in different registries or ImageSteams
+- Can trigger builds and deployments when a new image is available
 
 ### What are build triggers
 
 Automate builds using the following triggers:
 
--   Webhook trigger
-    -   Sends a request to an OpenShift Container Platform API endpoint
-    -   Supports generic webhooks and the more often used GitHub webhooks
--   Image Change trigger
-    -   New version of an image is available
-    -   Useful for keeping base image up to date
--   Configuration change trigger
-    -   Build when you create a new BuildConfig
+- Webhook trigger
+    - Sends a request to an OpenShift Container Platform API endpoint
+    - Supports generic webhooks and the more often used GitHub webhooks
+- Image Change trigger
+    - New version of an image is available
+    - Useful for keeping base image up to date
+- Configuration change trigger
+    - Build when you create a new BuildConfig
 
 ### BuildConfig: Step-by-step process
 
@@ -168,40 +168,40 @@ postCommit:
 
 ### Source-to-Image (S2I) strategy
 
--   Is a tool for building reproducible container images
--   Injects application source into a container image to produce a ready-to-run image
--   Eliminates using a Dockerfile
--   Go from Source to Image in one step
--   OpenShift includes predefined builder images
+- Is a tool for building reproducible container images
+- Injects application source into a container image to produce a ready-to-run image
+- Eliminates using a Dockerfile
+- Go from Source to Image in one step
+- OpenShift includes predefined builder images
 
 ### Docker build strategy
 
 Docker Registry
 
--   Required a repository with Dockerfile and necessary artifacts
--   Invoke the "docker build" command and creates an image
--   Pushes image to the internal registry
+- Required a repository with Dockerfile and necessary artifacts
+- Invoke the "docker build" command and creates an image
+- Pushes image to the internal registry
 
 Docker build strategy methods:
 
--   Replace Dockerfile FROM image
--   Use Dockerfile path
--   Use Docker environment variables
--   Add Docker build arguments
+- Replace Dockerfile FROM image
+- Use Dockerfile path
+- Use Docker environment variables
+- Add Docker build arguments
 
 ### Custom build strategy
 
 In a custom build strategy, you must define and create your own builder image
 
--   Custom builder images are Docker images that contain logic to transform inputs into expected outputs
--   Custom build strategy creates additional objects like JAR files and CI/CD deployment that performs unit or integration tests
--   Custom builds are only available to cluster administrators
+- Custom builder images are Docker images that contain logic to transform inputs into expected outputs
+- Custom build strategy creates additional objects like JAR files and CI/CD deployment that performs unit or integration tests
+- Custom builds are only available to cluster administrators
 
 ### Builds automation
 
 Cloud-native development requires greater automation throughout the container lifecycle
 
--   Continuous integration and continuous delivery (CI/CD) deployment pipeline provides automation
+- Continuous integration and continuous delivery (CI/CD) deployment pipeline provides automation
 
 The OpenShift CI/CD process:
 
@@ -215,19 +215,19 @@ The OpenShift CI/CD process:
 
 Operators automate cluster tasks and act as a custom controller to extend the Kubernetes API.
 
--   Run in a Pod, interact with the API sever
--   Package, deploy and manage Kubernetes apps
--   Automate app creation, configuration, and management via continuous real-time decisions
+- Run in a Pod, interact with the API sever
+- Package, deploy and manage Kubernetes apps
+- Automate app creation, configuration, and management via continuous real-time decisions
 
 #### Human vs Software Operators
 
 Operators package, deploy, and manage native apps in Kubernetes, automate other tasks, and ensure all relevant components are included. Operators provide the following features:
 
--   Repeatable installs & upgrades
--   Regular full-system health checks
--   Over-the-air updates
--   Communication tools
--   Integration
+- Repeatable installs & upgrades
+- Regular full-system health checks
+- Over-the-air updates
+- Communication tools
+- Integration
 
 #### Service Brokers vs Operators
 
@@ -253,36 +253,36 @@ Off-cluster services
 
 Custom resource definitions (or CRDs) store and retrieve objects in the Kubernetes API.
 
--   Extend the Kubernetes API
--   Make the Kubernetes API more modular and flexible
--   Can be installed in clusters
--   Once installed, can be accessed using kubectl
+- Extend the Kubernetes API
+- Make the Kubernetes API more modular and flexible
+- Can be installed in clusters
+- Once installed, can be accessed using kubectl
 
 ### Custom controllers
 
 Controllers reconcile a cluster's actual state with its configured state.
 
--   Custom controllers do the same reconciling for custom resources (CRDs)
--   Combining CRDs and custom controllers creates a declarative API
--   This combination is known as "The Operator Pattern"
+- Custom controllers do the same reconciling for custom resources (CRDs)
+- Combining CRDs and custom controllers creates a declarative API
+- This combination is known as "The Operator Pattern"
 
 ### Operator Framework
 
 The Operator Framework covers coding, testing, delivery, and Operator updates. Operator SDK
 
--   Helps authors build, test, and package Operators
+- Helps authors build, test, and package Operators
 
 Operator Lifecycle Manager (OLM)
 
--   Controls Operator install, upgrade, and RBAC
+- Controls Operator install, upgrade, and RBAC
 
 Operator Registry
 
--   Store CRDs, CSVs, and Operator metadata
+- Store CRDs, CSVs, and Operator metadata
 
 OperatorHub
 
--   Lets cluster admins find and install Operators
+- Lets cluster admins find and install Operators
 
 ### Operator Maturity Model
 
@@ -298,10 +298,10 @@ The sophistication of Operator management logic varies, depending on Operator se
 
 Some Operators examples include:
 
--   Deploying an application to the OpenShift cluster
--   Scaling the application with the help of multiple replicas
--   Automation of backup/restore tasks
--   Integration
+- Deploying an application to the OpenShift cluster
+- Scaling the application with the help of multiple replicas
+- Automation of backup/restore tasks
+- Integration
 
 #### Operators in practice
 
@@ -316,10 +316,10 @@ To deploy a complete application:
 
 Install operators with a simple click Many operators available
 
--   Red Hat
--   Certified
--   Community
--   Custom
+- Red Hat
+- Certified
+- Community
+- Custom
 
 Can be used to install other Kubernetes tools
 
@@ -327,74 +327,74 @@ Can be used to install other Kubernetes tools
 
 ### What is a service mesh?
 
--   A dedicated infrastructure layer that adds capabilities (to applications without adding to code), such as
-    -   Traffic management
-    -   Security
-    -   Observability
--   Help make service-to-service communication fast, secure, and reliable.
+- A dedicated infrastructure layer that adds capabilities (to applications without adding to code), such as
+    - Traffic management
+    - Security
+    - Observability
+- Help make service-to-service communication fast, secure, and reliable.
 
 ### What is Istio and what does it do?
 
 Connection to control traffic
 
--   Between services in canary deployment, A/B test, and other deployment models
+- Between services in canary deployment, A/B test, and other deployment models
 
 Secures services
 
--   Using managed authentication, authorization, and encryption
+- Using managed authentication, authorization, and encryption
 
 Enforces policies
 
--   Across the fleet
+- Across the fleet
 
 Observes
 
--   Traffic flow
+- Traffic flow
 
 Traces
 
--   Call flows and dependencies
+- Call flows and dependencies
 
 Enables the view
 
--   Of metrics such as latency and errors
+- Of metrics such as latency and errors
 
 ### Features of Istio
 
--   TSL-encrypted (secure) communications between services in a cluster combined with authentication and authorization
--   Load balances traffic for different protocols
--   Granular configuration of traffic flow (routing rules) and control
--   Policies and API support access controls, rate limits, and quotas
--   Automatic monitoring, logging, and tracking traffic
+- TSL-encrypted (secure) communications between services in a cluster combined with authentication and authorization
+- Load balances traffic for different protocols
+- Granular configuration of traffic flow (routing rules) and control
+- Policies and API support access controls, rate limits, and quotas
+- Automatic monitoring, logging, and tracking traffic
 
 ### Istio on Kubernetes enables
 
--   The addition of applications of a cluster to the mesh
--   The extension of the mesh to additional clusters
--   Connections to virtual machines or other endpoints running outside of Kubernetes
+- The addition of applications of a cluster to the mesh
+- The extension of the mesh to additional clusters
+- Connections to virtual machines or other endpoints running outside of Kubernetes
 
 ### Microservices with Istio
 
--   Cloud-native architectural approach
--   Single application composed of loosely coupled and independently deployable services
--   Well-defined APIs for communication
--   Benefits include easy updates to code, allowing different technology stacks for different components, and scaling components independently
--   Challenges range from traffic encryption, Canary deployment and A/B testing to Cascading failures (Retries, Circuit-breaking)
+- Cloud-native architectural approach
+- Single application composed of loosely coupled and independently deployable services
+- Well-defined APIs for communication
+- Benefits include easy updates to code, allowing different technology stacks for different components, and scaling components independently
+- Challenges range from traffic encryption, Canary deployment and A/B testing to Cascading failures (Retries, Circuit-breaking)
 
 ## Summary
 
 Congratulations! You have completed this module. At this point, you know:
 
--   OpenShift® is an enterprise-ready Kubernetes container platform built for open hybrid cloud.
--   OpenShift is easier to use, integrates with Jenkins, and has more services and features.
--   Custom resource definitions (CRDs) extend the Kubernetes API.
--   CRDs paired with custom controllers create new, declarative APIs in Kubernetes.
--   Operators use CRDs and custom controllers to automate cluster tasks.
--   A build is a process that transforms inputs into an object.
--   An ImageStream is an abstraction for referencing container images in OpenShift.
--   A service mesh provides traffic management to control the flow of traffic between services, security to encrypt traffic between services, and observability of service behavior to troubleshoot and optimize applications.
--   Istio is a service mesh that supports four concepts of connection, security, enforcement, and observability. It is commonly used with Microservices applications.
--   Istio provides service communication metrics for basic service monitoring needs: latency, traffic, errors, and saturation.
+- OpenShift® is an enterprise-ready Kubernetes container platform built for open hybrid cloud.
+- OpenShift is easier to use, integrates with Jenkins, and has more services and features.
+- Custom resource definitions (CRDs) extend the Kubernetes API.
+- CRDs paired with custom controllers create new, declarative APIs in Kubernetes.
+- Operators use CRDs and custom controllers to automate cluster tasks.
+- A build is a process that transforms inputs into an object.
+- An ImageStream is an abstraction for referencing container images in OpenShift.
+- A service mesh provides traffic management to control the flow of traffic between services, security to encrypt traffic between services, and observability of service behavior to troubleshoot and optimize applications.
+- Istio is a service mesh that supports four concepts of connection, security, enforcement, and observability. It is commonly used with Microservices applications.
+- Istio provides service communication metrics for basic service monitoring needs: latency, traffic, errors, and saturation.
 
 Term
 

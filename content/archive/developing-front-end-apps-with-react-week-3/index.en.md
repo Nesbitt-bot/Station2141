@@ -15,22 +15,22 @@ Introduced in Feb 2019 as part of React 16.8. Help you make your code clearer an
 
 ### Advantages
 
--   Readable
--   Lesser code
--   Overall optimized component
--   Writing a functional component with state
--   Writing complex components became easier
--   Handling events and logics in functional components
--   Performance boost with functional components
+- Readable
+- Lesser code
+- Overall optimized component
+- Writing a functional component with state
+- Writing complex components became easier
+- Handling events and logics in functional components
+- Performance boost with functional components
 
 ### Best practices
 
--   Can be called only from inside React function components
--   Can only be called at the top level of component
--   Cannot be conditonal
--   Use Node version 6 or above.
--   User NPM version 5.2 or above
--   Use Create-react-app tool for running the React App
+- Can be called only from inside React function components
+- Can only be called at the top level of component
+- Cannot be conditonal
+- Use Node version 6 or above.
+- User NPM version 5.2 or above
+- Use Create-react-app tool for running the React App
 
 ### Standard Hooks
 
@@ -56,22 +56,22 @@ export default CntApp;
 
 ### Forms
 
--   Allow users to interact with web page
--   Handle data using components
--   Store data in component state
--   Control changes and update the state of the variable using event handlers
+- Allow users to interact with web page
+- Handle data using components
+- Store data in component state
+- Control changes and update the state of the variable using event handlers
 
 For form elements like `<input>`,`<textarea>`, and `<select>` In HTML, the form elements maintain their own state. In React, the form element are kept in the state property of components. Form validation in react
 
--   Get form values.
--   Manage the form state.
--   Validate the form on the fly.
--   Show validation messages.
+- Get form values.
+- Manage the form state.
+- Validate the form on the fly.
+- Show validation messages.
 
 Types of inputs
 
--   Uncontrolled input Allow the browser to handle most of the form elements and collect data through React's change events.
--   Controlled input Use React to fully control the element by setting and updating the input value directly.
+- Uncontrolled input Allow the browser to handle most of the form elements and collect data through React's change events.
+- Controlled input Use React to fully control the element by setting and updating the input value directly.
 
 Example of form using React Hooks.
 
@@ -104,19 +104,19 @@ export default functionApp() {
 
 Redux is:
 
--   A state management library
--   Follows a pattern known as Flux architecture
--   Handles state changes
--   Used when high number of components
--   Not specific to React and can be used with other libraries
+- A state management library
+- Follows a pattern known as Flux architecture
+- Handles state changes
+- Used when high number of components
+- Not specific to React and can be used with other libraries
 
 Use of Redux:
 
--   Manages state in SPAs (Single page applications), desktop apps via electron, React native apps
--   Helps in catching page state
--   Manages state in components/global components
--   Refactors components
--   Share state with multiple container components
+- Manages state in SPAs (Single page applications), desktop apps via electron, React native apps
+- Helps in catching page state
+- Manages state in components/global components
+- Refactors components
+- Share state with multiple container components
 
 ### Essential concepts of Redux
 
@@ -140,23 +140,23 @@ Receive the Action from the Store makes appropriate changes to the state A pure 
 
 #### Sync
 
--   Runs in sequence from top to bottom
--   Each operation waits for the previous to complete
+- Runs in sequence from top to bottom
+- Each operation waits for the previous to complete
 
 #### Async
 
--   Runs in parallel
--   An operation can occur while another is still being processed
--   Preferable when execution can be blocked indefinitely
--   Page remains responsive
--   JavaScript code executes functions concurrently
+- Runs in parallel
+- An operation can occur while another is still being processed
+- Preferable when execution can be blocked indefinitely
+- Page remains responsive
+- JavaScript code executes functions concurrently
 
 #### Middleware
 
 We need async because we need to provide fluent experience for users, while updating or requesting from API takes time.
 
--   In Redux, Actions and Reducers complement your app's architecture
--   To use asynchronous operations, Actions and Reducer are not enough
+- In Redux, Actions and Reducers complement your app's architecture
+- To use asynchronous operations, Actions and Reducer are not enough
 
 Middleware techniques
 
@@ -192,13 +192,13 @@ Not very suitable for simple apps More boilerplate code than other middleware Ne
 
 State change
 
--   Triggers the re-rendering of DOM in React
--   Involves transfer of data and long chain of props
--   Required state management done by Redux
--   Manage in React Redux using a single Store and Reducers
--   Is easier in Redux
+- Triggers the re-rendering of DOM in React
+- Involves transfer of data and long chain of props
+- Required state management done by Redux
+- Manage in React Redux using a single Store and Reducers
+- Is easier in Redux
 
 Data-flow (unidirectional)
 
--   Easier to manage state when actions on UI and update of state are separate
--   Enable reuse of the containers, actions, and reducer in React Native
+- Easier to manage state when actions on UI and update of state are separate
+- Enable reuse of the containers, actions, and reducer in React Native

@@ -10,7 +10,7 @@ draft: false
 
 Week 6
 
-Structured thinking: The process of recognizing the current problem or situation, organizing available information, revealing gaps and opportunities, and identifying the options.
+**Structured thinking**: The process of recognizing the current problem or situation, organizing available information, revealing gaps and opportunities, and identifying the options.
 
 ## From issue to action: The six data analysis phases
 
@@ -28,7 +28,7 @@ It’s impossible to solve a problem if you don’t know what it is. These are s
 - Collaborate with stakeholders and keep an open line of communication
 - Take a step back and see the whole situation in context
 
-### __Questions to ask yourself in this step:__
+### **Questions to ask yourself in this step:**
 
 1. What are my stakeholders saying their problems are?
 2. Now that I’ve identified the issues, how can I help the stakeholders resolve their questions?
@@ -43,7 +43,7 @@ You will decide what data you need to collect in order to answer your questions 
 - Locate data in your database
 - Create security measures to protect that data
 
-### __Questions to ask yourself in this step: __
+### **Questions to ask yourself in this step:**
 
 1. What do I need to figure out how to solve this problem?
 2. What research do I need to do?
@@ -59,7 +59,7 @@ Clean data is the best data and you will need to clean up your data to get rid o
 - Removing repeated entries
 - Checking as much as possible for bias in the data
 
-### __Questions to ask yourself in this step: __
+### **Questions to ask yourself in this step:**
 
 1. What data errors or inaccuracies might get in my way of getting the best possible answer to the problem I am trying to solve?
 2. How can I clean my data so the information I have is more consistent?
@@ -74,7 +74,7 @@ You will want to think analytically about your data. At this stage, you might so
 - Combine data from multiple sources
 - Create tables with your results
 
-### __Questions to ask yourself in this step:__
+### **Questions to ask yourself in this step:**
 
 1. What story is my data telling me?
 2. How will my data help me solve this problem?
@@ -91,7 +91,7 @@ Everyone shares their results differently so be sure to summarize your results w
 - Lead to stronger outcomes
 - Successfully communicate your findings
 
-### __Questions to ask yourself in this step:__
+### **Questions to ask yourself in this step:**
 
 1. How can I make what I present to the stakeholders engaging and easy to understand?
 2. What would help me understand this if I were the listener?
@@ -102,7 +102,7 @@ Everyone shares their results differently so be sure to summarize your results w
 
 Now it’s time to act on your data. You will take everything you have learned from your data analysis and put it to use. This could mean providing your stakeholders with recommendations based on your findings so they can make data-driven decisions.
 
-### __Questions to ask yourself in this step:__
+### **Questions to ask yourself in this step:**
 
 1. How can I use the feedback I received during the share phase (step 5) to actually meet the stakeholder’s needs and expectations?
 
@@ -117,29 +117,29 @@ When you are starting out in your career as a data analyst, it is normal to feel
 
 ![](image-7.png)
 
-### __Making predictions__
+### **Making predictions**
 
 A company that wants to know the best advertising method to bring in new customers is an example of a problem requiring analysts to make predictions. Analysts with data on location, type of media, and number of new customers acquired as a result of past ads can't guarantee future results, but they can help predict the best placement of advertising to reach the target audience.
 
-### __Categorizing things__
+### **Categorizing things**
 
 An example of a problem requiring analysts to categorize things is a company's goal to improve customer satisfaction. Analysts might classify customer service calls based on certain keywords or scores. This could help identify top-performing customer service representatives or help correlate certain actions taken with higher customer satisfaction scores.
 
-### __Spotting something unusual__
+### **Spotting something unusual**
 
 A company that sells smart watches that help people monitor their health would be interested in designing their software to spot something unusual. Analysts who have analyzed aggregated health data can help product developers determine the right algorithms to spot and set off alarms when certain data doesn't trend normally.
 
-### __Identifying themes__
+### **Identifying themes**
 
 User experience (UX) designers might rely on analysts to analyze user interaction data. Similar to problems that require analysts to categorize things, usability improvement projects might require analysts to identify themes to help prioritize the right product features for improvement. Themes are most often used to help researchers explore certain aspects of data. In a user study, user beliefs, practices, and needs are examples of themes.
 
 By now you might be wondering if there is a difference between categorizing things and identifying themes. The best way to think about it is: categorizing things involves assigning items to categories; identifying themes takes those categories a step further by grouping them into broader themes.
 
-### __Discovering connections__
+### **Discovering connections**
 
 A third-party logistics company working with another company to get shipments delivered to customers on time is a problem requiring analysts to discover connections. By analyzing the wait times at shipping hubs, analysts can determine the appropriate schedule changes to increase the number of on-time deliveries.
 
-### __Finding patterns__
+### **Finding patterns**
 
 Minimizing downtime caused by machine failure is an example of a problem requiring analysts to find patterns in data. For example, by analyzing maintenance data, they might discover that most failures happen if regular maintenance is delayed by more than a 15-day window.
 

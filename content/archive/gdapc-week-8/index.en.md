@@ -61,18 +61,18 @@ Combining with functions
 
 COUNTIF() is a formula and a function. This means the function runs based on criteria set by the formula. In this case, COUNT is the formula; it will be executed IF the conditions you create are true. For example, you could use =COUNTIF(A1:A16, “7”) to count only the cells that contained the number 7. Combining formulas and functions allows you to do more work with a single command
 
-__Context can turn raw data into meaningful information. It is very important for data analysts to contextualize their data. This means giving the data perspective by defining it. To do this, you need to identify:__
+**Context can turn raw data into meaningful information. It is very important for data analysts to contextualize their data. This means giving the data perspective by defining it. To do this, you need to identify:**
 
-Who: The person or organization that created, collected, and/or funded the data collection
+**Who**: The person or organization that created, collected, and/or funded the data collection
 
-What: The things in the world that data could have an impact on
+**What**: The things in the world that data could have an impact on
 
-Where: The origin of the data
+**Where**: The origin of the data
 
-When: The time when the data was created or collected
+**When**: The time when the data was created or collected
 
-Why: The motivation behind the creation or collection
+**Why**: The motivation behind the creation or collection
 
-How: The method used to create or collect it
+**How**: The method used to create or collect it
 
-__Scope of work__
+## Scope of work

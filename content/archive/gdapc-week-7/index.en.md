@@ -115,4 +115,4 @@ Metric: single, quantifiable type of data that can be used for measurement.
 
 Metric Goal: a measurable goal set by a company and evaluated using metrics.
 
-Pivot table: A data summarization tool that is used in data processsing. Pivot tables are used to summarize, sort, reorganize, group, count, total or average data stored in a database.
+**Pivot table**: A data summarization tool that is used in data processsing. Pivot tables are used to summarize, sort, reorganize, group, count, total or average data stored in a database.

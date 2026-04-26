@@ -96,15 +96,15 @@ Framework is a collection of packages or modules for a specific purpose Most use
 
 ### Flask
 
--   Flask is a microframework
--   Flask is based on Werkzeug and Jinja2.
--   Flask supports CRUD
-    -   Create -> POST/PUT
-    -   Read -> GET
-    -   Update -> UPDATE
-    -   Delete -> DELETE
--   Flask can serve static files
--   Flask web application is extensible
+- Flask is a microframework
+- Flask is based on Werkzeug and Jinja2.
+- Flask supports CRUD
+    - Create -> POST/PUT
+    - Read -> GET
+    - Update -> UPDATE
+    - Delete -> DELETE
+- Flask can serve static files
+- Flask web application is extensible
 
 ### Creating a Web Application
 

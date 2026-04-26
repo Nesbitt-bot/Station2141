@@ -9,31 +9,25 @@ draft: false
 
 Week1
 
-__Ask __
-
+## Ask
 Find out the question and be ready to solve it.
 
-__Prepare__
-
+## Prepare
 Prepare the forms, questions to ask.
 
-__Process__
-
+## Process
 Collect, store, manage, and protect data.
 
-__Analyze__
-
+## Analyze
 Discover the pattern in the data.
 
-__Share__
-
+## Share
 Share your report and communicate the results.
 
-__Act__
-
+## Act
 Implement change and take action.
 
-Data is the list of __facts__ that might be useful.
+Data is the list of **facts** that might be useful.
 
 Discussion Prompt: Meet and greet.
 
@@ -59,17 +53,17 @@ Analytics: not decide uncertainty. To meet unknown of unknown. (Explore the unce
 
 Data ecosystem
 
-Data ecosystem: A group of elements that interact with one another to produce, manage, store, organize, analyze, and share data.
+**Data ecosystem**: A group of elements that interact with one another to produce, manage, store, organize, analyze, and share data.
 
-Cloud: A place to keep data online, rather than a computer hard drive.
+**Cloud**: A place to keep data online, rather than a computer hard drive.
 
-Data science: Creating new ways of modeling and understanding the unknown by using raw data.
+**Data science**: Creating new ways of modeling and understanding the unknown by using raw data.
 
-Data analysis: The collection, transformation, and organization of data, to draw conclusions, make predictions, and drive informed decision-making.
+**Data analysis**: The collection, transformation, and organization of data, to draw conclusions, make predictions, and drive informed decision-making.
 
-Data analytics: The science of data.
+**Data analytics**: The science of data.
 
-Data-driven decision-making: Using facts to guide business strategy.
+**Data-driven decision-making**: Using facts to guide business strategy.
 
 Analysts use data-driven decision-making and follow a step-by-step process. You have learned that there are six steps to this process:
 

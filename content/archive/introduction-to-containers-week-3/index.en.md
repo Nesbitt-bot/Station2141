@@ -16,16 +16,16 @@ If an application is deployed on a single pod, the pod will be unable to perform
 
 #### Limitations for single-pod deployment cannot:
 
--   Accommodate growing demands
--   Handle outages
--   Minimize downtime
--   Auto restart on interruptions
+- Accommodate growing demands
+- Handle outages
+- Minimize downtime
+- Auto restart on interruptions
 
 A ReplicaSet ensures the right number of pods are always up and running. It always tries to match the actual state of the replicas to the desired state. Advantages of using ReplicaSet:
 
--   Adds or deletes pods for scaling and redundancy
--   Replaces failing pods or deletes additional pods to maintain the desired state
--   Supersedes ReplicaControllers
+- Adds or deletes pods for scaling and redundancy
+- Replaces failing pods or deletes additional pods to maintain the desired state
+- Supersedes ReplicaControllers
 
 ### Create ReplicaSet from scratch
 
@@ -77,14 +77,14 @@ When replica numbers are set, the Kubernetes will automatically maintain the num
 
 Autoscaling enables scaling as needed Autoscaling occurs at two different layers:
 
--   Cluster/node level
--   Pod level
+- Cluster/node level
+- Pod level
 
 Autoscaler types:
 
--   Horizontal Pod Autoscaler (HPA) Adjust the number of replicas of an application by increasing or decreasing the number of pods
--   Vertical Pod Autoscaler (VPA) Adjusts the recourse requests and limits of an container by increasing or decreasing the resource size or speed of the pods
--   Cluster Autoscaler (CA) Adjusts the number of nodes in the cluster when pods fail to schedule, or when demand increases or decreases in relation to the capacity of existing nodes
+- Horizontal Pod Autoscaler (HPA) Adjust the number of replicas of an application by increasing or decreasing the number of pods
+- Vertical Pod Autoscaler (VPA) Adjusts the recourse requests and limits of an container by increasing or decreasing the resource size or speed of the pods
+- Cluster Autoscaler (CA) Adjusts the number of nodes in the cluster when pods fail to schedule, or when demand increases or decreases in relation to the capacity of existing nodes
 
 ### Create autoscaling with Kubectl
 
@@ -134,8 +134,8 @@ spec:
 
 Each autoscaler type is suitable in specific scenarios. That's why we analyze the pros and cons of each one to find the best choice. Using a combination of all three types ensures:
 
--   Service run stably at peak load times
--   Costs are minimized in times of lower demand
+- Service run stably at peak load times
+- Costs are minimized in times of lower demand
 
 ## Deployment Strategies
 
@@ -143,9 +143,9 @@ Each autoscaler type is suitable in specific scenarios. That's why we analyze th
 
 A Kubernetes deployment strategy defines an application’s lifecycle that achieves and maintains the configured state for objects and applications in an automated manner. Effective deployment strategies minimize risk. Kubernetes deployment strategies are used to:
 
--   Deploy, update, or rollback ReplicaSets, Pods, Services, and Applications
--   Pause/Resume Deployments
--   Scale Deployments manually or automatically
+- Deploy, update, or rollback ReplicaSets, Pods, Services, and Applications
+- Pause/Resume Deployments
+- Scale Deployments manually or automatically
 
 ### Types of deployment strategies
 
@@ -414,21 +414,21 @@ Requires monitoring for two environments
 
 To create a good strategy:
 
--   Consider the product type and the target audience
--   Shadow and canary strategies use live user requests, as opposed to using a sample of users.
--   The A/B testing strategy is useful if the version of the application requires minor tweaks or UI feature changes.
--   The blue/green strategy is useful if your version of the application is complex or critical and needs proper monitoring with no downtime during deployment.
--   The canary strategy is a good choice if you want zero downtime and are comfortable exposing your version of the application to the public.
--   A rolling strategy gradually deploys the new version of the application. There is no downtime, and it is easy to roll back.
--   The recreate strategy is a good choice if the application is not critical and users aren’t impacted by a short downtime.
+- Consider the product type and the target audience
+- Shadow and canary strategies use live user requests, as opposed to using a sample of users.
+- The A/B testing strategy is useful if the version of the application requires minor tweaks or UI feature changes.
+- The blue/green strategy is useful if your version of the application is complex or critical and needs proper monitoring with no downtime during deployment.
+- The canary strategy is a good choice if you want zero downtime and are comfortable exposing your version of the application to the public.
+- A rolling strategy gradually deploys the new version of the application. There is no downtime, and it is easy to roll back.
+- The recreate strategy is a good choice if the application is not critical and users aren’t impacted by a short downtime.
 
 ## Rolling updates
 
 Rolling updates are automated updates that occur on a scheduled basis.
 
--   Roll out automated and controlled app changes across pods
--   Work with pod templates like deployments
--   Allow for rollback as needed
+- Roll out automated and controlled app changes across pods
+- Work with pod templates like deployments
+- Allow for rollback as needed
 
 ### First steps
 
@@ -545,19 +545,19 @@ In a one-at-a-time rollback, the update rollback is staggered so user access is 
 
 ### ConfigMap
 
--   Helps developers avoid hard-coding configuration variables into the application code
--   Is an API object used to store non-confidential data in key-value pairs
--   Does not provide secrecy or encryption
--   Provides configuration data to pods and deployments
--   Is limited to 1 MB of data
-    -   For larger amounts of data, consider mounting a volume or use a separate database or file service
--   Has optional data and binaryData fields and no spec field in the template
--   Name must be a valid DNS subdomain name
+- Helps developers avoid hard-coding configuration variables into the application code
+- Is an API object used to store non-confidential data in key-value pairs
+- Does not provide secrecy or encryption
+- Provides configuration data to pods and deployments
+- Is limited to 1 MB of data
+    - For larger amounts of data, consider mounting a volume or use a separate database or file service
+- Has optional data and binaryData fields and no spec field in the template
+- Name must be a valid DNS subdomain name
 
 ### ConfigMap capabilities
 
--   Easily portable as a ConfigMap is reusable across deployments
--   Multiple ways to create eg. Configure environment variables
+- Easily portable as a ConfigMap is reusable across deployments
+- Multiple ways to create eg. Configure environment variables
     
     ```yaml
     appVersion: apps/v1
@@ -586,7 +586,7 @@ In a one-at-a-time rollback, the update rollback is staggered so user access is 
     		    value: "Hello from config file!"
     ```
     
-    -   Using string literals
+    - Using string literals
         
         ```shell
         kubectl create ConfigMap my-config --from-literal=MESSAGE="hello from first configmap"
@@ -601,7 +601,7 @@ In a one-at-a-time rollback, the update rollback is staggered so user access is 
           		key: MESSAGE
         ```
         
-    -   Using an existing properties or "key"="value" file
+    - Using an existing properties or "key"="value" file
         
         ```shell
         cat my.properties
@@ -618,7 +618,7 @@ In a one-at-a-time rollback, the update rollback is staggered so user access is 
           		key: my.properties
         ```
         
-    -   Providing a ConfigMap YAML descriptor file
+    - Providing a ConfigMap YAML descriptor file
         
         ```shell
         # check if config map is already created
@@ -629,9 +629,9 @@ In a one-at-a-time rollback, the update rollback is staggered so user access is 
         kubectl describe cm my-config
         ```
         
--   Multiple ways to reference from pod/deployment
-    -   Reference as an environment variable
-    -   Mount as a volume
+- Multiple ways to reference from pod/deployment
+    - Reference as an environment variable
+    - Mount as a volume
 
 #### Secret: Using with string literals
 
@@ -679,8 +679,8 @@ spec:
 
 ## Service binding
 
--   Is a process to consume external Services or backing Services
--   Manages configuration and credentials for back-end Services while protecting sensitive data
--   Makes Service credentials available to you automatically as a Secret
--   Consumes the external Service by binding the application to a deployment
--   The application code uses the credentials from the binding and calls the corresponding Service
+- Is a process to consume external Services or backing Services
+- Manages configuration and credentials for back-end Services while protecting sensitive data
+- Makes Service credentials available to you automatically as a Secret
+- Consumes the external Service by binding the application to a deployment
+- The application code uses the credentials from the binding and calls the corresponding Service

@@ -10,7 +10,7 @@ draft: false
 
 Week 20
 
-Analysis: The process used to make sense of the data collected.
+**Analysis**: The process used to make sense of the data collected.
 
 The goal of the analysis is to identify trends and relationships within data so you can accurately answer the question you’re asking.
 
@@ -34,7 +34,7 @@ Identifying relationships and patterns between the data and do calculation
 
 Sorting involves arranging data into a meaningful order to make it easier to understand, analyze, and visualize.
 
-## __Sorting versus filtering![Left image of a pair of hands sorting letters and numbers. Right image is a hand holding a filter sorting numbers and letters](image-1.png)__
+## **Sorting versus filtering![Left image of a pair of hands sorting letters and numbers. Right image is a hand holding a filter sorting numbers and letters](image-1.png)**
 
 Sorting is when you arrange data into a meaningful order to make it easier to understand, analyze, and visualize. It ranks your data based on a specific metric you choose. You can sort data in spreadsheets, SQL databases (when your dataset is too large for spreadsheets), and tables in documents.
 
@@ -50,9 +50,9 @@ It is important to point out that, after you filter data, you can sort the filte
 
 Filter using WHERE.
 
-Sort sheet: All of the data in a spreadsheet is sorted by the ranking of a specific sorted column - data across rows is kept together.
+**Sort sheet**: All of the data in a spreadsheet is sorted by the ranking of a specific sorted column - data across rows is kept together.
 
-Sort range: Nothing else on the spreadsheet is rearranged besides the specified cells in a column.
+**Sort range**: Nothing else on the spreadsheet is rearranged besides the specified cells in a column.
 
 The SORT function (spreadsheet)
 
@@ -60,9 +60,7 @@ Syntax: =SORT(form:to,colum_number,A TRUE statement is in ascending order, and F
 
 eg:![](image-2.png)
 
-Customized sort order:
-
-When you sort data in a spreadsheet using multiple conditions.
+**Customized sort order**: When you sort data in a spreadsheet using multiple conditions.
 
 ![](image-3.png)
 
@@ -72,7 +70,7 @@ In this reading, we will describe the sorting and filtering options in Google Sh
 
 ![Image of lightbulb, money icon, person icon, and an analog clock traveling into an open box](image-4.png)
 
-## __Sorting and filtering in Sheets__
+## **Sorting and filtering in Sheets**
 
 Sorting in Google Sheets helps you quickly spot trends in numbers. One trend might be gross revenue by sales region. In this case, you could sort the gross revenue column in descending (Z to A) order to spot the top performing regions at the top, or sort the gross revenue column in ascending (A-Z) order to spot the lowest performing regions at the top. Although an alphabetical order is implied, these sorting options do sort numbers, as our gross revenue example highlighted.
 
@@ -88,7 +86,7 @@ And like the SORT function, you can use the[ FILTER function](https://support.go
 
 You might recall that you can filter data and then sort the filtered results. Using the FILTER and SORT functions together in a range of cells can programmatically and automatically achieve these results for you.
 
-## __Sorting and filtering in Excel__
+## **Sorting and filtering in Excel**
 
 You can also sort in ascending (A-Z) and descending (Z-A) order in Microsoft Excel. Excel offers Smallest to Largest and Largest to Smallest sorting when you are working with numbers.
 
@@ -103,9 +101,7 @@ If you want to learn more about sorting and filtering in Excel, start with these
 
 Excel also has[ SORT](https://support.microsoft.com/en-us/office/sort-function-22f63bd0-ccc8-492f-953d-c20e8e44b86c),[ SORTBY](https://support.microsoft.com/en-us/office/sortby-function-cd2d7a62-1b93-435c-b561-d6a35134f28f), and[ FILTER](https://support.microsoft.com/en-us/office/filter-function-f4f7cb66-82eb-4767-8f7c-4877ad80c759) functions. Explore how you can use these functions to automatically sort and filter your data in spreadsheets without having to select any menu options at all.
 
-Sorting queries in SQL:
-
-ORDER BY (null / DESC)
+**Sorting queries in SQL**: ORDER BY (null / DESC)
 
 eg:
 

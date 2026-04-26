@@ -10,7 +10,7 @@ draft: false
 
 Week 28
 
-Programming languages: The magical spell.
+**Programming languages**: The magical spell.
 
 Benefits of using programming languages:
 
@@ -24,11 +24,11 @@ Writing programming language code can be an exciting and rewarding experience. T
 
 ![Image of a person sitting at a desk and typing on a keyboard. There are 4 large computer screens in front of them.](image-1.png)
 
-## __Popular programming languages by profession __
+## **Popular programming languages by profession**
 
 Let’s go through some potential job titles you might encounter and the most popular programming languages used in those professions. Also included is a list of additional resources for you to explore and learn more about each of the programming languages introduced.
 
-### __Data analyst__
+### **Data analyst**
 
 A data analyst collects, transforms, and organizes data to draw conclusions, make predictions, and drive informed decision-making. The most popular programming languages used by data analysts are R and Python.
 
@@ -47,7 +47,7 @@ Python is a general-purpose language that you can use to create what you need fo
 
 - [Coding Club Python Tutorials](https://ourcodingclub.github.io/tutorials.html): a collection of coding tutorials for Python
 
-### __Web designer__
+### **Web designer**
 
 A web designer is responsible for the styling and layout of web pages containing text, graphics, and video. Web designers generally use Hypertext Markup Language v5 (HTML5) and Cascading Style Sheets (CSS) to create web pages.
 
@@ -62,7 +62,7 @@ CSS is used for web page design and controls graphic elements (color, layout, an
 - [Interactive CSS Cheat Sheet](https://htmlcheatsheet.com/css/): includes the most common CSS snippets for gradient, background, font-family, border, and much more
 - [50 Best HTML & CSS Cheat Sheets](https://sharethis.com/best-practices/2020/02/best-html-and-css-cheat-sheets/): a list of 50 cheat sheets–choose a few that are useful to you
 
-### __Mobile application developer__
+### **Mobile application developer**
 
 A mobile application developer uses programming to create applications used on laptops, mobile phones, and tablets. The most popular programming languages for mobile application developers are Swift, Java, and C#.
 
@@ -86,7 +86,7 @@ C# (pronounced C-sharp) is an object-oriented programming language that is widel
 - [Xamarin Tutorial - build your first iOS or Android app in C#](https://dotnet.microsoft.com/learn/xamarin/hello-world-tutorial/intro): instructions for building a mobile app that displays the text “Hello World”
 - [Learn C# from Codecademy](https://www.codecademy.com/learn/learn-c-sharp): a website with free basic interactive lessons, and additional activities that can be accessed with a monthly subscription
 
-### __Web application developer__
+### **Web application developer**
 
 A web application developer designs and develops network applications used across the web. The most popular programming languages used by web application developers are Java, Python, Ruby, and PHP.
 
@@ -111,7 +111,7 @@ PHP is a scripting language particularly suited for web application development.
 - [PHP the Right Way](https://phptherightway.com/): a quick reference for popular PHP coding standards
 - [Interactive PHP tutorial](https://www.learn-php.org/): a free tutorial that runs PHP code in exercises
 
-### __Game developer__
+### **Game developer**
 
 A game developer is an application developer who specializes in video game creation. Game developers most commonly use the programming languages C# and C++.
 
@@ -123,7 +123,7 @@ C++ is an extension of the C programming language that is also used to create co
 - [Microsoft C++ and C# code samples for gaming](https://docs.microsoft.com/en-us/samples/browse/?languages=cpp&terms=gaming): a resource with over 40 C++ and C# code samples for gaming
 - [Interactive C++ tutorial](https://www.learn-cpp.org/): a free tutorial that runs C++ code in exercises
 
-## __Tips for learning programming languages__
+## **Tips for learning programming languages**
 
 Here are a few tips to follow when you start learning a new programming language:
 
@@ -138,7 +138,7 @@ Although the programming language R might be new to you, it actually has a lot o
 
 ![Image of person thinking with 3 speech bubbles: one has a bar chart, one has a spreadsheet, and one has the word "function"](image-2.png)
 
-## __Spreadsheets, SQL, and R: a comparison__
+## **Spreadsheets, SQL, and R: a comparison**
 
 As a data analyst, there is a good chance you will work with SQL, R, and spreadsheets at some point in your career. Each tool has its own strengths and weaknesses, but they all make the data analysis process smoother and more efficient. There are two main things that all three have in common:
 
@@ -147,8 +147,7 @@ As a data analyst, there is a good chance you will work with SQL, R, and spreads
 
 The table below presents key questions to explore a few more ways that these tools compare to each other. You can use this as a general guide as you begin to navigate R.
 
-__Key questionSpreadsheetsSQLR__
-
+### Key questionSpreadsheetsSQLR
 What is it?
 
 A program that uses rows and columns to organize data and allows for analysis and manipulation through formulas, functions, and built-in features
@@ -218,7 +217,7 @@ Common use of R:
 - Processing lots of data
 - Creating data visualizations
 
-Integrated Development Environment (IDE): A software application that brigbs together all the tools you may want to use in a single place.
+**Integrated Development Environment (IDE)**: A software application that brigbs together all the tools you may want to use in a single place.
 
 # When to use RStudio
 
@@ -226,11 +225,11 @@ As a data analyst, you will have plenty of tools to work with in each phase of y
 
 ![Image of maintenance worker handing a wrench tool to an office worker who is sitting at their desk](image-3.png)
 
-## __Why RStudio?__
+## **Why RStudio?**
 
 One of your core tasks as an analyst will be converting raw data into insights that are accurate, useful, and interesting. That can be tricky to do when the raw data is complex. R and RStudio are designed to handle large data sets, which spreadsheets might not be able to handle as well. RStudio also makes it easy to reproduce your work on different datasets. When you input your code, it's simple to just load a new dataset and run your scripts again. You can also create more detailed visualizations using RStudio.
 
-## __When RStudio truly shines__
+## **When RStudio truly shines**
 
 When the data is spread across multiple categories or groups, it can be challenging to manage your analysis, visualize trends, and build graphics. And the more groups of data that you need to work with, the harder those tasks become. That’s where RStudio comes in.
 
@@ -244,7 +243,7 @@ Here are a few ways RStudio could help in this situation:
 
 As you learn more about R and RStudio moving forward in this program, you’ll get a better understanding of when RStudio should be your data analysis tool of choice.
 
-## __For more information__
+## **For more information**
 
 - [The Advantages of RStudio](https://www.theanalysisfactor.com/the-advantages-of-rstudio/): This web page explains some of the reasons why RStudio is many analysts’ preferred choice for interfacing with R. You’ll learn about the advantages of using RStudio for data analysis, from ease of use to accessibility of graphics and more.
 - [Data analysis and R programming](https://lgatto.github.io/2017_11_09_Rcourse_Jena/before-we-start.html): This online introduction to data analysis and R programming is a good starting point for R and RStudio users. It also includes a list of detailed explanations about the advantages of using R and RStudio. You’ll also find a helpful guide for getting set up with RStudio.

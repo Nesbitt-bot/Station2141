@@ -31,9 +31,9 @@ The name came from the gray-75 project. Because I don't want to make a dull to-d
 
 **This is NOT a TO DO list. It is a NOT TO DO list.** The app can **only add tasks that can be done in a day**, because I know I would never, never plan for some "future things". Life is unpredictable and we should focus on the present, focus on something we can do today. My final goal is to make the APP the ONLY APP on my smartphone, which caused too many distractions in my life. I want to use the APP to develop a longer concentration-time and divide the challenging task into separate units. The core function of it would be:
 
--   A record to show your concentration time.
--   A tool to avoid interference from others.
--   A summary of distribution of productivities on different time of the day.
--   A bullet record, A priority list.
+- A record to show your concentration time.
+- A tool to avoid interference from others.
+- A summary of distribution of productivities on different time of the day.
+- A bullet record, A priority list.
 
 Instead of a to-do list and a timer.

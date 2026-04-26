@@ -68,7 +68,7 @@ Communicate often. Your stakeholders will want regular updates on your projects.
 
 Being able to communicate in multiple formats is a key skill for data analysts. Listening, speaking, presenting, and writing skills will help you succeed in your projects and in your career. This reading covers effective communication strategies, including examples of clearly worded emails for common situations.
 
-Here's an important first tip: Know your audience! When you communicate your analysis and recommendations as a data analyst, it's vital to keep your audience in mind.
+**Here's an important first tip**: Know your audience! When you communicate your analysis and recommendations as a data analyst, it's vital to keep your audience in mind.
 
 Be sure to answer these four important questions related to your audience:
 
@@ -139,8 +139,7 @@ Thank you,
 
 Good communication keeps stakeholders updated on progress and ultimately helps prevent problems. Carefully worded responses are key. Whether you gather and address feedback using email, meetings, or reports, everyone you work with will know what to expect. As a result, they will be able to better manage their own schedules, resources, and teams.
 
-__very effective when you try to compose an email to your professor. lol__
-
+### very effective when you try to compose an email to your professor. lol
 ## Limitations of data
 
 Data is powerful, but it has its limitations. Has someone’s personal opinion found its way into the numbers? Is your data telling the whole story? Part of being a great data analyst is knowing the limits of data and planning for them. This reading explores how you can do that.

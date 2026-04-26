@@ -15,59 +15,59 @@ Database: Repository, tables Data Management System: software to manage database
 
 ### Basic SQL Commands
 
--   Create a table
--   Insert
--   Select
--   Update
--   Delete
+- Create a table
+- Insert
+- Select
+- Update
+- Delete
 
 ## Relational Database
 
 A relational database is a collection of data organized into a table structure, where the tables can be linked, or related, based on data common to each. Rows are the record and columns are the attributes. Similarities between relational databased and spreadsheets: Relational databased build on the organizational principles of flat files such as spreadsheets, with data organized into rows and columns following a well-defined structure and schema. Relational databased:
 
--   Ideal for the optimized storage, retrieval, and processing of data for large volumes of data
--   Each table has a unique set of rows and columns
--   Relationships can be defined between tables
--   Field can be restricted to specific data types and values
--   Can retrieve millions of records in seconds using SQL for querying data
--   Security architecture of relational databased provides greater access control and governance
+- Ideal for the optimized storage, retrieval, and processing of data for large volumes of data
+- Each table has a unique set of rows and columns
+- Relationships can be defined between tables
+- Field can be restricted to specific data types and values
+- Can retrieve millions of records in seconds using SQL for querying data
+- Security architecture of relational databased provides greater access control and governance
 
 Relational Databases can be:
 
--   Open-source and internally supported
--   Open-source and commercial supported
--   Commercial closed-source
+- Open-source and internally supported
+- Open-source and commercial supported
+- Commercial closed-source
 
 IBM DB2, MySQL, Oracle database, PostgreSQL Cloud-based relational databased or database-as-a-service: Amazon RDS, Google SQL, IBM DB2 on Cloud, Oracle Cloud, Azure SQL Advantages of Relational Databases:
 
--   Create meaningful information by joining tables
--   Flexibility to make changes while the database is in use
--   Minimize data redundancy by allowing relationships to be defined between tables
--   Offer export and import options that provide ease of backup and disaster recovery
--   Are ACID compliant ensuring accuracy and reliability in database transactions
+- Create meaningful information by joining tables
+- Flexibility to make changes while the database is in use
+- Minimize data redundancy by allowing relationships to be defined between tables
+- Offer export and import options that provide ease of backup and disaster recovery
+- Are ACID compliant ensuring accuracy and reliability in database transactions
 
 Limitations of RDBMS:
 
--   Does not work well with semi-structed and unstructured data
--   Migration between two RDBMS's is possible only when the source and destination tables have identical schemas and data types
--   Entering a value greater than the defined length of a data field results in loss of information
+- Does not work well with semi-structed and unstructured data
+- Migration between two RDBMS's is possible only when the source and destination tables have identical schemas and data types
+- Entering a value greater than the defined length of a data field results in loss of information
 
 ## Relational Database Concepts
 
 Relational model
 
--   Most used data model
--   Allows for data independence
--   Data is stored in tables
+- Most used data model
+- Allows for data independence
+- Data is stored in tables
 
 Entity-Relationship Model
 
--   Used as a tool to design relational databases
+- Used as a tool to design relational databases
 
 Mapping Entity Diagrams to Tables
 
--   Entities become tables
--   Attributes get translated into columns
+- Entities become tables
+- Attributes get translated into columns
 
 Primary key and foreign key Primary key is used to uniquely identified a specific row in a table Common datatypes include characters, numbers, and dates/times
 
@@ -75,14 +75,14 @@ Primary key and foreign key Primary key is used to uniquely identified a specifi
 
 Congratulations! You have completed this module. At this point in the course, you know:
 
--   Structured Query Language, or SQL, was designed for managing data in relational databases and is useful in handling structured data.
--   Data is a collection of facts in the form of words, numbers, and pictures.
--   A database is a repository of data that provides functionality for adding, modifying, and querying data.
--   Relational databases store tabular data as collections of related items, with columns containing item properties.
--   The basic SQL statements are CREATE TABLE, INSERT, SELECT, UPDATE, and DELETE.
--   Relational databases are ideal for the optimized storage, retrieval, and processing of large volumes of data.
--   RDBMS is a mature and well-documented technology, providing flexibility, reduced redundancy, ease of backup and disaster recovery, and ACID compliance.
--   An Entity-Relationship model is a tool for designing relational databases. Entities become tables, and attributes are translated into columns.
+- Structured Query Language, or SQL, was designed for managing data in relational databases and is useful in handling structured data.
+- Data is a collection of facts in the form of words, numbers, and pictures.
+- A database is a repository of data that provides functionality for adding, modifying, and querying data.
+- Relational databases store tabular data as collections of related items, with columns containing item properties.
+- The basic SQL statements are CREATE TABLE, INSERT, SELECT, UPDATE, and DELETE.
+- Relational databases are ideal for the optimized storage, retrieval, and processing of large volumes of data.
+- RDBMS is a mature and well-documented technology, providing flexibility, reduced redundancy, ease of backup and disaster recovery, and ACID compliance.
+- An Entity-Relationship model is a tool for designing relational databases. Entities become tables, and attributes are translated into columns.
 
 ## Basic SQL Statements
 
@@ -90,9 +90,9 @@ Congratulations! You have completed this module. At this point in the course, yo
 
 #### Retrieving rows form a table
 
--   After creating a table and inserting data into the table, we want to see the data
--   SELECT statement
-    -   A Data Manipulation Language (DML) statement used to read and modify data
+- After creating a table and inserting data into the table, we want to see the data
+- SELECT statement
+    - A Data Manipulation Language (DML) statement used to read and modify data
 
 ```sql
 SELECT * FROM <tablename>
@@ -110,12 +110,12 @@ SELECT <column 1>, <column 2> FROM <tablename>
 SELECT * FROM <tablename> WHERE <condition>
 ```
 
--   Equal to =
--   Greater than >
--   Less than <
--   Greater than or equal to >=
--   Less than or equal to <=
--   Not equal to <>
+- Equal to =
+- Greater than >
+- Less than <
+- Greater than or equal to >=
+- Less than or equal to <=
+- Not equal to <>
 
 #### Get number of rows matching the query criteria.
 
@@ -139,10 +139,10 @@ SELECT * FROM <tablename> LIMIT 10
 
 Adding rows to a table
 
--   Create the table (CREATE TABLE statement)
--   Populate table with data:
-    -   INSERT statement
-        -   A Data Manipulation Language (DML) statement used to read and modify data
+- Create the table (CREATE TABLE statement)
+- Populate table with data:
+    - INSERT statement
+        - A Data Manipulation Language (DML) statement used to read and modify data
 
 ```sql
 INSERT INTO <tablename> (<columne 1>, <columne 2>) VALUES (<value 1>, <value2>)
@@ -179,10 +179,10 @@ CREATE TABLE <tablename>
 
 ### ALTER, DROP, and TRUNCATE tables
 
--   Add or remove columns
--   Modify the data type of columns
--   Add or remove keys
--   Add or remove constrains
+- Add or remove columns
+- Modify the data type of columns
+- Add or remove keys
+- Add or remove constrains
 
 ```sql
 ALTER TABLE <tablename>
@@ -223,46 +223,46 @@ SELECT <columnname> FROM <tablename> ORDER BY <columnname/columnnumber> (add DES
 
 JOIN operator:
 
--   combines rows from two or more tables
--   Based on a relationship
+- combines rows from two or more tables
+- Based on a relationship
 
 Types of joins
 
--   Inner Join
--   Outer Join
-    -   Left Outer Join
-    -   Right Outer Join
-    -   Full Outer Join
+- Inner Join
+- Outer Join
+    - Left Outer Join
+    - Right Outer Join
+    - Full Outer Join
 
 ### Summary
 
 Congratulations! You have completed this lesson. At this point in the course, you know:
 
--   Structured Query Language, or SQL, is used for querying and managing data.
--   SQL is useful for handling structured data, or data incorporating relations among entities and variables.
--   The SQL SELECT statement is used to retrieve data from a relational database table.
--   The SELECT statement is called a query, and the output we get from executing this query is called a Result Set or a Result Table.
--   In its simplest form, the syntax for a SELECT statement is:
+- Structured Query Language, or SQL, is used for querying and managing data.
+- SQL is useful for handling structured data, or data incorporating relations among entities and variables.
+- The SQL SELECT statement is used to retrieve data from a relational database table.
+- The SELECT statement is called a query, and the output we get from executing this query is called a Result Set or a Result Table.
+- In its simplest form, the syntax for a SELECT statement is:
 
 SELECT \* from TableName
 
--   The SQL INSERT statement is used to insert data into a relational database table by adding rows to the table.
--   The syntax of the INSERT statement is:
+- The SQL INSERT statement is used to insert data into a relational database table by adding rows to the table.
+- The syntax of the INSERT statement is:
 
 INSERT INTO TableName ColumnName VALUES (values)
 
--   For the INSERT statement, It is important that the number of values provided in the Values clause is equal to the number of column names specified in the Column Name list. This ensures that each column has a value.
--   The SQL UPDATE statement is used to read and modify data.
--   The syntax of the UPDATE statement is:
+- For the INSERT statement, It is important that the number of values provided in the Values clause is equal to the number of column names specified in the Column Name list. This ensures that each column has a value.
+- The SQL UPDATE statement is used to read and modify data.
+- The syntax of the UPDATE statement is:
 
 UPDATE \[TableName\] SET \[\[ColumnName\]=\[Value\]\] <WHERE \[Condition\]>
 
--   The SQL DELETE statement is used to remove data from a table.
--   The syntax of the DELETE statement is:
+- The SQL DELETE statement is used to remove data from a table.
+- The syntax of the DELETE statement is:
 
 DELETE FROM \[TableName\] <Where \[Condition\]>
 
--   The WHERE clause specifies the rows in a table that are to be acted on by a SQL statement such as SELECT, DELETE, or UPDATE.
+- The WHERE clause specifies the rows in a table that are to be acted on by a SQL statement such as SELECT, DELETE, or UPDATE.
 
 ## Using SQL in applications
 
@@ -318,15 +318,15 @@ expected out put would be
 
 #### OOP
 
--   Models entities using _classes, objects,_ and _attributes_
--   Models relationships using _inheritance, association, aggregation,_ and so on
--   Performs CRUD (Create, Read, Update, and Delete (CRUD) are the four basic functions that models should be able to do, at most. )on data using _methods_
+- Models entities using _classes, objects,_ and _attributes_
+- Models relationships using _inheritance, association, aggregation,_ and so on
+- Performs CRUD (Create, Read, Update, and Delete (CRUD) are the four basic functions that models should be able to do, at most. )on data using _methods_
 
 #### SQL
 
--   Models entities using _tables, rows,_ and _columns_
--   Models relationships using _JOIN_ and _FOREIGN KEY_
--   Performs CRUD on data using _Data Manipulation Language (DML)_
+- Models entities using _tables, rows,_ and _columns_
+- Models relationships using _JOIN_ and _FOREIGN KEY_
+- Performs CRUD on data using _Data Manipulation Language (DML)_
 
 _ORM (Object-Relational Mapping) is used to bridge the Objects and Rows in RDBMS_ To save your time, ORM code can do this:
 
@@ -339,43 +339,43 @@ Course.objects.get(name='Introduction to Python').learners.all()
 
 Python
 
--   Django
--   SQLAlchemy
+- Django
+- SQLAlchemy
 
 Java
 
--   Hibernate
--   OpenJPA
+- Hibernate
+- OpenJPA
 
 JavaScript
 
--   Sequelize
--   TypeORM
+- Sequelize
+- TypeORM
 
 ### Pros and cons of ORM
 
 Pros
 
--   Your class designs define the databases
--   Use databased without writing SQL
--   Single set of APIs for different database systems
--   Deliver applications faster
+- Your class designs define the databases
+- Use databased without writing SQL
+- Single set of APIs for different database systems
+- Deliver applications faster
 
 Cons
 
--   Impedance mismatching (the data may not map to SQL properly)
--   Moves data access complexity to applicaiton code
--   Hides implementation details; difficult to debug
--   May reduce performance
+- Impedance mismatching (the data may not map to SQL properly)
+- Moves data access complexity to applicaiton code
+- Hides implementation details; difficult to debug
+- May reduce performance
 
 ## Django Model
 
 Key facts:
 
--   Each Django model (class) maps to a database table
--   Each class object represents a database table row
--   Each field represents a database table column
--   Schema and tables are automatically generated once model classes are defined
+- Each Django model (class) maps to a database table
+- Each class object represents a database table row
+- Each field represents a database table column
+- Schema and tables are automatically generated once model classes are defined
 
 ```python
 class User(models.Model):

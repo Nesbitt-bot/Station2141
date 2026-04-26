@@ -63,15 +63,15 @@ expected out put would be
 
 #### OOP
 
--   Models entities using _classes, objects,_ and _attributes_
--   Models relationships using _inheritance, association, aggregation,_ and so on
--   Performs CRUD (Create, Read, Update, and Delete (CRUD) are the four basic functions that models should be able to do, at most. )on data using _methods_
+- Models entities using _classes, objects,_ and _attributes_
+- Models relationships using _inheritance, association, aggregation,_ and so on
+- Performs CRUD (Create, Read, Update, and Delete (CRUD) are the four basic functions that models should be able to do, at most. )on data using _methods_
 
 #### SQL
 
--   Models entities using _tables, rows,_ and _columns_
--   Models relationships using _JOIN_ and _FOREIGN KEY_
--   Performs CRUD on data using _Data Manipulation Language (DML)_
+- Models entities using _tables, rows,_ and _columns_
+- Models relationships using _JOIN_ and _FOREIGN KEY_
+- Performs CRUD on data using _Data Manipulation Language (DML)_
 
 _ORM (Object-Relational Mapping) is used to bridge the Objects and Rows in RDBMS_ To save your time, ORM code can do this:
 
@@ -84,43 +84,43 @@ Course.objects.get(name='Introduction to Python').learners.all()
 
 Python
 
--   Django
--   SQLAlchemy
+- Django
+- SQLAlchemy
 
 Java
 
--   Hibernate
--   OpenJPA
+- Hibernate
+- OpenJPA
 
 JavaScript
 
--   Sequelize
--   TypeORM
+- Sequelize
+- TypeORM
 
 ### Pros and cons of ORM
 
 Pros
 
--   Your class designs define the databases
--   Use databased without writing SQL
--   Single set of APIs for different database systems
--   Deliver applications faster
+- Your class designs define the databases
+- Use databased without writing SQL
+- Single set of APIs for different database systems
+- Deliver applications faster
 
 Cons
 
--   Impedance mismatching (the data may not map to SQL properly)
--   Moves data access complexity to applicaiton code
--   Hides implementation details; difficult to debug
--   May reduce performance
+- Impedance mismatching (the data may not map to SQL properly)
+- Moves data access complexity to applicaiton code
+- Hides implementation details; difficult to debug
+- May reduce performance
 
 ## Django Model
 
 Key facts:
 
--   Each Django model (class) maps to a database table
--   Each class object represents a database table row
--   Each field represents a database table column
--   Schema and tables are automatically generated once model classes are defined
+- Each Django model (class) maps to a database table
+- Each class object represents a database table row
+- Each field represents a database table column
+- Schema and tables are automatically generated once model classes are defined
 
 ```python
 class User(models.Model):
@@ -129,9 +129,9 @@ class User(models.Model):
 
 ### Fields
 
--   Each field in a model should be a Field class
--   Django maps each field to a column type, such as _INT, VARCHAR,_ or _DATE_
--   Each field has customization parameters such as _null, blank, default,_ or _primary\_key_
+- Each field in a model should be a Field class
+- Django maps each field to a column type, such as _INT, VARCHAR,_ or _DATE_
+- Each field has customization parameters such as _null, blank, default,_ or _primary\_key_
 
 ```python
 class User(models.Model):
@@ -233,9 +233,9 @@ class Leaner(models.Model):
 
 Determine if parent models should have their own tables
 
--   Multi-table
-    -   Subclassing an existing model
-    -   Each model will have a separate database table
+- Multi-table
+    - Subclassing an existing model
+    - Each model will have a separate database table
 
 ```python
 class User(models.Model):
@@ -250,11 +250,11 @@ class Instructor(User):
 	total_leaners = models.IntegerField()
 ```
 
--   Abstract base classes
-    -   Parent class to hold common information
-    -   No base table created
--   Proxy models
-    -   Modify the application-level behavior of a model without changing fields
+- Abstract base classes
+    - Parent class to hold common information
+    - No base table created
+- Proxy models
+    - Modify the application-level behavior of a model without changing fields
 
 ## Django CRUD
 

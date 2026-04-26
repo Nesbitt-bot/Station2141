@@ -14,45 +14,45 @@ Node.js is a Runtime environment for Server-side JavaScript applications Express
 
 ### Back-end technologies
 
--   Includes: servers, databased, web APIs, programing languages, frameworks, and runtimes
--   Server can refer to hardware, software, or both
--   Server communicate with and provide functionality to a client
--   Server also communicate with and provide functionality to each other
+- Includes: servers, databased, web APIs, programing languages, frameworks, and runtimes
+- Server can refer to hardware, software, or both
+- Server communicate with and provide functionality to a client
+- Server also communicate with and provide functionality to each other
 
 ### Application servers
 
--   Host and deliver the application through HTTP
--   They sit between a database server and a web server
--   Transform data into content
--   Run business logic
-    -   Data storage rules
-    -   Data transfer rules
+- Host and deliver the application through HTTP
+- They sit between a database server and a web server
+- Transform data into content
+- Run business logic
+    - Data storage rules
+    - Data transfer rules
 
 ### Web APIs
 
--   How two pieces of software communicate
--   Web services
-    -   Type of a web API
-    -   Communicate using HTTP
+- How two pieces of software communicate
+- Web services
+    - Type of a web API
+    - Communicate using HTTP
 
 ### Frameworks
 
--   Provide structure for code
--   Generates code that cannot be altered
--   Back-end framework include:
-    -   Django (Python)
-    -   Ruby on Rails (Ruby)
-    -   Expresss.js (JavaScript)
--   Express.js
-    -   Framework that runs on top of Node.js
-    -   Handles the HTTP requests made to a web server
+- Provide structure for code
+- Generates code that cannot be altered
+- Back-end framework include:
+    - Django (Python)
+    - Ruby on Rails (Ruby)
+    - Expresss.js (JavaScript)
+- Express.js
+    - Framework that runs on top of Node.js
+    - Handles the HTTP requests made to a web server
 
 ### Runtime environments
 
--   Like a mini operating system that provides the resources necessary for an application to run
--   The infrastructure that supports the execution of a code base
--   The environment in which an application gets executed
--   Node.js is a back-end runtime environment
+- Like a mini operating system that provides the resources necessary for an application to run
+- The infrastructure that supports the execution of a code base
+- The environment in which an application gets executed
+- Node.js is a back-end runtime environment
 
 ### Backend Responsibility:
 
@@ -60,14 +60,14 @@ Node.js is a Runtime environment for Server-side JavaScript applications Express
 
 ##### Load:
 
--   Number of concurrent users
--   Number of concurrent transactions
--   Amount of concurrent data transfer between clients and servers
+- Number of concurrent users
+- Number of concurrent transactions
+- Amount of concurrent data transfer between clients and servers
 
 ##### Scalability
 
--   Application's ability to handle changes in load without affecting performance
--   Essential for client-server application success
+- Application's ability to handle changes in load without affecting performance
+- Essential for client-server application success
 
 #### Security
 
@@ -81,52 +81,52 @@ Node.js is a Runtime environment for Server-side JavaScript applications Express
 
 Node.js definition
 
--   Node.js is an open-source language that runs on V8
--   V8 is an open-source engine developed by Google for the Google Chrome browser
+- Node.js is an open-source language that runs on V8
+- V8 is an open-source engine developed by Google for the Google Chrome browser
 
 Node.js functionality
 
--   Developers frequently use JavaScript to code client-side capabilities. Node.js is the server component in the same language
--   Node.js is event-driven and uses asynchronous, non-blocking I/O
+- Developers frequently use JavaScript to code client-side capabilities. Node.js is the server component in the same language
+- Node.js is event-driven and uses asynchronous, non-blocking I/O
 
 Express.js
 
--   Configurable framework for building applications on Node.js
--   Abstract lower-level APIs in Node.js by using HTTP utility methods and middleware
+- Configurable framework for building applications on Node.js
+- Abstract lower-level APIs in Node.js by using HTTP utility methods and middleware
 
 ## Import and Require
 
 ### Modules
 
--   Related, encapsulated JavaScript code
--   Serves a single purpose
--   Can be a single file or a folder containing files
--   Reusable
--   Breaks down complex code into manageable chunks
+- Related, encapsulated JavaScript code
+- Serves a single purpose
+- Can be a single file or a folder containing files
+- Reusable
+- Breaks down complex code into manageable chunks
 
 #### Packages and specifications
 
--   A directory with one or more modules
+- A directory with one or more modules
 
 #### Module specifications
 
--   Conventions and standards used to create packages
--   CommonJS (.js)
--   ES (.mjs)
+- Conventions and standards used to create packages
+- CommonJS (.js)
+- ES (.mjs)
 
 #### Importing and exporting modules
 
--   CommonJS import by require(), export by module.exports
--   ES import by import(), export by export
+- CommonJS import by require(), export by module.exports
+- ES import by import(), export by export
 
 #### Comparing require() and import()
 
 require() Synchronous
 
--   Can be called anywhere in the code
--   Can be called within conditionals and functions
--   Dynamic
--   Binding error not identified until run-time
+- Can be called anywhere in the code
+- Can be called within conditionals and functions
+- Dynamic
+- Binding error not identified until run-time
 
 Eg.
 
@@ -144,10 +144,10 @@ console.log(msg);
 
 Import() Asynchronous
 
--   Can only be called at the beginning of the file
--   Cannot be called within conditionals or functions
--   Static
--   Binding errors identified at compile-time
+- Can only be called at the beginning of the file
+- Cannot be called within conditionals or functions
+- Static
+- Binding errors identified at compile-time
 
 Eg.
 
@@ -185,9 +185,9 @@ server.listen(8080);
 
 Package.json: the module manifest
 
--   A package consists of one or more modules
--   Every package has a package.json file that describes details about Node.js module
--   If there is no package.json, the browser would assumes that the main class is index.js
+- A package consists of one or more modules
+- Every package has a package.json file that describes details about Node.js module
+- If there is no package.json, the browser would assumes that the main class is index.js
 
 #### Importing Node.js modules
 
@@ -210,8 +210,8 @@ exports.dayOfWeek = function (){
 };
 ```
 
--   Each Node.js module has an implicit export object
--   To make a function or a value available to Node.js applications that import your module, add a property to exports
+- Each Node.js module has an implicit export object
+- To make a function or a value available to Node.js applications that import your module, add a property to exports
 
 ## Advanced Node.js Modules
 
@@ -313,30 +313,30 @@ console.log(qryParams.firstName);
 
 Package manager
 
--   Set of tools to deal with modules and packages containing dependencies
--   Also refer to package-management system
+- Set of tools to deal with modules and packages containing dependencies
+- Also refer to package-management system
 
 Dependencies
 
--   Code in the form of a library or a package reused in a program
--   Libraries and packaged contain many dependencies
--   A library does not depend on code outside of it to function
+- Code in the form of a library or a package reused in a program
+- Libraries and packaged contain many dependencies
+- A library does not depend on code outside of it to function
 
 package.json file
 
--   File located in a project's root direcotry
--   NPM uses package.json to determine dependencies
--   Contains key-value pairs that identify the project
--   Must contian
-    -   Project name
-    -   Project verison
+- File located in a project's root direcotry
+- NPM uses package.json to determine dependencies
+- Contains key-value pairs that identify the project
+- Must contian
+    - Project name
+    - Project verison
 
 Local install (in ./npm\_modules)
 
--   NPM packages can be installed locally or globlally
--   Use local install for use with packages within your application
--   Run the local install command from the directory you want the package installed in
--   Local install is NPM's default behavior
+- NPM packages can be installed locally or globlally
+- Use local install for use with packages within your application
+- Run the local install command from the directory you want the package installed in
+- Local install is NPM's default behavior
 
 ```shell
 npm install <pacakge_name>
@@ -344,11 +344,11 @@ npm install <pacakge_name>
 
 Global install
 
--   Packages can also be installed globally
--   A globally installed package will be used by all applications on the machine
--   Use judiciously
--   If you have different version of the project on your machine, they will all use the globally installed packages
--   Might break compatibility with other dependencies
+- Packages can also be installed globally
+- A globally installed package will be used by all applications on the machine
+- Use judiciously
+- If you have different version of the project on your machine, they will all use the globally installed packages
+- Might break compatibility with other dependencies
 
 ```shell
 npm install -g <package_name>

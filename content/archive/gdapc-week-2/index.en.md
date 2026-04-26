@@ -9,15 +9,15 @@ draft: false
 
 Week 2
 
-Analytical skills: Qualities and characteristics associated with solving problems using facts.
+**Analytical skills**: Qualities and characteristics associated with solving problems using facts.
 
-__CuriosityUnderstanding context (condition)Having a technical mindset (The ability to break things down into smaller steps or pieces and work with them in an orderly and logical way)Data designData strategy (involves the management of people, processes, and tools)__
+**CuriosityUnderstanding context (condition)Having a technical mindset (The ability to break things down into smaller steps or pieces and work with them in an orderly and logical way)Data designData strategy (involves the management of people, processes, and tools)**
 
-Analytical thinking: Identifying and defining a problem and then solving it by using data in an organized, step-by-step manner.
+**Analytical thinking**: Identifying and defining a problem and then solving it by using data in an organized, step-by-step manner.
 
-__VisualizationStrategyProblem-orientationCorrelationBig-picture and detail-oriented thinking__
+**VisualizationStrategyProblem-orientationCorrelationBig-picture and detail-oriented thinking**
 
-Root cause: The reason why a problem occurs.
+**Root cause**: The reason why a problem occurs.
 
 Five Why to reveal the root cause.
 

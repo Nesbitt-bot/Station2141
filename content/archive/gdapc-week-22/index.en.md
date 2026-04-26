@@ -10,13 +10,13 @@ draft: false
 
 Week 22
 
-Aggregation: Collecting or gathering many separate pieces into a whole.
+**Aggregation**: Collecting or gathering many separate pieces into a whole.
 
-Data aggregation: The process of gathering data from multiple sources in order to combine it into a single summarized collection.
+**Data aggregation**: The process of gathering data from multiple sources in order to combine it into a single summarized collection.
 
-Subquery: A query within another query
+**Subquery**: A query within another query
 
-VLOOKUP (Vertical Lookup): A funciton that searches for a certain value in a column to return a corresponding piece of information.
+**VLOOKUP (Vertical Lookup)**: A funciton that searches for a certain value in a column to return a corresponding piece of information.
 
 Syntax: =VLOOKUP(value_to_serach,from:to,colum_nubmer,FALSE_for_exact_match/TRUE_for_close_match)
 
@@ -24,7 +24,7 @@ Syntax: =VLOOKUP(value_to_serach,from:to,colum_nubmer,FALSE_for_exact_match/TRUE
 
 *$sign for absolute reference
 
-VALUE: A function that converts a text string that represents a number to a numerical value.
+**VALUE**: A function that converts a text string that represents a number to a numerical value.
 
 Troubleshooting questions:
 
@@ -32,7 +32,7 @@ Troubleshooting questions:
 - In a single sentence, what’s the issue I’m facing?
 - What resources can help me solve the problem?
 
-MATCH: A function used to locate the posittion of a specific lookup value.
+**MATCH**: A function used to locate the posittion of a specific lookup value.
 
 # VLOOKUP core concepts
 
@@ -40,14 +40,14 @@ Functions can be used to quickly find information and perform calculations using
 
 ![An image of a person standing on top of a spreadsheet, looking up with binoculars](image-1.png)
 
-## __When do you need to use VLOOKUP? __
+## **When do you need to use VLOOKUP?**
 
 Two common reasons to use VLOOKUP are:
 
 - Populating data in a spreadsheet
 - Merging data from one spreadsheet with data in another
 
-## __VLOOKUP syntax__
+## **VLOOKUP syntax**
 
 A VLOOKUP function is available in both Microsoft Excel and Google Sheets. You will be introduced to the general syntax in Google Sheets. (You can refer to the resources at the end of this reading for more information about VLOOKUP in Microsoft Excel.)
 
@@ -62,12 +62,12 @@ Here is the syntax.
 - The value to search for.
 - For example, 42, "Cats", or I24.
 
-### __range__
+### **range**
 
 - The range to consider for the search.
 - The first column in the range is searched to locate data matching the value specified by search_key.
 
-### __index__
+### **index**
 
 - The column index of the value to be returned, where the first column in range is numbered 1.
 - If index is not between 1 and the number of columns in range, #VALUE! is returned.
@@ -78,7 +78,7 @@ Here is the syntax.
 - It’s recommended to set is_sorted to FALSE. If set to FALSE, an exact match is returned. If there are multiple matching values, the content of the cell corresponding to the first value found is returned, and #N/A is returned if no such value is found.
 - If is_sorted is TRUE or omitted, the nearest match (less than or equal to the search key) is returned. If all values in the search column are greater than the search key, #N/A is returned.
 
-## __What if you get #N/A?__
+## **What if you get #N/A?**
 
 As you have just read, #N/A indicates that a matching value can't be returned as a result of the VLOOKUP. The error doesn’t mean that anything is actually wrong with the data, but people might have questions if they see the error in a report. You can use the IFNA function to replace the #N/A error with something more descriptive, like “Does not exist.”
 
@@ -88,7 +88,7 @@ Here is the syntax.
 
 ![](image-5.png)
 
-### __value__
+### **value**
 
 - This is a required value.
 - The function checks if the cell value matches the value; such as #N/A.
@@ -98,13 +98,13 @@ Here is the syntax.
 - This is a required value.
 - The function returns this value if the cell value matches the value in the first argument; it returns this value when the cell value is #N/A.
 
-## __Helpful VLOOKUP reminders__
+## **Helpful VLOOKUP reminders**
 
 - TRUE means an approximate match, FALSE means an exact match on the search key. If the data used for the search key is sorted, TRUE can be used.
 - You want the column that matches the search key in a VLOOKUP formula to be on the left side of the data. VLOOKUP only looks at data to the right after a match is found. In other words, the index for VLOOKUP indicates columns to the right only. This may require you to move columns around before you use VLOOKUP.
 - After you have populated data with the VLOOKUP formula, you may copy and paste the data as values only to remove the formulas so you can manipulate the data again.
 
-## __VLOOKUP resources for Microsoft Excel__
+## **VLOOKUP resources for Microsoft Excel**
 
 VLOOKUP may slightly differ in Microsoft Excel, but the overall concepts can still be generally applied. Refer to the following resources if you are working with Excel.
 
@@ -116,7 +116,7 @@ VLOOKUP may slightly differ in Microsoft Excel, but the overall concepts can sti
 
 Use JOINS in SQL
 
-Join: A SQL clause thatis used to combine rows from tow or more tables based on a related column.
+**Join**: A SQL clause thatis used to combine rows from tow or more tables based on a related column.
 
 Common JOINs:
 
@@ -131,43 +131,43 @@ Primary keys reference columns in which each value is unique
 
 Foreign keys are primary keys in other tables
 
-INNER JOIN: A function that returns records with matching values in both tables.
+**INNER JOIN**: A function that returns records with matching values in both tables.
 
-LEFT JOIN: A funciotn that will return all the revords from the left table and only the matching records from the right table.
+**LEFT JOIN**: A funciotn that will return all the revords from the left table and only the matching records from the right table.
 
 (The table mentioned frist is left, and the table mentioned second is right.)
 
-LEFT JOIN: A funciotn that will return all the revords from the right table and only the matching records from the left table.
+**LEFT JOIN**: A funciotn that will return all the revords from the right table and only the matching records from the left table.
 
-OUTER JOIN: A function that comvines RIGHT and LEFT JOIN to return all matching records in both tables.
+**OUTER JOIN**: A function that comvines RIGHT and LEFT JOIN to return all matching records in both tables.
 
-If the BigQuery editor flags the table names in your query as unrecognizable, include the dataset name by substituting __employee_data.employees__ for the employees table and __employee_data.departments__ for the departments table, as shown in line 6 and line 8 below:
+If the BigQuery editor flags the table names in your query as unrecognizable, include the dataset name by substituting __employee_data.employees**for the employees table and**employee_data.departments__ for the departments table, as shown in line 6 and line 8 below:
 
 ![This image has the modifications to the query: 1) FROM employee_data.employees and 2) INNER JOIN employee_data.departments ON](image-7.png)
 
-COUNT in SQL: A query that returns the number of rows in a specified range.
+**COUNT in SQL**: A query that returns the number of rows in a specified range.
 
-COUNT DISTINCT: A query that only returns the distsinct values in a specified range.
+**COUNT DISTINCT**: A query that only returns the distsinct values in a specified range.
 
 eg use of LIMIT:
 
 ![](image-8.png)
 
-Aliasing: When you temporarity name a table or column in your query to make it easier to read and write.
+**Aliasing**: When you temporarity name a table or column in your query to make it easier to read and write.
 
 eg use of COUNT DISTINCT:
 
 ![](image-9.png)
 
-Subquery: A SQL query that is nested inside a larger query.
+**Subquery**: A SQL query that is nested inside a larger query.
 
 eg run subquery inside query
 
 ![](image-10.png)
 
-HAVING: Allows your to add filter to your query instead of the underlying table that can only be used with aggregate funcitons.
+**HAVING**: Allows your to add filter to your query instead of the underlying table that can only be used with aggregate funcitons.
 
-CASE: Returns records with yoru conditions by allowing you to include if/then statements in your query.
+**CASE**: Returns records with yoru conditions by allowing you to include if/then statements in your query.
 
 eg CASE example
 

@@ -36,19 +36,19 @@ Types of data:
 - Second-party data: Data collected by a group directly from its audience and then told
 - Third-party data: Data collected from outside sources who did not collect it directly
 
-Quantitative data: Data can be measured, or easily expressed using numbers.
+**Quantitative data**: Data can be measured, or easily expressed using numbers.
 
 - Discrete data: Data that is counted and has a limited number of values.
 - Continuous data: Data that is measured and can have almost any numeric value.
 
-Qualitative data: Data cannot be measured, or easily expressed using numbers.
+**Qualitative data**: Data cannot be measured, or easily expressed using numbers.
 
 - Nominal data: A type of qualitative data that is categorized without a set order
 - Ordinal data: A type of qualitative data with a set order or scale
 
-Internal data: Data that lives in a company’s own system
+**Internal data**: Data that lives in a company’s own system
 
-External data: Data that lives and is generated outside of an organization
+**External data**: Data that lives and is generated outside of an organization
 
 ![](image-2.png)
 
@@ -240,20 +240,19 @@ Each level of data modeling has a different level of detail.
 
 ![pyramid with the three common types of data modeling: conceptual, logical, and physical](image-9.png)
 
-1. __Conceptual data modeling__ gives a high-level view of the data structure, such as how data interacts across an organization. For example, a conceptual data model may be used to define the business requirements for a new database. A conceptual data model doesn't contain technical details.
-2. __Logical data modeling__ focuses on the technical details of a database such as relationships, attributes, and entities. For example, a logical data model defines how individual records are uniquely identified in a database. But it doesn't spell out actual names of database tables. That's the job of a physical data model.
-3. __Physical data modeling__ depicts how a database operates. A physical data model defines all entities and attributes used; for example, it includes table names, column names, and data types for the database.
+1. **Conceptual data modeling** gives a high-level view of the data structure, such as how data interacts across an organization. For example, a conceptual data model may be used to define the business requirements for a new database. A conceptual data model doesn't contain technical details.
+2. **Logical data modeling** focuses on the technical details of a database such as relationships, attributes, and entities. For example, a logical data model defines how individual records are uniquely identified in a database. But it doesn't spell out actual names of database tables. That's the job of a physical data model.
+3. **Physical data modeling** depicts how a database operates. A physical data model defines all entities and attributes used; for example, it includes table names, column names, and data types for the database.
 
 More information can be found in this[ comparison of data models​.](https://www.1keydata.com/datawarehousing/data-modeling-levels.html)
 
 ## Data-modeling techniques
 
-There are a lot of approaches when it comes to developing data models, but two common methods are the __Entity Relationship Diagram (ERD)__ and the __Unified Modeling Language (UML) __diagram. ERDs are a visual way to understand the relationship between entities in the data model. UML diagrams are very detailed diagrams that describe the structure of a system by showing the system's entities, attributes, operations, and their relationships. As a junior data analyst, you will need to understand that there are different data modeling techniques, but in practice, you will probably be using your organization’s existing technique.
+There are a lot of approaches when it comes to developing data models, but two common methods are the **Entity Relationship Diagram (ERD)** and the **Unified Modeling Language (UML)**diagram. ERDs are a visual way to understand the relationship between entities in the data model. UML diagrams are very detailed diagrams that describe the structure of a system by showing the system's entities, attributes, operations, and their relationships. As a junior data analyst, you will need to understand that there are different data modeling techniques, but in practice, you will probably be using your organization’s existing technique.
 
 ![](image-10.png)
 
-__Wide data is preferred when  Long data is preferred when __
-
+### Wide data is preferred when  Long data is preferred when
 Creating tables and charts with a few variables about each subject
 
 Storing a lot of variables about each subject. For example, 60 years worth of interest rates for each bank

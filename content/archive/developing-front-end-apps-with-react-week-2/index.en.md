@@ -13,10 +13,10 @@ aliases:
 
 States:
 
--   Allows you to change data
--   An object that specified different types of data
--   A built-in state object sotres property balues belonging to the component
--   Chage in state results in re-rendering of component
+- Allows you to change data
+- An object that specified different types of data
+- A built-in state object sotres property balues belonging to the component
+- Chage in state results in re-rendering of component
 
 Type of state:
 
@@ -30,12 +30,12 @@ present only in a single compoent that needs it such as hiding and showing infor
 
 ### States in React components
 
--   A plain JavaScript object used to represent an information about the component's current situation.
--   Determines how the componet renders and behaves.
--   Allows you to create components that are dynamic and interactive.
--   An instance of React Component Class that can be defined as an object with properties that control the behavior of the component.
--   Managed and preserved in the React component.
--   Holds some information that may change over the lifetime of the component.
+- A plain JavaScript object used to represent an information about the component's current situation.
+- Determines how the componet renders and behaves.
+- Allows you to create components that are dynamic and interactive.
+- An instance of React Component Class that can be defined as an object with properties that control the behavior of the component.
+- Managed and preserved in the React component.
+- Holds some information that may change over the lifetime of the component.
 
 Eg.
 
@@ -65,14 +65,14 @@ root.render(<Testcomponent />)
 
 ### Props
 
--   Short for properties used to pass data between React components
--   Read-only components
--   Behavior:
-    -   Store the value of attributes of a tag and work like the HTML attributes.
-    -   Function arguments that can be passed to the component.
-    -   Immutable and cannot be modified from inside the component.
-    -   Should not be changed in a child component.
-    -   Allow child components to access methods defined in the parent component.
+- Short for properties used to pass data between React components
+- Read-only components
+- Behavior:
+    - Store the value of attributes of a tag and work like the HTML attributes.
+    - Function arguments that can be passed to the component.
+    - Immutable and cannot be modified from inside the component.
+    - Should not be changed in a child component.
+    - Allow child components to access methods defined in the parent component.
 
 ```javascript
 //component
@@ -125,20 +125,20 @@ Component phrases:
 
 Component creation When a component is created, four methods are called in the same order
 
--   Constructor()
--   getDerivedStateFromProps()
--   render()
--   componentDidMount()
+- Constructor()
+- getDerivedStateFromProps()
+- render()
+- componentDidMount()
 
 ### Updating
 
 Component change When a component is updated, five methods are called in the same order
 
--   getDerivedStateFromProps()
--   shouldComponentUpdate()
--   render()
--   getSnapshotBeforeUpdate()
--   componentDidUpdate()
+- getDerivedStateFromProps()
+- shouldComponentUpdate()
+- render()
+- getSnapshotBeforeUpdate()
+- componentDidUpdate()
 
 ### Unmounting
 
@@ -242,28 +242,28 @@ HTTP: GET(get remote data), POST(add remote data), UPDATE(change remote data), D
 
 Testing of React components:
 
--   Ensured appliation will work as intended.
--   Verifies the code runs error-free.
--   Tests functionality by replicating the actions of the end users.
--   Validates any updates done do not effect the working of the overall application.
--   Prevents regression that is reappearance of a previous fixed bug.
+- Ensured appliation will work as intended.
+- Verifies the code runs error-free.
+- Tests functionality by replicating the actions of the end users.
+- Validates any updates done do not effect the working of the overall application.
+- Prevents regression that is reappearance of a previous fixed bug.
 
 Approaches of React component testing
 
--   Render component trees in a simple test environment and assert their output
--   Run application in a realistic browser environment to do end-to-end testing.
+- Render component trees in a simple test environment and assert their output
+- Run application in a realistic browser environment to do end-to-end testing.
 
 Steps: Arrange -> Act -> Assert Choosing the right tool (Factors to consider when testing)
 
--   Speed or realistic
--   What to mock (units or integration)
+- Speed or realistic
+- What to mock (units or integration)
 
 React testing libraries/tools
 
--   Mocha: Test runner
--   Chai: Assertion library
--   Sinon: Spies, stubs, mocks
--   Enzyme: Render components
+- Mocha: Test runner
+- Chai: Assertion library
+- Sinon: Spies, stubs, mocks
+- Enzyme: Render components
 
 Jest: combined of Mocha, Chai, Sinon. Other individual libraries Example of usage of React Testing Library
 

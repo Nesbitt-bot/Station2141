@@ -31,9 +31,9 @@ Identifying good data sources (ROCCC):
 - Current
 - Cited
 
-Data ethics: Well-founded standards of right and wrong that dictate how data is collected, shared, and used.
+**Data ethics**: Well-founded standards of right and wrong that dictate how data is collected, shared, and used.
 
-GDPR: General Data Protection Regulation of the European Union.
+**GDPR**: General Data Protection Regulation of the European Union.
 
 Aspects of data ethics
 
@@ -46,7 +46,7 @@ Aspects of data ethics
 
 Open data: free access, usage, and sharing data.
 
-Data interoperability: The ability of data systems and services to openly connect and share data
+**Data interoperability**: The ability of data systems and services to openly connect and share data
 
 Luckily for data analysts, there are lots of trustworthy sites and resources available for open data. It is important to remember that even reputable data needs to be constantly evaluated, but these websites are a useful starting point:
 
@@ -54,8 +54,8 @@ U.S. government data site: Data.gov is one of the most comprehensive data source
 
 U.S. Census Bureau: This open data source offers demographic information from federal, state, and local governments, and commercial entities in the U.S. too.
 
-Open Data Network: This data source has a really powerful search engine and advanced filters. Here, you can find data on topics like finance, public safety, infrastructure, and housing and development.
+**Open Data Network**: This data source has a really powerful search engine and advanced filters. Here, you can find data on topics like finance, public safety, infrastructure, and housing and development.
 
-Google Cloud Public Datasets: There are a selection of public datasets available through the Google Cloud Public Dataset Program that you can find already loaded into BigQuery.
+**Google Cloud Public Datasets**: There are a selection of public datasets available through the Google Cloud Public Dataset Program that you can find already loaded into BigQuery.
 
-Dataset Search: The Dataset Search is a search engine designed specifically for data sets; you can use this to search for specific data sets.
+**Dataset Search**: The Dataset Search is a search engine designed specifically for data sets; you can use this to search for specific data sets.

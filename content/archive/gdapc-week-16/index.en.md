@@ -10,17 +10,19 @@ draft: false
 
 Week16
 
-Dirty data: Data that is incomplete, incorrect, or irrelevant to the problem you’re trying to solve.
+**Dirty data**: Data that is incomplete, incorrect, or irrelevant to the problem you’re trying to solve.
 
-Clean data: Data that is coplete, correct, and relevant to the problem you’re trying to solve.
+**Clean data**: Data that is coplete, correct, and relevant to the problem you’re trying to solve.
 
-Data engineers: Transform data into a useful format for analysis and give it a reliable infrastructure.
+**Data engineers**: Transform data into a useful format for analysis and give it a reliable infrastructure.
 
-Data warehousing specialists: Develop processes and procedures to effectively store and organize data.
+**Data warehousing specialists**: Develop processes and procedures to effectively store and organize data.
 
-## __Types of dirty data![Icons of the 6 types of dirty data: duplicate, outdated, incomplete, incorrect and inconsistent data](image-1.png)__
+## **Types of dirty data**
 
-### __Duplicate data__
+![Icons of the 6 types of dirty data: duplicate, outdated, incomplete, incorrect and inconsistent data](image-1.png)
+
+### **Duplicate data**
 
 Description
 
@@ -34,7 +36,7 @@ Manual data entry, batch data imports, or data migration
 
 Skewed metrics or analyses, inflated or inaccurate counts or predictions, or confusion during data retrieval
 
-### __Outdated data__
+### **Outdated data**
 
 Description
 
@@ -48,7 +50,7 @@ People changing roles or companies, or software and systems becoming obsolete
 
 Inaccurate insights, decision-making, and analytics
 
-### __Incomplete data__
+### **Incomplete data**
 
 Description
 
@@ -62,7 +64,7 @@ Improper data collection or incorrect data entry
 
 Decreased productivity, inaccurate insights, or inability to complete essential services
 
-### __Incorrect/inaccurate data__
+### **Incorrect/inaccurate data**
 
 Description
 
@@ -76,7 +78,7 @@ Human error inserted during data input, fake information, or mock data
 
 Inaccurate insights or decision-making based on bad information resulting in revenue loss
 
-### __Inconsistent data__
+### **Inconsistent data**
 
 Description
 
@@ -90,7 +92,7 @@ Data stored incorrectly or errors inserted during data transfer
 
 Contradictory data points leading to confusion or inability to classify or segment customers
 
-### __Business impact of dirty data__
+### **Business impact of dirty data**
 
 For further reading on the business impact of dirty data, enter the term “dirty data” into your preferred browser’s search bar to bring up numerous articles on the topic. Here are a few impacts cited for certain industries from a previous search:
 
@@ -99,11 +101,11 @@ For further reading on the business impact of dirty data, enter the term “dirt
 - Marketing and sales: 8 out of 10 companies have said that dirty data hinders sales campaigns ([source](https://www.dqglobal.com/2011/05/04/obsolete-or-dirty-data/)).
 - Healthcare: Duplicate records can be 10% and even up to 20% of a hospital’s electronic health records ([source](https://searchhealthit.techtarget.com/feature/Hospitals-battle-duplicate-medical-records-with-technology)).
 
-Data validation: A tool for checking the accuracy and quality of data before adding or importing it.
+**Data validation**: A tool for checking the accuracy and quality of data before adding or importing it.
 
-Data merging: The process of combinging two or more datasets into a single dataset.
+**Data merging**: The process of combinging two or more datasets into a single dataset.
 
-Compatiblity: How well two or more datasets are able to work together.
+**Compatiblity**: How well two or more datasets are able to work together.
 
 Questions for data cleaning:
 
@@ -117,7 +119,7 @@ In this reading, you will learn the importance of data cleaning and how to ident
 
 ![list of common errors in data cleaning](image-2.png)
 
-## __Common mistakes to avoid__
+## **Common mistakes to avoid**
 
 - Not checking for spelling errors: Misspellings can be as simple as typing or input errors. Most of the time the wrong spelling or common grammatical errors can be detected, but it gets harder with things like names or addresses. For example, if you are working with a spreadsheet table of customer data, you might come across a customer named “John” whose name has been input incorrectly as “Jon” in some places. The spreadsheet’s spellcheck probably won’t flag this, so if you don’t double-check for spelling errors and catch this, your analysis will have mistakes in it.
 - Forgetting to document errors: Documenting your errors can be a big time saver, as it helps you avoid those errors in the future by showing you how you resolved them. For example, you might find an error in a formula in your spreadsheet. You discover that some of the dates in one of your columns haven’t been formatted correctly. If you make a note of this fix, you can reference it the next time your formula is broken, and get a head start on troubleshooting. Documenting your errors also helps you keep track of changes in your work, so that you can backtrack if a fix didn’t work.
@@ -130,39 +132,37 @@ In this reading, you will learn the importance of data cleaning and how to ident
 - Not backing up your data prior to data cleaning: It is always good to be proactive and create your data backup before you start your data clean-up. If your program crashes, or if your changes cause a problem in your dataset, you can always go back to the saved version and restore it. The simple procedure of backing up your data can save you hours of work-- and most importantly, a headache.
 - Not accounting for data cleaning in your deadlines/process: All good things take time, and that includes data cleaning. It is important to keep that in mind when going through your process and looking at your deadlines. When you set aside time for data cleaning, it helps you get a more accurate estimate for ETAs for stakeholders, and can help you know when to request an adjusted ETA.
 
-## __Additional resources__
+## **Additional resources**
 
 Refer to these "top ten" lists for data cleaning in Microsoft Excel and Google Sheets to help you avoid the most common mistakes:
 
 - [Top ten ways to clean your data](https://support.microsoft.com/en-us/office/top-ten-ways-to-clean-your-data-2844b620-677c-47a7-ac3e-c2e157d1db19): Review an orderly guide to data cleaning in Microsoft Excel.
 - [10 Google Workspace tips to clean up data](https://support.google.com/a/users/answer/9604139?hl=en#zippy=): Learn best practices for data cleaning in Google Sheets.
 
-Some other tools for processing data:
+**Some other tools for processing data**: Conditional formatting: A spreadsheet tool that changes how cells appear when values meet specific conditions.
 
-Conditional formatting: A spreadsheet tool that changes how cells appear when values meet specific conditions.
+**Text string**: A group of characters within a cell, most often composed of letters.
 
-Text string: A group of characters within a cell, most often composed of letters.
+**Split**: A tool that divides text around a specified character and puts each fragment into a new, separate cell.
 
-Split: A tool that divides text around a specified character and puts each fragment into a new, separate cell.
+**Concatenate**: A function that joins multiple text strings into a single string.
 
-Concatenate: A function that joins multiple text strings into a single string.
+**COUNTIF**: A function that returns the number of cells that match a specified value.
 
-COUNTIF: A function that returns the number of cells that match a specified value.
+**Syntax**: A predetermined structure that includes all required information and its proper placement.
 
-Syntax: A predetermined structure that includes all required information and its proper placement.
+**LEN**: A function that tells you the length of a text string by counting the number of characters it contains.
 
-LEN: A function that tells you the length of a text string by counting the number of characters it contains.
+**LEFT**: A function that gives you a set number of characters from the left side of a text string.
 
-LEFT: A function that gives you a set number of characters from the left side of a text string.
+**RIGHT**: A function that gives you a set number of characters from the right side of a text string.
 
-RIGHT: A function that gives you a set number of characters from the right side of a text string.
+**MID**: A function that gives you a segment from the middle of a text string.
 
-MID: A function that gives you a segment from the middle of a text string.
+**TRIM**: A function that removes leading, trailing, and repeated speces in data.
 
-TRIM: A function that removes leading, trailing, and repeated speces in data.
+**VLOOKUP**: A function that searches for a certian value in a column to return a corresponding piece of information.
 
-VLOOKUP: A function that searches for a certian value in a column to return a corresponding piece of information.
+**Data mapping**: The process of matching fields from one data source to another.
 
-Data mapping: The process of matching fields from one data source to another.
-
-Schema: A way of describing how something is organized.
+**Schema**: A way of describing how something is organized.

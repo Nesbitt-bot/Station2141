@@ -10,13 +10,13 @@ draft: false
 
 Week 15
 
-Data integrity: The accuracy, completeness, consistency, and trustworthiness of data throughout its lifecycle.
+**Data integrity**: The accuracy, completeness, consistency, and trustworthiness of data throughout its lifecycle.
 
-Data replication: The process of storing data in multiple locations.
+**Data replication**: The process of storing data in multiple locations.
 
-Data transfer: The process of copying data from a storage device to memory, or from one computer to another.
+**Data transfer**: The process of copying data from a storage device to memory, or from one computer to another.
 
-Data manipulation: The process of changing the data to make it more organized and easier to read.
+**Data manipulation**: The process of changing the data to make it more organized and easier to read.
 
 Type of insufficient data:
 
@@ -134,7 +134,7 @@ To decrease the margin of error, use a larger sample size
 
 For greater statistical significance, use a larger sample size
 
-Note: Sample size calculators use statistical formulas to determine a sample size. More about these are coming up in the course!  Stay tuned.
+**Note**: Sample size calculators use statistical formulas to determine a sample size. More about these are coming up in the course!  Stay tuned.
 
 Why a minimum sample of 30?
 
@@ -142,9 +142,9 @@ This recommendation is based on the Central Limit Theorem (CLT) in the field of 
 
 Still curious? Without getting too much into the math, check out these articles:
 
-Central Limit Theorem (CLT): This article by Investopedia explains the Central Limit Theorem and briefly describes how it can apply to an analysis of a stock index.
+**Central Limit Theorem (CLT)**: This article by Investopedia explains the Central Limit Theorem and briefly describes how it can apply to an analysis of a stock index.
 
-Sample Size Formula: This article by Statistics Solutions provides a little more detail about why some researchers use 30 as a minimum sample size.
+**Sample Size Formula**: This article by Statistics Solutions provides a little more detail about why some researchers use 30 as a minimum sample size.
 
 Sample sizes vary by business problem
 
@@ -154,7 +154,7 @@ For example, if you live in a city with a population of 200,000 and get 180,000 
 
 Would 200 be alright if the people surveyed represented every district in the city?
 
-Answer: It depends on the stakes.
+**Answer**: It depends on the stakes.
 
 A sample size of 200 might be large enough if your business problem is to find out how residents felt about the new library
 
@@ -172,9 +172,9 @@ Knowing the basics will help you make the right choices when it comes to sample 
 
 Refer to the Determine the Best Sample Size video for a demonstration of a sample size calculator, or refer to the Sample Size Calculator reading for additional information.
 
-Statistical power: The probability of getting meaningful results from a test.
+**Statistical power**: The probability of getting meaningful results from a test.
 
-Hypothesis testing: A way to see if a survey or experiment has meaningful results.
+**Hypothesis testing**: A way to see if a survey or experiment has meaningful results.
 
 If a test is statistically significant, it means the results of the test are real and not an error caused by random chance.
 
@@ -182,12 +182,12 @@ If a test is statistically significant, it means the results of the test are rea
 
 Determine the best sample size.
 
-Confidence level: The probability that your sample size accurately reflects the greater population.
+**Confidence level**: The probability that your sample size accurately reflects the greater population.
 
 95% to 90% confidence level is usually enough.
 
 Hahaha, there are sample size calculator for you to choose.
 
-Margin of error: The maximum amount that the sample results are expected to differ from those of the actual population.
+**Margin of error**: The maximum amount that the sample results are expected to differ from those of the actual population.
 
 Margin of error is counted in two side.

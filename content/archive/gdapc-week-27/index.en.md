@@ -43,7 +43,7 @@ This reading provides an orientation of two upcoming videos:
 
 To get the most out of these videos, you should watch them together (back to back). In the first video, Connor introduces a presentation that is confusing and hard to follow. In the second video, he returns to talk about what can be done to improve it and help the audience better understand the data and conclusions being shared.
 
-## __Messy data presentation__
+## **Messy data presentation**
 
 In the first video, watch and listen carefully for the specific reasons the “messy” presentation falls short. Here is a preview:
 
@@ -53,11 +53,11 @@ In the first video, watch and listen carefully for the specific reasons the “m
 - Inconsistent format (no theme)
 - No recommendation or conclusion at the end
 
-### __Messy presentation: people don’t know where to focus their attention __
+### **Messy presentation: people don’t know where to focus their attention**
 
 The main problem with the messy presentation is the lack of a logical flow. Notice also how the data visualizations are hard to understand and appear without any introduction or explanation. The audience has no sense of what they are looking at and why.  When people in the audience have to figure out what the data means without any help, they can end up being lost, confused, and unclear about any actions they need to take.
 
-## __Good data presentation__
+## **Good data presentation**
 
 In the second video, numerous best practices are applied to create a better presentation on the same topic. This “good” presentation is so much easier to understand than the messy one! Here is a preview:
 
@@ -70,9 +70,9 @@ In the second video, numerous best practices are applied to create a better pres
 - Logic and progression
 - Limitations to the data (caveats) - what the data can’t tell you
 
-Tip: As you watch this video, take notes about what Connor suggests to create a good presentation. You can keep these notes in your journal. When you create your own presentations, refer back to your notes. This will help you to develop your own thinking about the quality of presentations.
+**Tip**: As you watch this video, take notes about what Connor suggests to create a good presentation. You can keep these notes in your journal. When you create your own presentations, refer back to your notes. This will help you to develop your own thinking about the quality of presentations.
 
-### __Good presentation: people are logically guided through the data__
+### **Good presentation: people are logically guided through the data**
 
 The good presentation logically guides the audience through the data – from the objectives at the beginning all the way to the conclusions at the end. Notice how the data visualizations are introduced using a common theme and are thoughtfully placed before each conclusion. A good presentation gives people in the audience the facts and data, helps them understand what the data means, and provides takeaways about how they can use their understanding to make a change or do some good.
 
@@ -99,7 +99,7 @@ Tell them the conclusion
 
 Use this guide to help make your presentation stand out as you tell your data story. Follow the recommended tips and slide sequence in this guide for a presentation that will truly impress your audience.
 
-You can also __download this guide as a PDF__, so you can reference it in the future:
+You can also **download this guide as a PDF**, so you can reference it in the future:
 
 __Sharing your data findings in presentations _ Tips and Tricks.pdf__PDF File
 
@@ -109,7 +109,7 @@ __Sharing your data findings in presentations _ Tips and Tricks.pdf__PDF File
 
 Use the following tips and sample layout to build your own presentation.
 
-### __Tip 1: Know your flow__
+### **Tip 1: Know your flow**
 
 Just like in any good story, a data story must have a good plot (theme and flow), good dialogue (talking points), and a great ending or big reveal (results and conclusions). One flow could be an overview of what was analyzed followed by resulting trends and potential areas for further exploration.
 
@@ -117,21 +117,19 @@ Just like in any good story, a data story must have a good plot (theme and flow)
 
 - In order to develop the right flow for your presentation, keep your audience in mind. Ask yourself these two questions to help you define the overall flow and build out your presentation.
 
-__Who is my audience?__
-
+### Who is my audience?
 - If your intended audience is executives, board members, directors, or other C-level (C-Suite) executives, your storytelling should be kept at a high level. This audience will want to hear about your story but might not have time to hear the *entire* story. Executives tend to focus on endings that encourage improving, correcting, or inventing things. Keep your presentation brief and spend most of your time on your results and recommendations. Refer to an upcoming topic in this reading—Tip 3: end with your recommendations.
 - If your intended audience is stakeholders and managers, they might have more time to learn about how you performed your analysis and they might ask more data-specific questions. Be prepared with talking points about the aspects of your analysis that led you to your final results and conclusions.
 - If your intended audience is other analysts and individual contributors, you will have the most freedom—and perhaps the most time—to go more deeply into the data, processes, and results.
 
-__What is the purpose of my presentation?__
-
+### What is the purpose of my presentation?
 - If the goal of your presentation is to request or recommend something at the end, like a sales pitch, you can have each slide work toward the recommendations at the end.
 - If the goal of your presentation is to focus on the results of your analysis, each slide can help mark the path to the results. Be sure to include plenty of breadcrumbs (views of the data analysis steps) to demonstrate the path you took with the data.
 - If the goal of your presentation is to provide a report on the data analysis, your slides should clearly summarize your data and key findings. In this case, it is alright to let the data be the star or speak for itself.
 
-### __Tip 2: Prepare talking points and limit text on slides__
+### **Tip 2: Prepare talking points and limit text on slides**
 
-As you create each slide in your presentation, prepare __talking points__ (also called __speaker notes__) on what you will say.
+As you create each slide in your presentation, prepare **talking points** (also called **speaker notes**) on what you will say.
 
 ![This illustration is of a slide with an area underneath reserved for talking points or speaker notes.](image-2.png)
 
@@ -139,14 +137,14 @@ Don’t forget that you will be talking at the same time that your audience is r
 
 Knowing exactly what you will say when explaining each slide throughout your presentation also creates a natural flow to your story. Talking points help you avoid awkward pauses between topics. Slides that summarize data can also be repetitive (and boring). If you prepare a variety of interesting talking points about the data, you can keep your audience alert and paying attention to the data and its analysis.
 
-### __Tip 3: End with your recommendations![This illustration is of a person making a presentation at the top of a mountain](image-3.png)__
+### **Tip 3: End with your recommendations![This illustration is of a person making a presentation at the top of a mountain](image-3.png)**
 
 When climbing a mountain, getting to the top is the goal. Making recommendations at the end of your presentation is like getting to the mountaintop.
 
 - Useone slide for your recommendations at the end. Be clear and concise.
 - If you are recommending that something be done, provide next steps and describe what you would consider a successful outcome.
 
-### __Tip 4: Allow enough time for the presentation and questions![This illustration is of an analog clock with the time 12:25 displayed](image-4.png)__
+### **Tip 4: Allow enough time for the presentation and questions![This illustration is of an analog clock with the time 12:25 displayed](image-4.png)**
 
 Assume that everyone in your audience is busy. Keep your presentation on topic and as short as possible by:
 
@@ -160,7 +158,7 @@ In this section, we will describe how to put everything together in a sample sli
 
 ![This illustration has the order and content on the slides: agenda, purpose, data/analysis, pitch, and a call to action](image-5.png)
 
-### __First slide: Agenda __
+### **First slide: Agenda**
 
 Provide a high-level bulleted list of the topics you will cover and the amount of time you will spend on each. Every company’s norms are different, but in general, most presentations run from 30 minutes to an hour at most. Here is an example of a 30-minute agenda:
 
@@ -171,7 +169,7 @@ Provide a high-level bulleted list of the topics you will cover and the amount o
 - Actionable steps (3 minutes)
 - Questions (5 minutes)
 
-### __Second slide: Purpose__
+### **Second slide: Purpose**
 
 Everyone might not be familiar with your project or know why it is important. They didn’t spend the last couple of weeks thinking about the analysis and results of your project like you did. This slide summarizes the purpose of the project and why it is important to the business for your audience.
 
@@ -179,7 +177,7 @@ Here is an example of a purpose statement:
 
 *Service center consolidation is an important cost savings initiative. The aim of this project was to determine the impact of service center consolidation on customer response times. *
 
-### __Third slide: Data/analysis__
+### **Third slide: Data/analysis**
 
 First, It really is possible to tell your data story in a single slide if you summarize the key things about your data and analysis. You may have supporting slides with additional data or information in an appendix at the end of the presentation.
 
@@ -196,11 +194,11 @@ For extra visuals on the slides, use animations. For example, you can:
 - Only display the visual that is relevant to what you are talking about (fade out non-relevant visuals).
 - Use arrows or callouts to point to a specific area of a visual that you are using.
 
-### __Fourth slide: Recommendations__
+### **Fourth slide: Recommendations**
 
 If you have been telling your story well in the previous slides, the recommendations will be obvious to your audience. This is when you might get a lot of questions about how your data supports your recommendations. Be ready to communicate how your data backs up your conclusion or recommendations in different ways. Having multiple words to state the same thing also helps if someone is having difficulty with one particular explanation.
 
-### __Fifth slide: Call to action__
+### **Fifth slide: Call to action**
 
 Sometimes the call to action can be combined with the recommendations slide. If there are multiple actions or activities recommended, a separate slide is best.
 
@@ -258,7 +256,7 @@ When working on any project, it is important to understand from the beginning wh
 
 There are many things to consider before you begin asking and answering possible questions – like the objective, stakeholder expectations, and if there are any limitations. Make sure you have everything covered before you begin. The checklist below identifies ten tasks that you should engage in to be well prepared for your Q&A:
 
-## __Before the presentation__
+## **Before the presentation**
 
 1. Assemble and prepare your questions.
 2. Discuss your presentation with your manager, other analysts, or other friendly contacts in your organization.
@@ -267,7 +265,7 @@ There are many things to consider before you begin asking and answering possible
 5. At least 24 hours ahead of the presentation, try and brainstorm tricky questions or unclear parts you may come across- this helps avoid surprises.
 6. It never hurts to practice what you will be presenting, to account for any missing information or simply to calm your nerves.
 
-## __During the presentation__
+## **During the presentation**
 
 1. Be prepared to respond to the things that you find and effectively and accurately explain your findings.
 2. Address potential questions that may come up.
@@ -276,7 +274,7 @@ There are many things to consider before you begin asking and answering possible
 
 ![Illustration of a person at a podium speaking to a group of people](image-6.png)
 
-## __Practice makes perfect__
+## **Practice makes perfect**
 
 Preparing for a presentation or a meeting doesn’t have to be intimidating. If you invest time into knowing your audience, crafting your notes, doing necessary research and organizing your data, then there is very little reason why your audience will not be engaged, even impressed.
 

@@ -13,46 +13,46 @@ A container is a standard unit of software that encapsulates everything that pro
 
 ## Why use containers?
 
--   Isolation and allocation: No way to define resource boundaries for apps in a physical server.
--   Server Utilization: Not optimal because servers tend to be either over-utilized or under-utilized.
--   Provisioning and Costs: Requires long periods for provisioning resources and expensive maintenance costs.
--   Performance: Constrained during peak workloads
--   Portability: Applications are not portable across multiple environments and operating systems.
--   Resiliency: Complex, time-consuming and expensive
--   Scalability: Limited scalability and resiliency
--   Automation: Difficult to implement for multiple platforms
+- Isolation and allocation: No way to define resource boundaries for apps in a physical server.
+- Server Utilization: Not optimal because servers tend to be either over-utilized or under-utilized.
+- Provisioning and Costs: Requires long periods for provisioning resources and expensive maintenance costs.
+- Performance: Constrained during peak workloads
+- Portability: Applications are not portable across multiple environments and operating systems.
+- Resiliency: Complex, time-consuming and expensive
+- Scalability: Limited scalability and resiliency
+- Automation: Difficult to implement for multiple platforms
 
 ### Container characteristics
 
--   The container engine virtualizes the operating system
--   A container is light-weight, fast, isolated, portable and secure
--   Require less memory space
--   Binaries, libraries within container enable apps to run
--   One machine can host multiple containers
+- The container engine virtualizes the operating system
+- A container is light-weight, fast, isolated, portable and secure
+- Require less memory space
+- Binaries, libraries within container enable apps to run
+- One machine can host multiple containers
 
 ### Container benefits
 
 Containers enable organizations to:
 
--   Quickly create applications using automation
--   Lower deployment time and costs
--   Improve recourse utilization
--   Port across different environments
--   Support next-gen applications (microservices)
+- Quickly create applications using automation
+- Lower deployment time and costs
+- Improve recourse utilization
+- Port across different environments
+- Support next-gen applications (microservices)
 
 ### Container challenges
 
--   Security impacted if operating system affected
--   Difficult to manage thousands of containers
--   Complex to migrate legacy projects to container technology
--   Difficult to right-size containers for specific scenarios
+- Security impacted if operating system affected
+- Difficult to manage thousands of containers
+- Complex to migrate legacy projects to container technology
+- Difficult to right-size containers for specific scenarios
 
 ### Container vendors
 
--   Docker: Robust and most popular container platform today
--   Podman: Daemon-less architecture providing more security than Docker containers
--   LXC: Preferred for data-intensive apps and ops
--   Vagrant: Offers highest level of isolation on the running physical machine
+- Docker: Robust and most popular container platform today
+- Podman: Daemon-less architecture providing more security than Docker containers
+- LXC: Preferred for data-intensive apps and ops
+- Vagrant: Offers highest level of isolation on the running physical machine
 
 ## Introduction to Docker
 
@@ -60,34 +60,34 @@ Containers enable organizations to:
 
 Available since 2013, Docker is an open platform, or engine, where programmers can:
 
--   Develop
--   Ship
--   Run
--   Containers
+- Develop
+- Ship
+- Run
+- Containers
 
 ### Docker's underlying technology
 
--   Written in Go programming language
--   Uses Linux kernel's features to deliver functionality
--   Uses the namespaces technology to provide an isolated workspace called "container"
--   Creates a set of namespaces for every container and each aspect runs in a separate namespace with access limited to that namespace
+- Written in Go programming language
+- Uses Linux kernel's features to deliver functionality
+- Uses the namespaces technology to provide an isolated workspace called "container"
+- Creates a set of namespaces for every container and each aspect runs in a separate namespace with access limited to that namespace
 
 ### Docker benefits
 
--   Consistent and isolated environments
--   Fast deployment
--   Repeatability and automation
--   Supports Agile and CI/CD DevOps practices
--   Versioning for easy testing, rollbacks, and redeployments
--   Collaboration, modularity, and scaling
--   Easy portability and flexibility
+- Consistent and isolated environments
+- Fast deployment
+- Repeatability and automation
+- Supports Agile and CI/CD DevOps practices
+- Versioning for easy testing, rollbacks, and redeployments
+- Collaboration, modularity, and scaling
+- Easy portability and flexibility
 
 ### Challenging use cases
 
--   Requiring high performance or security
--   Based on Monolith architecture
--   Using rich GUI features
--   Performing standard desktop or limited functions
+- Requiring high performance or security
+- Based on Monolith architecture
+- Using rich GUI features
+- Performing standard desktop or limited functions
 
 ## Building and Running Container Images
 
@@ -95,16 +95,16 @@ Available since 2013, Docker is an open platform, or engine, where programmers c
 
 Steps to create and run containers:
 
--   Create a Dockerfile
--   Use the Docker file to create a container image
--   Use the container image to create a running container
+- Create a Dockerfile
+- Use the Docker file to create a container image
+- Use the container image to create a running container
 
 #### Dockerfile example
 
 Use a Dockerfile to create a running container: This sample Dockerfile has the commands FROM and CMD
 
--   FROM: Defines the base image
--   CMD: Prints the words "Hello World!" on the terminal
+- FROM: Defines the base image
+- CMD: Prints the words "Hello World!" on the terminal
 
 ```dockerfile
 FROM alpine
@@ -163,19 +163,19 @@ docker pull nginx
 
 ### Dockerfile
 
--   A Dockerfile is a text file that contains instructions needed to create an image
--   The Dockerfile is created using any editor from the console or terminal
--   Few instructions that Docker provides:
-    -   From Defines base image
-    -   Run Executes arbitrary commands
-    -   CMD Defines default command for container execution
+- A Dockerfile is a text file that contains instructions needed to create an image
+- The Dockerfile is created using any editor from the console or terminal
+- Few instructions that Docker provides:
+    - From Defines base image
+    - Run Executes arbitrary commands
+    - CMD Defines default command for container execution
 
 ### Docker image
 
--   Read-only template with instructions for creating Docker container
--   Built using instruction in a Dockerfile; a new read-only image layer is created for each instruction
--   A writable layer is added when an image is run as a container
--   Layer can be shared between images, which saves disk space and network bandwidth
+- Read-only template with instructions for creating Docker container
+- Built using instruction in a Dockerfile; a new read-only image layer is created for each instruction
+- A writable layer is added when an image is run as a container
+- Layer can be shared between images, which saves disk space and network bandwidth
 
 ### Container image naming
 
@@ -185,30 +185,30 @@ hostname/repository:tag
 
 A docker container
 
--   Is a runnable instance of an image
--   Can be created, stopped, started or deleted using the Docker API or CLI
--   Can connect to multiple networks, attach storage, or create a new image based on its current state
--   Is well isolated from other containers and its host machine
+- Is a runnable instance of an image
+- Can be created, stopped, started or deleted using the Docker API or CLI
+- Can connect to multiple networks, attach storage, or create a new image based on its current state
+- Is well isolated from other containers and its host machine
 
 ### Docker networks, storage & plugins
 
 Networks
 
--   Networks are used for the isolated container communication
+- Networks are used for the isolated container communication
 
 Storage
 
--   Docker uses volumes and bind mounts to persist data even after a container stops
+- Docker uses volumes and bind mounts to persist data even after a container stops
 
 Plugins
 
--   Storage plugins provide the ability to connect to external storage platforms
+- Storage plugins provide the ability to connect to external storage platforms
 
 ## Docker Architecture
 
--   Based on client-server architecture
--   Provides a complete application environment
--   Includes the client, the host, and the registry components
+- Based on client-server architecture
+- Provides a complete application environment
+- Includes the client, the host, and the registry components
 
 ### Docker process overview
 
@@ -222,35 +222,35 @@ Plugins
 
 The Docker host also includes and manages:
 
--   Images
--   Containers
--   Namespaces
--   Networks
--   Storage
--   Plugins and add-ons
+- Images
+- Containers
+- Namespaces
+- Networks
+- Storage
+- Plugins and add-ons
 
 ### Docker communications
 
--   The Docker client can communicate with both local and remote hosts
--   The Docker client and the host daemon can run
-    -   On the same system
-    -   On different systems
--   Docker daemons can also communicate with other daemons to manage Docker services
+- The Docker client can communicate with both local and remote hosts
+- The Docker client and the host daemon can run
+    - On the same system
+    - On different systems
+- Docker daemons can also communicate with other daemons to manage Docker services
 
 ### Registry
 
--   Stores and distributes images
--   Access is public or private
-    -   Public such as Docker Hub - Everyone can access
-    -   Private - Implemented for security
--   Registry locations are either hosted or self-hosted
+- Stores and distributes images
+- Access is public or private
+    - Public such as Docker Hub - Everyone can access
+    - Private - Implemented for security
+- Registry locations are either hosted or self-hosted
 
 #### Registry access
 
 Docker stores the images in a registry
 
--   Developers build and push images using automation or a build pipeline
--   Local machines, cloud systems, or on-premises systems pull the images
+- Developers build and push images using automation or a build pipeline
+- Local machines, cloud systems, or on-premises systems pull the images
 
 **Cheat Sheet: Docker CLI**
 
