@@ -80,6 +80,22 @@ hasCJKLanguage = true
     ]
     page = [{ type = "toc" }]
 
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 1
+  [menu.main.params]
+    icon = "home"
+
+[[menu.main]]
+  identifier = "archive"
+  name = "Archive"
+  url = "/archive/"
+  weight = 2
+  [menu.main.params]
+    icon = "archives"
+
 [[menu.social]]
   identifier = "github"
   name = "GitHub"

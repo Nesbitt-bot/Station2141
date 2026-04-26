@@ -169,17 +169,24 @@ function palette(rng) {
 
 const __filename = fileURLToPath(import.meta.url);
 const repoRoot = resolve(__filename, '..', '..');
-const postsDir = join(repoRoot, 'content', 'posts');
+const SEARCH_SECTIONS = ['posts', 'archive'];
 
 async function listPostBundles() {
-    const entries = await readdir(postsDir, { withFileTypes: true });
     const bundles = [];
-    for (const e of entries) {
-        if (!e.isDirectory()) continue;
-        const full = join(postsDir, e.name);
-        const children = await readdir(full);
-        if (children.some((c) => c.startsWith('index.') && c.endsWith('.md'))) {
-            bundles.push({ slug: e.name, dir: full });
+    for (const section of SEARCH_SECTIONS) {
+        const sectionDir = join(repoRoot, 'content', section);
+        let entries;
+        try {
+            entries = await readdir(sectionDir, { withFileTypes: true });
+        } catch { continue; }
+        for (const e of entries) {
+            if (!e.isDirectory()) continue;
+            const full = join(sectionDir, e.name);
+            const children = await readdir(full);
+            if (!children.some((c) => c.startsWith('index.') && c.endsWith('.md'))) continue;
+            // Skip if any cover.* image already exists (regardless of extension)
+            const hasCover = children.some((c) => /^cover\.(png|jpe?g|gif|webp)$/i.test(c));
+            bundles.push({ slug: e.name, dir: full, hasCover });
         }
     }
     return bundles;
@@ -201,14 +208,11 @@ async function main() {
         process.exit(1);
     }
 
-    for (const { slug, dir } of bundles) {
+    for (const { slug, dir, hasCover } of bundles) {
         const outPath = join(dir, 'cover.png');
-        if (!force) {
-            try {
-                await stat(outPath);
-                console.log(`skip ${slug} (cover.png exists, pass --force to overwrite)`);
-                continue;
-            } catch { /* not present, fall through */ }
+        if (!force && hasCover) {
+            console.log(`skip ${slug} (cover already present, pass --force to overwrite)`);
+            continue;
         }
 
         const seed = seedFromString(slug);
