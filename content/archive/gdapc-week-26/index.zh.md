@@ -1,5 +1,5 @@
 ---
-title: "GDAPC Week 26 — <a id=\"_if00285aq78k\"></a>Effective data stories"
+title: "GDAPC Week 26 — Effective data stories"
 date: 2026-04-26T07:26:30.000Z
 image: "cover.png"
 description: "翻译待补"

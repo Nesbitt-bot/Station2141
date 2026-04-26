@@ -1,5 +1,5 @@
 ---
-title: "GDAPC Week 18 — <a id=\"_xcm6eg6jcdcf\"></a>__Correct the most common problems__"
+title: "GDAPC Week 18 — Correct the most common problems"
 date: 2026-04-26T07:26:24.000Z
 image: "cover.png"
 description: "翻訳待ち"

@@ -1,5 +1,5 @@
 ---
-title: "GDAPC Week 3 — <a id=\"_tx7we4toc0t\"></a>Spreadsheets"
+title: "GDAPC Week 3 — Spreadsheets"
 date: 2026-04-26T07:26:32.000Z
 image: "cover.png"
 description: "翻訳待ち"

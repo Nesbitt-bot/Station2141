@@ -1,5 +1,5 @@
 ---
-title: "GDAPC Week 6 — <a id=\"_hpp7fchg5te0\"></a>From issue to action: The six data analysis phases"
+title: "GDAPC Week 6 — From issue to action: The six data analysis phases"
 date: 2026-04-26T07:26:36.000Z
 image: "cover.png"
 description: "翻译待补"

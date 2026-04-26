@@ -1,5 +1,5 @@
 ---
-title: "GDAPC Week 14 — <a id=\"_ta8dbmhtma8q\"></a>Online connections"
+title: "GDAPC Week 14 — Online connections"
 date: 2026-04-26T07:26:22.000Z
 image: "cover.png"
 description: "翻译待补"

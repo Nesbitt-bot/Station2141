@@ -87,6 +87,20 @@ async function migrateOne(docxPath) {
     let md = result.value;
     const messages = result.messages || [];
 
+    // Strip mammoth's bookmark anchors and aggressive backslash-escapes for
+    // plain prose characters, plus stray empty bold runs.
+    md = md
+        .replace(/<a id="[^"]*"><\/a>/g, '')
+        .replace(/__\s+__/g, '');
+    {
+        const parts = md.split(/(```[\s\S]*?```)/g);
+        for (let i = 0; i < parts.length; i++) {
+            if (i % 2 === 1) continue;
+            parts[i] = parts[i].replace(/\\([.\-_!"+#*()])/g, '$1');
+        }
+        md = parts.join('');
+    }
+
     // Mammoth occasionally emits empty bullets and stray non-breaking spaces.
     md = md
         .replace(/ /g, ' ')

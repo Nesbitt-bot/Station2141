@@ -1,5 +1,5 @@
 ---
-title: "GDAPC Week 28 — <a id=\"_mypxdm7hyij\"></a>Ways to learn about programming"
+title: "GDAPC Week 28 — Ways to learn about programming"
 date: 2026-04-26T07:26:32.000Z
 image: "cover.png"
 description: "翻译待补"

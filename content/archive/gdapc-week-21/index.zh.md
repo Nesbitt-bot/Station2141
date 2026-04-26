@@ -1,5 +1,5 @@
 ---
-title: "GDAPC Week 21 — <a id=\"_8lqf6oer0oor\"></a>__Additional resources__"
+title: "GDAPC Week 21 — String to date"
 date: 2026-04-26T07:26:26.000Z
 image: "cover.png"
 description: "翻译待补"

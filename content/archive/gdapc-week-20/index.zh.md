@@ -1,5 +1,5 @@
 ---
-title: "GDAPC Week 20 — <a id=\"_b960pdj8scnj\"></a>__Sorting versus filtering__"
+title: "GDAPC — Week 20"
 date: 2026-04-26T07:26:26.000Z
 image: "cover.png"
 description: "翻译待补"

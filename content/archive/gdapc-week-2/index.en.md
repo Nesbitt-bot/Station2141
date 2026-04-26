@@ -1,40 +1,24 @@
 ---
 title: "GDAPC — Week 2"
 date: 2026-04-26T07:26:26.000Z
-description: "Google Data Analytics Professional Certificate — Week 2 notes."
+description: "Analytical skills: Qualities and characteristics associated with solving problems using facts. CuriosityUnderstanding context (condition)Having a technical…"
 tags: ["GDAPC","Google Data Analytics","Coursera","Week 2"]
 categories: ["Google data analytics professional certificates"]
 draft: false
 ---
 
-<a id="_k2g6h06jrrj7"></a>Week 2
+Week 2
 
-Analytical skills: Qualities and characteristics associated with solving problems using facts\.
+Analytical skills: Qualities and characteristics associated with solving problems using facts.
 
-__Curiosity__
+__CuriosityUnderstanding context (condition)Having a technical mindset (The ability to break things down into smaller steps or pieces and work with them in an orderly and logical way)Data designData strategy (involves the management of people, processes, and tools)__
 
-__Understanding context \(condition\)__
+Analytical thinking: Identifying and defining a problem and then solving it by using data in an organized, step-by-step manner.
 
-__Having a technical mindset \(The ability to break things down into smaller steps or pieces and work with them in an orderly and logical way\)__
+__VisualizationStrategyProblem-orientationCorrelationBig-picture and detail-oriented thinking__
 
-__Data design__
+Root cause: The reason why a problem occurs.
 
-__Data strategy \(involves the management of people, processes, and tools\)__
+Five Why to reveal the root cause.
 
-Analytical thinking: Identifying and defining a problem and then solving it by using data in an organized, step\-by\-step manner\.
-
-__Visualization__
-
-__Strategy__
-
-__Problem\-orientation__
-
-__Correlation__
-
-__Big\-picture and detail\-oriented thinking__
-
-Root cause: The reason why a problem occurs\.
-
-Five Why to reveal the root cause\.
-
-Gap analysis: a method for examining and evaluating how a process worked currently in order to get where you want to be in the future\.
+Gap analysis: a method for examining and evaluating how a process worked currently in order to get where you want to be in the future.

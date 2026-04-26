@@ -1,5 +1,5 @@
 ---
-title: "GDAPC Week 24 — <a id=\"_8ojs3ydfputf\"></a>Effective data visualizations"
+title: "GDAPC Week 24 — Effective data visualizations"
 date: 2026-04-26T07:26:28.000Z
 image: "cover.png"
 description: "翻訳待ち"

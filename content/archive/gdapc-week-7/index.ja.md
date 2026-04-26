@@ -1,5 +1,5 @@
 ---
-title: "GDAPC Week 7 — <a id=\"_ktv3gflzon7r\"></a>The beauty of dashboards"
+title: "GDAPC Week 7 — The beauty of dashboards"
 date: 2026-04-26T07:26:36.000Z
 image: "cover.png"
 description: "翻訳待ち"

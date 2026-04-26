@@ -1,5 +1,5 @@
 ---
-title: "GDAPC Week 10 — <a id=\"_ouvqq3utb5rz\"></a>Data format examples"
+title: "GDAPC Week 10 — Data format examples"
 date: 2026-04-26T07:26:20.000Z
 image: "cover.png"
 description: "翻译待补"
