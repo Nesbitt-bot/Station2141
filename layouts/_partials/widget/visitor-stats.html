@@ -5,6 +5,7 @@
     data-visitor-stats
     data-hostname="{{ . }}"
     data-time-zone="{{ default "UTC" $.Context.Site.Params.analytics.timeZone }}"
+    data-archive-url="{{ "analytics/daily.json" | relURL }}"
     data-consent-pending="{{ T "visitorStats.consentPending" }}"
     data-counting-on="{{ T "visitorStats.countingOn" }}"
     data-counting-off="{{ T "visitorStats.countingOff" }}"

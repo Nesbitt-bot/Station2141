@@ -426,6 +426,44 @@
         });
     }
 
+    function fetchVisitorArchive(url, hostname, timeZone) {
+        if (!url) return Promise.resolve(null);
+        return fetch(url, {
+            credentials: 'same-origin',
+            cache: 'no-cache'
+        }).then(function (response) {
+            if (!response.ok) throw new Error('Visitor archive returned ' + response.status);
+            return response.json();
+        }).then(function (archive) {
+            if (
+                !archive ||
+                archive.schemaVersion !== 1 ||
+                archive.hostname !== hostname ||
+                archive.timeZone !== timeZone ||
+                !Array.isArray(archive.days)
+            ) {
+                throw new Error('Visitor archive format does not match this site');
+            }
+            return archive;
+        }).catch(function () {
+            return null;
+        });
+    }
+
+    function archivedVisitorCounts(archive, periods, today) {
+        var totals = { month: 0, year: 0 };
+        if (!archive) return totals;
+
+        archive.days.forEach(function (day) {
+            if (!day || typeof day.date !== 'string' || day.date >= today) return;
+            var visitors = Number(day.visitors);
+            if (!Number.isFinite(visitors) || visitors < 0) return;
+            if (day.date >= periods.month) totals.month += visitors;
+            if (day.date >= periods.year) totals.year += visitors;
+        });
+        return totals;
+    }
+
     function initVisitorStats() {
         var widget = document.querySelector('[data-visitor-stats]');
         if (!widget) return;
@@ -441,12 +479,31 @@
             year: parts.year + '-01-01'
         };
 
-        Promise.all(Object.keys(periods).map(function (period) {
+        var liveCounts = {};
+        var liveRequest = Promise.all(Object.keys(periods).map(function (period) {
             return fetchVisitorCount(hostname, timeZone, periods[period], today).then(function (count) {
-                var target = widget.querySelector('[data-visitor-period="' + period + '"]');
-                if (target) target.textContent = count;
+                liveCounts[period] = Number(count);
             });
-        })).catch(function () {
+        }));
+        var archiveRequest = fetchVisitorArchive(
+            String(widget.dataset.archiveUrl || ''),
+            hostname,
+            timeZone
+        );
+
+        Promise.all([liveRequest, archiveRequest]).then(function (results) {
+            var archived = archivedVisitorCounts(results[1], periods, today);
+            var counts = {
+                today: liveCounts.today,
+                month: Math.max(liveCounts.month, archived.month + liveCounts.today),
+                year: Math.max(liveCounts.year, archived.year + liveCounts.today)
+            };
+
+            Object.keys(counts).forEach(function (period) {
+                var target = widget.querySelector('[data-visitor-period="' + period + '"]');
+                if (target) target.textContent = String(counts[period]);
+            });
+        }).catch(function () {
             widget.classList.add('visitor-stats--error');
             var fetchStatus = widget.querySelector('[data-visitor-fetch-status]');
             if (fetchStatus) fetchStatus.textContent = widget.dataset.loadError || '';

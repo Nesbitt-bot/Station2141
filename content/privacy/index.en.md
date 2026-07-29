@@ -16,11 +16,13 @@ Simple Analytics does not use cookies, local storage, fingerprinting, IP-address
 
 The author uses aggregate counts to see which posts attract readers. Overall and page-level counts are public. They are not sold or shared for advertising.
 
-The figures shown as “today,” “this month,” and “this year” are privacy-preserving visitor estimates, not a precise count of distinct human beings. A returning reader may be counted again, and blockers or network conditions may prevent a visit from being counted. On the free Simple Analytics plan, data older than 30 days is deleted, so “this year” reflects the available history rather than a complete annual total.
+The figures shown as “today,” “this month,” and “this year” are privacy-preserving visitor estimates, not a precise count of distinct human beings. A returning reader may be counted again, and blockers or network conditions may prevent a visit from being counted.
+
+Simple Analytics' free plan deletes data older than 30 days. To preserve longer trends without creating a visitor database, a scheduled GitHub Action copies each completed day's aggregate site and page totals into a public JSON file in this site's source repository. It stores no individual page-view records, identifiers, or analytics credentials. The archive starts with whatever history Simple Analytics still has when the collector first runs; it cannot reconstruct data that was already deleted.
 
 ## Your choice
 
-No visit-recording request is sent until you select **Allow counting**. The visitor widget may still fetch already-aggregated public totals from Simple Analytics; that read-only request does not add your visit to the statistics and sends no page path or referrer. If you choose **Do not count me**, your page visit is not sent to Simple Analytics. A first-party consent cookie stores only that choice so the site can remember it; it contains no visitor identifier. You can change the choice at any time through **Change counting choice** in the footer or visitor widget.
+No visit-recording request is sent until you select **Allow counting**. The visitor widget may still fetch already-aggregated public totals from Simple Analytics and the site's public daily archive; those read-only requests do not add your visit to the statistics and send no page path or referrer. If you choose **Do not count me**, your page visit is not sent to Simple Analytics. A first-party consent cookie stores only that choice so the site can remember it; it contains no visitor identifier. You can change the choice at any time through **Change counting choice** in the footer or visitor widget.
 
 Simple Analytics' current data-handling details are available in its [metrics documentation](https://docs.simpleanalytics.com/what-we-collect).
 
