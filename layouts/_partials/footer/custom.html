@@ -12,7 +12,7 @@
     {{- with .commit -}}{{- $lifeSeed = . -}}{{- end -}}
 {{- end -}}
 
-{{- $analyticsEndpoint := strings.TrimRight "/" (default "" .Site.Params.analytics.goatCounterEndpoint) -}}
+{{- $analyticsHostname := strings.TrimSpace (default "" .Site.Params.analytics.simpleAnalyticsHostname) -}}
 {{- $analyticsPath := .RelPermalink -}}
 {{- with .File -}}
     {{- if eq $.Section "posts" -}}
@@ -22,7 +22,7 @@
 
 <nav class="visitor-privacy-controls" aria-label="{{ T "visitorStats.privacyControls" }}">
     <a href="{{ "privacy/" | relLangURL }}">{{ T "visitorStats.privacy" }}</a>
-    {{- with $analyticsEndpoint }}
+    {{- with $analyticsHostname }}
         <span aria-hidden="true">·</span>
         <button type="button" data-cookie-action="reopen">{{ T "visitorStats.changeChoice" }}</button>
     {{- end }}
@@ -32,9 +32,8 @@
     window.Station2141 = Object.assign(window.Station2141 || {}, {{ dict
         "lifeSeed" $lifeSeed
         "analytics" (dict
-            "endpoint" $analyticsEndpoint
+            "hostname" $analyticsHostname
             "path" $analyticsPath
-            "title" .Title
         )
         | jsonify | safeJS
     }});

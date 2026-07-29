@@ -224,6 +224,13 @@ body > footer {
 
 /* ---------- Public visitor statistics ---------- */
 
+.right-sidebar.sticky {
+    max-height: 100vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    scrollbar-width: thin;
+}
+
 .visitor-stats__grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -281,6 +288,17 @@ body > footer {
     gap: 0.5rem 1rem;
     margin-top: 0.8rem;
     font-size: 1.2rem;
+}
+
+.visitor-stats__badge {
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.visitor-stats__badge img {
+    display: block;
+    width: min(100%, 210px);
+    height: auto;
 }
 
 .visitor-stats__links a,

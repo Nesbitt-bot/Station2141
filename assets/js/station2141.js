@@ -308,9 +308,8 @@
         var config = window.Station2141 || {};
         var analytics = config.analytics || {};
         return {
-            endpoint: String(analytics.endpoint || '').replace(/\/+$/, ''),
-            path: String(analytics.path || window.location.pathname || '/'),
-            title: String(analytics.title || document.title || '')
+            hostname: String(analytics.hostname || '').trim(),
+            path: String(analytics.path || window.location.pathname || '/')
         };
     }
 
@@ -321,18 +320,28 @@
 
     function loadAnalytics() {
         var config = getAnalyticsConfig();
-        if (!config.endpoint || document.querySelector('script[data-station2141-analytics]')) return;
+        if (!config.hostname || document.querySelector('script[data-station2141-analytics]')) return;
         if (doNotTrackEnabled()) return;
 
-        window.goatcounter = Object.assign(window.goatcounter || {}, {
-            path: config.path,
-            title: config.title
-        });
+        window.station2141AnalyticsPath = function () {
+            return config.path;
+        };
 
         var script = document.createElement('script');
         script.async = true;
-        script.src = 'https://gc.zgo.at/count.js';
-        script.dataset.goatcounter = config.endpoint + '/count';
+        script.src = 'https://scripts.simpleanalyticscdn.com/latest.js';
+        script.dataset.hostname = config.hostname;
+        script.dataset.pathOverwriter = 'station2141AnalyticsPath';
+        script.dataset.ignoreMetrics = [
+            'utm',
+            'country',
+            'session',
+            'timeonpage',
+            'scrolled',
+            'screensize',
+            'viewportsize',
+            'language'
+        ].join(',');
         script.dataset.station2141Analytics = 'true';
         document.head.appendChild(script);
     }
@@ -361,7 +370,7 @@
 
     function initAnalytics() {
         var config = getAnalyticsConfig();
-        if (!config.endpoint) return;
+        if (!config.hostname) return;
 
         function applyConsent(state) {
             updateVisitorConsentStatus(state);
@@ -398,10 +407,13 @@
         }
     }
 
-    function fetchVisitorCount(endpoint, start, end) {
-        var url = new URL(endpoint + '/counter/TOTAL.json');
+    function fetchVisitorCount(hostname, timeZone, start, end) {
+        var url = new URL('https://simpleanalytics.com/' + hostname + '.json');
+        url.searchParams.set('version', '6');
+        url.searchParams.set('fields', 'visitors');
         url.searchParams.set('start', start);
         url.searchParams.set('end', end);
+        url.searchParams.set('timezone', timeZone);
 
         return fetch(url.toString(), {
             credentials: 'omit',
@@ -410,17 +422,18 @@
             if (!response.ok) throw new Error('Visitor counter returned ' + response.status);
             return response.json();
         }).then(function (data) {
-            return String(data.count || '0');
+            return String(Number.isFinite(Number(data.visitors)) ? Number(data.visitors) : 0);
         });
     }
 
     function initVisitorStats() {
         var widget = document.querySelector('[data-visitor-stats]');
         if (!widget) return;
-        var endpoint = String(widget.dataset.endpoint || '').replace(/\/+$/, '');
-        if (!endpoint) return;
+        var hostname = String(widget.dataset.hostname || '').trim();
+        if (!hostname) return;
 
-        var parts = datePartsInZone(widget.dataset.timeZone || 'UTC');
+        var timeZone = widget.dataset.timeZone || 'UTC';
+        var parts = datePartsInZone(timeZone);
         var today = parts.year + '-' + parts.month + '-' + parts.day;
         var periods = {
             today: today,
@@ -429,7 +442,7 @@
         };
 
         Promise.all(Object.keys(periods).map(function (period) {
-            return fetchVisitorCount(endpoint, periods[period], today).then(function (count) {
+            return fetchVisitorCount(hostname, timeZone, periods[period], today).then(function (count) {
                 var target = widget.querySelector('[data-visitor-period="' + period + '"]');
                 if (target) target.textContent = count;
             });

@@ -1,5 +1,5 @@
-{{- $endpoint := strings.TrimRight "/" (default "" .Site.Params.analytics.goatCounterEndpoint) -}}
-{{- if and .Site.Params.cookies.enabled $endpoint -}}
+{{- $hostname := strings.TrimSpace (default "" .Site.Params.analytics.simpleAnalyticsHostname) -}}
+{{- if and .Site.Params.cookies.enabled $hostname -}}
     {{ partial "cookies/banner.html" . }}
 
     {{- $opts := dict "minify" hugo.IsProduction -}}
