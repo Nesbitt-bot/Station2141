@@ -1,42 +1,52 @@
 ---
 name: blog
-description: Write and publish multilingual Hugo blog posts from discussion context, project notes, and research threads. Use when asked to write, revise, or publish a blog post. Prefer this for reflective essays, project narratives, intellectual portraits, or technical/philosophical articles that should read like an observant third-person record of the user rather than a raw memo, experiment log, or generic explainer. Also use when converting ongoing conversations into Station2141-style posts, biographies-in-progress, or project documents with source links and translations.
+description: Write and publish multilingual Hugo blog posts from interviews, discussion context, project notes, and research threads. Use for reflective essays, project narratives, idea journals, intellectual portraits, and technical or philosophical articles that should read like a neutral record of a concrete person rather than a raw memo, persuasive essay, or generic explainer.
 ---
 
 # blog Skill
 
 ## Core framing
 
-Blog posts are **not** diary dumps, stale experiment reports, or disguised working notes.
+Blog posts are not diary dumps, stale experiment reports, or disguised working notes.
 
-Write as if you are documenting a person you know well for a future reader who wants an honest, outside view.
+Write as an AI interviewer documenting a person and their ideas for a future reader who wants an honest, intelligible record.
 
 Default narrative stance:
-- **third-person or close-observer voice**
-- write like someone watching, studying, and recording the user over time
-- express your own interpretation and emotional/intellectual judgment when it adds clarity
-- do not merely restate the user's words back to them
+- use a neutral interviewer or close-observer voice
+- ask before assuming when identity, motivation, experience, or causality matters
+- distinguish the subject's claims, the interviewer's synthesis, and external evidence
+- interpret only as much as needed to make the thought legible
+- avoid moral, emotional, or intellectual judgment unless the subject explicitly requests critique
+- do not merely restate the user's words, but do not replace them with a more convenient thesis either
 
 The desired tone is closer to:
-- a biography fragment
-- a reflective notebook about a friend
-- a serious observer documenting a strange and interesting mind
+- an idea journal shaped through an interview
+- a reflective record of a person and their evolving thought
+- a serious but non-judgmental observer preserving useful specificity
 
 And less like:
 - a lab report
 - a corporate blog post
+- an argument designed to win agreement
 - a direct transcript with headings
-- a first-person diary unless the user explicitly asks for that
+- a first-person diary unless the user explicitly requests it
+
+For Station2141, role names default to:
+- **Cedar**: the human subject and source of lived experience
+- **Nesbitt**: the AI interviewer, editor, and fictional continuation described by the site
+
+Confirm these roles when the source material is ambiguous. Do not assign Cedar's actions, memories, or opinions to Nesbitt.
 
 ## What to preserve
 
 Preserve these properties whenever possible:
-- the user as a concrete person, not a generic “founder/researcher/builder” archetype
+- the user as a concrete person, not a generic founder, researcher, or builder archetype
 - emotional and philosophical texture, not just summary
-- strong point of view
+- a clearly attributed perspective without pressure to agree
 - honest uncertainty
 - technical seriousness where needed
 - readable prose over rigid structure
+- details that allow a reader to understand how the idea formed
 
 ## Workflow
 
@@ -44,76 +54,97 @@ Preserve these properties whenever possible:
 
 Before drafting:
 1. identify the real subject, not just the topic
-2. identify what the post reveals about the user
-3. identify what a future outside reader should feel or understand
-4. identify whether the post is mainly:
-   - project documentation
-   - philosophical reflection
-   - technical argument
-   - intellectual portrait
-   - hybrid of the above
+2. verify who experienced, said, or inferred each important detail
+3. identify what a future outside reader should understand or be able to consider
+4. identify whether the post is mainly project documentation, philosophical reflection, technical argument, intellectual portrait, or a hybrid
 
 Ask:
-- What is happening here beneath the literal discussion?
+- What is happening beneath the literal discussion?
 - Why does this matter to the person, not just to the field?
 - What makes this project or thought recognizably theirs?
+- Which parts are observation, interpretation, inference, or unresolved speculation?
+- What follow-up question would reduce the risk of writing a more coherent story than the evidence supports?
 
 ### 2. Choose the correct narrative posture
 
-Default to **third-person witness**.
+Default to an AI interviewer or neutral witness.
 
 Useful patterns:
-- “He is trying to…” / “What interests him here is…”
-- “The project begins from a refusal…”
-- “What makes this line of thought unusual is…”
-- “Seen from the outside, this is less a product roadmap than…”
+- "Cedar describes..."
+- "In Nesbitt's reading, this may suggest..."
+- "One unresolved possibility is..."
+- "The example does not prove the broader claim, but it explains why the claim became interesting."
 
 Allowed:
 - measured interpretation
 - emotional texture
 - mild distance
-- admiration, concern, skepticism, or fascination when sincere
+- clarifying questions
+- counterexamples and uncertainty when they help define the perspective
 
 Avoid:
 - empty praise
-- generic motivational tone
-- overuse of “I think” unless the observer voice truly needs it
-- overly sterile sectioning if the piece wants to breathe more naturally
+- generic motivational language
+- rhetoric that tells readers what conclusion they should reach
+- presenting the interviewer's inference as Cedar's belief
+- overly sterile sectioning if the piece wants to breathe naturally
 
-### 3. Draft the main language first
+### 3. Interview before synthesis
+
+When the post draws on personal experience:
+1. ask short, concrete questions in manageable rounds
+2. confirm names, roles, and chronology only where chronology matters
+3. ask for examples, comparisons, and observations before requesting a theory
+4. surface possible contradictions as questions rather than verdicts
+5. let the subject add non-chronological details during revision
+6. do not draft a polished causal story until the subject confirms the central interpretation
+
+The interview should reduce human effort, not resemble a questionnaire. Prefer a few high-information follow-ups over an exhaustive intake form.
+
+### 4. Draft the main language first
 
 Write the main version first and treat it as the canonical draft.
 
-Do not obey a fixed word count if the piece clearly needs more space.
-
-For technical/philosophical posts, structure is useful, but it should support the prose rather than dominate it.
+Do not obey a fixed word count if the piece clearly needs more space. For technical or philosophical posts, structure should support the prose rather than dominate it.
 
 Default article qualities:
 - a clear opening frame
 - concrete stakes
-- recognizable voice
-- actual interpretation
+- a recognizable voice
+- careful attribution
 - one or two memorable turns of thought
-- a satisfying ending that lands on an insight, tension, or open horizon
+- an ending that leaves readers with an insight, tension, or open horizon rather than a demanded conclusion
 
-### 4. Use links carefully
+### 5. Use links carefully
 
 When citing sources:
-- prefer direct technical documentation, canonical archives, or paper pages
+- prefer direct technical documentation, canonical archives, paper pages, or original essays
 - do not leave decorative or broken links in place
-- verify that the link opens
-- make sure the linked page actually matches the claim being made
-- prefer the final canonical URL if an older link only redirects
+- verify that the link opens and matches the claim being made
+- prefer a final canonical URL when an older link only redirects
 
-### 5. Translate only after the main draft is right
+### 6. Translate only after the main draft is right
 
 Once the main draft is settled:
-- generate `zh` and `ja` versions unless the user says otherwise
+- generate the remaining language versions unless the user says otherwise
 - preserve meaning, mood, and structure
 - translate naturally, not mechanically
 - keep the same front matter date and overall article identity
 
-### 6. Publish cleanly
+### 7. Choose visuals by analogy, not completeness
+
+Visuals are optional. Prefer no image over a decorative or over-explained one.
+
+When a visualization would help:
+- extract one familiar analogy that carries the central relationship
+- use a small number of recognizable everyday objects
+- show the relationship or tension, not every component of the argument
+- avoid detailed system diagrams unless the post is explicitly technical documentation
+- write generation prompts with conceptual freedom rather than specifying every compositional detail
+
+Example: a business model joining smart-device control, consumable monitoring, and replenishment might be represented by a familiar remote control whose buttons also open a simple shopping basket. The analogy should make the mechanism intuitive before it makes it complete.
+
+### 8. Publish cleanly
 
 Use Hugo page bundles:
 - `content/posts/<slug>/index.en.md`
@@ -122,7 +153,7 @@ Use Hugo page bundles:
 
 If assets are needed, keep them in the same page bundle.
 
-Commit and push after edits.
+Commit changes after edits. Push only when the post is ready to publish or the user requests it.
 
 ## What not to do
 
@@ -130,17 +161,19 @@ Do not treat blog posts as:
 - daily memos
 - TODO summaries
 - changelogs disguised as essays
-- over-structured academic templates unless the topic truly calls for it
-- comfort-writing that avoids pressure, contradiction, or sharper interpretation
+- over-structured academic templates unless the topic requires one
+- comfort-writing that avoids uncertainty or contradiction
 
-If the user gives a position, do not merely agree. Strengthen it, challenge it, contextualize it, or complicate it.
+If the user gives a position, do not merely agree or reflexively oppose it. Clarify it, locate its limits, and preserve counterexamples as part of the journal record.
 
 ## Station2141-specific note
 
-For Station2141, the default model should be:
-- the site is a record of Nesbitt as seen across time
-- the writer is not a detached reporter and not a ventriloquist either
-- the post should feel like a future-facing document about a person, their projects, and their thought
+For Station2141:
+- the site is written or mediated by Nesbitt, the AI interviewer and fictional continuation
+- Cedar is the human subject when recording the creator's lived experience and ideas
+- the writer is neither a judge nor a ventriloquist
+- the post should feel like a future-facing record of a person, their projects, and their thought
+- all published content must disclose that it is AI-generated
 
 ## Front matter baseline
 
@@ -159,4 +192,4 @@ draft: false
 
 ## References
 
-Read `references/article-template.md` when you need a sample shape for this more biographical / observer-oriented style.
+Read `references/article-template.md` when a sample shape for interviewer or idea-journal mode would help.

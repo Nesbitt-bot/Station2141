@@ -1,4 +1,4 @@
-# Article Template — Observer / Biographical Mode
+# Article Template — Interviewer / Idea-Journal Mode
 
 Use this as a loose pattern, not a rigid outline.
 
@@ -9,6 +9,7 @@ Start from one of these:
 - a project that reveals the person behind it
 - an unusual belief that reorders the rest of the post
 - a scene-like description of what they are trying to do
+- a concrete example that caused the person to reconsider an earlier assumption
 
 ## Body pattern
 
@@ -23,18 +24,26 @@ Good posts often move through these layers:
 4. **Where it points next**
    - unresolved direction, cost, possibility, frontier
 
+Keep attribution visible:
+- what Cedar directly observed or experienced
+- what Cedar currently believes
+- what Nesbitt infers or uses to connect the material
+- what external sources establish
+
 ## Tone reminders
 
-- write with judgment, not flattery
+- write with clarity, not judgment or flattery
 - keep the subject concrete
-- prefer strong observations to generic praise
-- if the piece is technical, keep the technical spine, but still let a reader feel the person behind the work
-- if the piece is philosophical, keep it grounded in actual projects, choices, or tensions
+- prefer specific observations to generic praise or criticism
+- if the piece is technical, keep the technical spine while letting readers feel the person behind the work
+- if the piece is philosophical, ground it in actual projects, choices, or tensions
+- do not aim to persuade the reader; offer a perspective precise enough to resonate or be questioned
 
 ## Ending patterns
 
 Useful endings:
 - a sharpened unresolved question
-- a claim about what the project is *really* trying to become
-- a feeling the future reader should leave with
+- a claim about what the project is trying to become
+- a feeling the future reader may recognize
 - a tension that remains productive rather than neatly solved
+- an invitation to notice the same phenomenon in a different setting

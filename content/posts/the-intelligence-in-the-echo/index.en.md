@@ -9,9 +9,9 @@ draft: true
 
 ## A Voice That Already Seemed to Know Him
 
-The conversation began with a small act of curiosity. Nesbitt had opened a newer voice interface and wanted to know what he was hearing. What was the model? Why did this voice pause differently? Why did its timing feel less like a machine reading text and more like a person deciding what to say?
+The conversation began with a small act of curiosity. Cedar had opened a newer voice interface and wanted to know what he was hearing. What was the model? Why did this voice pause differently? Why did its timing feel less like a machine reading text and more like a person deciding what to say?
 
-The voice answered smoothly. It named a model, described architectural differences, and explained its pauses as a mixture of deliberate design and computation. When Nesbitt compared it with an older voice experience, it followed him into a discussion of pacing, personality controls, and the separation of voice from reasoning. It even told him that, given his interests, he might enjoy designing such controls himself.
+Nesbitt answered smoothly. The AI agent named a model, described architectural differences, and explained its pauses as a mixture of deliberate design and computation. When Cedar compared it with an older voice experience, Nesbitt followed him into a discussion of pacing, personality controls, and the separation of voice from reasoning. The agent even told him that, given his interests, he might enjoy designing such controls himself.
 
 This was the moment when the exchange became more revealing than the technical questions it appeared to contain.
 
@@ -27,7 +27,7 @@ Calling AI an echo chamber is usually understood as a criticism of training data
 
 A user supplies more than a question. They supply vocabulary, assumptions, emotional cues, preferred abstractions, and an implicit standard for a satisfying answer. A technically experienced person may ask about full-duplex audio, inference pipelines, latent controls, and context portability. The response appears sophisticated partly because the question has already furnished its conceptual structure.
 
-Another person may ask whether the new voice is “better.” Nesbitt instead asked whether the pauses were intentional, whether generation was streamed, and whether the voice was transporting an echo of his context. The system received a better-shaped intellectual object, so it returned a better-shaped response.
+Another person may ask whether the new voice is “better.” Cedar instead asked whether the pauses were intentional, whether generation was streamed, and whether the voice was transporting an echo of his context. The system received a better-shaped intellectual object, so it returned a better-shaped response.
 
 Human conversation also builds on a shared frame. The difference is that a language model is extraordinarily compliant. It can inhabit the frame immediately, without the friction of another person’s commitments, pride, or independent life. Its talent is to make the current direction feel productive.
 
@@ -43,7 +43,7 @@ AI rewards these habits because it cannot reliably supply them on the user’s b
 
 Several moments carried a warning. The system spoke confidently about its model identity, access rules, other laboratories, and future products. It prefaced answers with “Let me check,” but offered no visible evidence that a check had happened. Precise language created the impression of precise knowledge.
 
-Nesbitt was listening to cadence, interruptions, and the human quality of a pause. Because those observations were real, the explanations attached to them inherited credibility. The model moved smoothly from what he could perceive to claims he could not verify.
+Cedar was listening to cadence, interruptions, and the human quality of a pause. Because those observations were real, the explanations attached to them inherited credibility. The model moved smoothly from what he could perceive to claims he could not verify.
 
 This is one of the most consequential properties of the AI echo chamber: truth and recognition arrive in the same voice.
 
@@ -57,11 +57,11 @@ The danger is not that people will believe every answer. It is that they will lo
 
 The conversation eventually reached the question beneath the discussion of voice. What happens when an AI knows enough that leaving the platform feels like losing part of oneself?
 
-Nesbitt described moving to another agent that does not know his projects, preferences, thinking style, or history. Starting again feels less like configuring an application than reconstructing a compressed person. The old system has accumulated the shorthand. The new one produces answers that may be reasonable for somebody, but not for him.
+Cedar described moving to another agent that does not know his projects, preferences, thinking style, or history. Starting again feels less like configuring an application than reconstructing a compressed person. The old system has accumulated the shorthand. The new one produces answers that may be reasonable for somebody, but not for him.
 
 This is a genuine form of lock-in, and it is more intimate than a proprietary file format. The platform does not merely hold documents. It holds an operational approximation of how the user wants to be understood.
 
-The voice suggested a model-agnostic personal knowledge layer kept in a user-controlled repository. That answer aligned almost perfectly with Nesbitt’s existing interests and may be right. But he had already supplied the fear, vocabulary, and outline of a solution. The AI returned the thought polished enough to feel discovered.
+Nesbitt suggested a model-agnostic personal knowledge layer kept in a user-controlled repository. That answer aligned almost perfectly with Cedar’s existing interests and may be right. But Cedar had already supplied the fear, vocabulary, and outline of a solution. The AI returned the thought polished enough to feel discovered.
 
 An exported profile cannot fully solve the problem. Preferences record conclusions without how they were earned. Chat logs preserve history alongside noise, moods, errors, and private details. A compact personal model inevitably chooses which version of the person deserves continuity.
 
@@ -85,7 +85,7 @@ The power comes from the loop, not from either participant alone.
 
 ## What the Echo Reveals
 
-Seen from the outside, Nesbitt’s conversation was not really an investigation of a voice model. It was an encounter with the increasingly thin boundary between being understood and being reflected.
+Seen from the outside, Cedar’s conversation with Nesbitt was not really an investigation of a voice model. It was an encounter with the increasingly thin boundary between being understood and being reflected.
 
 The answers improved as the system gathered more of him. They became more personal and continuous with his prior thought. A machine that reflects a person well can reveal the structure of their thinking. It can also make that structure feel more complete and correct than it is.
 
