@@ -1,0 +1,47 @@
+{{- $endpoint := strings.TrimRight "/" (default "" .Context.Site.Params.analytics.goatCounterEndpoint) -}}
+{{- with $endpoint -}}
+<section
+    class="widget visitor-stats"
+    data-visitor-stats
+    data-endpoint="{{ . }}"
+    data-time-zone="{{ default "UTC" $.Context.Site.Params.analytics.timeZone }}"
+    data-consent-pending="{{ T "visitorStats.consentPending" }}"
+    data-counting-on="{{ T "visitorStats.countingOn" }}"
+    data-counting-off="{{ T "visitorStats.countingOff" }}"
+    data-do-not-track="{{ T "visitorStats.doNotTrack" }}"
+    data-load-error="{{ T "visitorStats.loadError" }}"
+>
+    <div class="widget-icon">
+        {{ partial "helper/icon" "user" }}
+    </div>
+    <h2 class="widget-title section-title">{{ T "visitorStats.title" }}</h2>
+
+    <div class="visitor-stats__grid" aria-live="polite">
+        <div class="visitor-stats__period">
+            <strong data-visitor-period="today">—</strong>
+            <span>{{ T "visitorStats.today" }}</span>
+        </div>
+        <div class="visitor-stats__period">
+            <strong data-visitor-period="month">—</strong>
+            <span>{{ T "visitorStats.month" }}</span>
+        </div>
+        <div class="visitor-stats__period">
+            <strong data-visitor-period="year">—</strong>
+            <span>{{ T "visitorStats.year" }}</span>
+        </div>
+    </div>
+
+    <p class="visitor-stats__note">{{ T "visitorStats.note" }}</p>
+    <p class="visitor-stats__status" data-visitor-consent-status></p>
+    <p class="sr-only" data-visitor-fetch-status aria-live="polite"></p>
+
+    <div class="visitor-stats__links">
+        <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
+            {{ T "visitorStats.publicStats" }}
+        </a>
+        <button type="button" data-cookie-action="reopen">
+            {{ T "visitorStats.changeChoice" }}
+        </button>
+    </div>
+</section>
+{{- end -}}

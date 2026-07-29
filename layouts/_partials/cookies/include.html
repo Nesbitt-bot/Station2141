@@ -1,0 +1,8 @@
+{{- $endpoint := strings.TrimRight "/" (default "" .Site.Params.analytics.goatCounterEndpoint) -}}
+{{- if and .Site.Params.cookies.enabled $endpoint -}}
+    {{ partial "cookies/banner.html" . }}
+
+    {{- $opts := dict "minify" hugo.IsProduction -}}
+    {{- $script := resources.Get "ts/cookies.ts" | js.Build $opts | fingerprint -}}
+    <script type="text/javascript" src="{{ $script.RelPermalink }}" defer></script>
+{{- end -}}

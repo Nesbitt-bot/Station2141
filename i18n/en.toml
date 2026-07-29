@@ -1,0 +1,34 @@
+[cookies]
+title = "Anonymous visitor counting"
+text = "With your permission, optional cookie-free analytics count visits to each page. One first-party cookie remembers your choice; it is not used to identify you."
+acceptAll = "Allow counting"
+deny = "Do not count me"
+managePreferences = "Manage preference"
+settingsTitle = "Visitor counting preference"
+savePreferences = "Save preference"
+cancel = "Cancel"
+footerLink = "Visitor counting preference"
+
+[cookies.necessary]
+title = "Your choice"
+text = "A first-party cookie stores only whether you allowed anonymous counting."
+
+[cookies.analytics]
+title = "Anonymous visit counts"
+text = "Aggregate page visits help the author understand which writing readers choose."
+
+[visitorStats]
+title = "Anonymous visits"
+today = "Today"
+month = "This month"
+year = "This year"
+note = "Aggregate visits, not exact people. Updated periodically."
+publicStats = "All public stats"
+privacy = "Visitor privacy"
+privacyControls = "Visitor privacy controls"
+changeChoice = "Change counting choice"
+consentPending = "Your visit is not counted unless you allow it."
+countingOn = "Anonymous counting is on for this browser."
+countingOff = "Counting is off for this browser."
+doNotTrack = "Counting is off because Do Not Track is enabled."
+loadError = "Visitor counts are temporarily unavailable."

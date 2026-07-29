@@ -4,6 +4,7 @@ title = "Station 2141"
 theme = "hugo-theme-stack"
 defaultContentLanguage = "en"
 hasCJKLanguage = true
+timeZone = "Asia/Shanghai"
 
 [pagination]
   pagerSize = 10
@@ -72,11 +73,27 @@ hasCJKLanguage = true
       enabled = true
       default = "AI-generated content published on Station 2141."
 
+  # Create a free GoatCounter site, then set this to its public origin, for
+  # example "https://station2141.goatcounter.com". The analytics UI stays
+  # disabled while this is blank.
+  [params.analytics]
+    goatCounterEndpoint = ""
+    timeZone = "Asia/Shanghai"
+
+  [params.cookies]
+    enabled = true
+    showSettings = false
+
+    [params.cookies.categories]
+      analytics = true
+      functional = false
+
   [params.widgets]
     homepage = [
       { type = "archives", params = { limit = 5 } },
       { type = "categories", params = { limit = 10 } },
-      { type = "tag-cloud", params = { limit = 10 } }
+      { type = "tag-cloud", params = { limit = 10 } },
+      { type = "visitor-stats" }
     ]
     page = [{ type = "toc" }]
 

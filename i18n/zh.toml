@@ -1,0 +1,34 @@
+[cookies]
+title = "匿名访问计数"
+text = "经您同意后，可选的无 Cookie 分析会统计各页面的访问量。一个本站 Cookie 仅用于记住您的选择，不会用于识别您。"
+acceptAll = "允许计数"
+deny = "不要记录我的访问"
+managePreferences = "管理偏好"
+settingsTitle = "访问计数偏好"
+savePreferences = "保存偏好"
+cancel = "取消"
+footerLink = "访问计数偏好"
+
+[cookies.necessary]
+title = "您的选择"
+text = "一个本站 Cookie 只保存您是否允许匿名计数。"
+
+[cookies.analytics]
+title = "匿名访问计数"
+text = "汇总后的页面访问量帮助作者了解读者更喜欢哪些文章。"
+
+[visitorStats]
+title = "匿名访问"
+today = "今天"
+month = "本月"
+year = "今年"
+note = "这是汇总访问次数，并非精确人数；数据会定期更新。"
+publicStats = "查看全部公开统计"
+privacy = "访问隐私"
+privacyControls = "访问隐私控制"
+changeChoice = "更改计数选择"
+consentPending = "只有在您允许后，本次访问才会被计数。"
+countingOn = "此浏览器已开启匿名计数。"
+countingOff = "此浏览器已关闭计数。"
+doNotTrack = "浏览器已启用“请勿跟踪”，因此不会计数。"
+loadError = "访问统计暂时无法加载。"

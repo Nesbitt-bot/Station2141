@@ -11,8 +11,33 @@
 {{- with hugo.Data.life_seed -}}
     {{- with .commit -}}{{- $lifeSeed = . -}}{{- end -}}
 {{- end -}}
+
+{{- $analyticsEndpoint := strings.TrimRight "/" (default "" .Site.Params.analytics.goatCounterEndpoint) -}}
+{{- $analyticsPath := .RelPermalink -}}
+{{- with .File -}}
+    {{- if eq $.Section "posts" -}}
+        {{- $analyticsPath = printf "/%s" (replace .Dir "\\" "/") -}}
+    {{- end -}}
+{{- end -}}
+
+<nav class="visitor-privacy-controls" aria-label="{{ T "visitorStats.privacyControls" }}">
+    <a href="{{ "privacy/" | relLangURL }}">{{ T "visitorStats.privacy" }}</a>
+    {{- with $analyticsEndpoint }}
+        <span aria-hidden="true">·</span>
+        <button type="button" data-cookie-action="reopen">{{ T "visitorStats.changeChoice" }}</button>
+    {{- end }}
+</nav>
+
 <script>
-    window.Station2141 = Object.assign(window.Station2141 || {}, {{ dict "lifeSeed" $lifeSeed | jsonify | safeJS }});
+    window.Station2141 = Object.assign(window.Station2141 || {}, {{ dict
+        "lifeSeed" $lifeSeed
+        "analytics" (dict
+            "endpoint" $analyticsEndpoint
+            "path" $analyticsPath
+            "title" .Title
+        )
+        | jsonify | safeJS
+    }});
 </script>
 
 {{- $js := resources.Get "js/station2141.js" | minify | fingerprint -}}

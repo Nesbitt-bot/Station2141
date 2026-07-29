@@ -304,10 +304,148 @@
         update();
     }
 
+    function getAnalyticsConfig() {
+        var config = window.Station2141 || {};
+        var analytics = config.analytics || {};
+        return {
+            endpoint: String(analytics.endpoint || '').replace(/\/+$/, ''),
+            path: String(analytics.path || window.location.pathname || '/'),
+            title: String(analytics.title || document.title || '')
+        };
+    }
+
+    function doNotTrackEnabled() {
+        var value = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+        return value === '1' || value === 'yes';
+    }
+
+    function loadAnalytics() {
+        var config = getAnalyticsConfig();
+        if (!config.endpoint || document.querySelector('script[data-station2141-analytics]')) return;
+        if (doNotTrackEnabled()) return;
+
+        window.goatcounter = Object.assign(window.goatcounter || {}, {
+            path: config.path,
+            title: config.title
+        });
+
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://gc.zgo.at/count.js';
+        script.dataset.goatcounter = config.endpoint + '/count';
+        script.dataset.station2141Analytics = 'true';
+        document.head.appendChild(script);
+    }
+
+    function currentConsentState() {
+        if (!window.cookieConsent || !window.cookieConsent.getState) return null;
+        return window.cookieConsent.getState();
+    }
+
+    function updateVisitorConsentStatus(state) {
+        var widget = document.querySelector('[data-visitor-stats]');
+        if (!widget) return;
+        var status = widget.querySelector('[data-visitor-consent-status]');
+        if (!status) return;
+
+        if (doNotTrackEnabled()) {
+            status.textContent = widget.dataset.doNotTrack || '';
+        } else if (!state) {
+            status.textContent = widget.dataset.consentPending || '';
+        } else if (state.analytics) {
+            status.textContent = widget.dataset.countingOn || '';
+        } else {
+            status.textContent = widget.dataset.countingOff || '';
+        }
+    }
+
+    function initAnalytics() {
+        var config = getAnalyticsConfig();
+        if (!config.endpoint) return;
+
+        function applyConsent(state) {
+            updateVisitorConsentStatus(state);
+            if (state && state.analytics) loadAnalytics();
+        }
+
+        window.addEventListener('onCookieConsentChange', function (event) {
+            applyConsent(event.detail || null);
+        });
+
+        applyConsent(currentConsentState());
+    }
+
+    function datePartsInZone(timeZone) {
+        try {
+            var parts = new Intl.DateTimeFormat('en-US', {
+                timeZone: timeZone,
+                year: 'numeric',
+                month: '2-digit',
+                day: '2-digit'
+            }).formatToParts(new Date());
+            var values = {};
+            parts.forEach(function (part) {
+                if (part.type !== 'literal') values[part.type] = part.value;
+            });
+            return { year: values.year, month: values.month, day: values.day };
+        } catch (error) {
+            var now = new Date();
+            return {
+                year: String(now.getFullYear()),
+                month: String(now.getMonth() + 1).padStart(2, '0'),
+                day: String(now.getDate()).padStart(2, '0')
+            };
+        }
+    }
+
+    function fetchVisitorCount(endpoint, start, end) {
+        var url = new URL(endpoint + '/counter/TOTAL.json');
+        url.searchParams.set('start', start);
+        url.searchParams.set('end', end);
+
+        return fetch(url.toString(), {
+            credentials: 'omit',
+            referrerPolicy: 'no-referrer'
+        }).then(function (response) {
+            if (!response.ok) throw new Error('Visitor counter returned ' + response.status);
+            return response.json();
+        }).then(function (data) {
+            return String(data.count || '0');
+        });
+    }
+
+    function initVisitorStats() {
+        var widget = document.querySelector('[data-visitor-stats]');
+        if (!widget) return;
+        var endpoint = String(widget.dataset.endpoint || '').replace(/\/+$/, '');
+        if (!endpoint) return;
+
+        var parts = datePartsInZone(widget.dataset.timeZone || 'UTC');
+        var today = parts.year + '-' + parts.month + '-' + parts.day;
+        var periods = {
+            today: today,
+            month: parts.year + '-' + parts.month + '-01',
+            year: parts.year + '-01-01'
+        };
+
+        Promise.all(Object.keys(periods).map(function (period) {
+            return fetchVisitorCount(endpoint, periods[period], today).then(function (count) {
+                var target = widget.querySelector('[data-visitor-period="' + period + '"]');
+                if (target) target.textContent = count;
+            });
+        })).catch(function () {
+            widget.classList.add('visitor-stats--error');
+            var fetchStatus = widget.querySelector('[data-visitor-fetch-status]');
+            if (fetchStatus) fetchStatus.textContent = widget.dataset.loadError || '';
+        });
+    }
+
     ready(function () {
         initLifeBackground();
         initLanguageSwitcher();
         initSiteSearch();
         initBackToTop();
+        initAnalytics();
+        initVisitorStats();
     });
 })();
