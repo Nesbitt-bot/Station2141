@@ -95,10 +95,18 @@
                 {{ end }}
 
                 {{ if .Site.Params.colorScheme.toggle }}
-                    <li id="dark-mode-toggle">
+                    <li
+                        id="dark-mode-toggle"
+                        role="button"
+                        tabindex="0"
+                        data-theme-label="{{ T "theme.mode" }}"
+                        data-light-label="{{ T "theme.light" }}"
+                        data-dark-label="{{ T "theme.dark" }}"
+                        data-auto-label="{{ T "theme.system" }}"
+                    >
                         {{ partial "helper/icon" "toggle-left" }}
                         {{ partial "helper/icon" "toggle-right" }}
-                        <span>{{ T "darkMode" }}</span>
+                        <span>{{ T "theme.mode" }}: <span data-color-scheme-label>{{ T "theme.system" }}</span></span>
                     </li>
                 {{ end }}
             </ol>

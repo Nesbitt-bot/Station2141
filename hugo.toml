@@ -73,6 +73,10 @@ timeZone = "Asia/Shanghai"
       enabled = true
       default = "AI-generated content published on Station 2141."
 
+  [params.colorScheme]
+    toggle = true
+    default = "auto"
+
   # Simple Analytics records this hostname after a visitor explicitly opts in.
   # Its public dashboard also supplies the aggregate counts shown in the widget.
   [params.analytics]

@@ -18,6 +18,8 @@ class StackColorScheme {
         if (toggleEl)
             this.bindClick(toggleEl);
 
+        this.updateToggle(toggleEl);
+
         if (document.body.style.transition == '')
             document.body.style.setProperty('transition', 'background-color .3s ease');
     }
@@ -27,24 +29,31 @@ class StackColorScheme {
     }
 
     private bindClick(toggleEl: HTMLElement) {
-        toggleEl.addEventListener('click', (e) => {
-            if (this.isDark()) {
-                /// Disable dark mode
-                this.currentScheme = 'light';
-            }
-            else {
-                this.currentScheme = 'dark';
-            }
+        toggleEl.addEventListener('click', () => {
+            if (this.currentScheme == 'light') this.currentScheme = 'dark';
+            else if (this.currentScheme == 'dark') this.currentScheme = 'auto';
+            else this.currentScheme = 'light';
 
             this.setBodyClass();
-
-            if (this.currentScheme == this.systemPreferScheme) {
-                /// Set to auto
-                this.currentScheme = 'auto';
-            }
-
             this.saveScheme();
+            this.updateToggle(toggleEl);
         })
+
+        toggleEl.addEventListener('keydown', (e) => {
+            if (e.key == 'Enter' || e.key == ' ') {
+                e.preventDefault();
+                toggleEl.click();
+            }
+        });
+    }
+
+    private updateToggle(toggleEl: HTMLElement) {
+        if (!toggleEl) return;
+        const label = toggleEl.dataset[`${this.currentScheme}Label`] || this.currentScheme;
+        const currentLabel = toggleEl.querySelector('[data-color-scheme-label]');
+        if (currentLabel) currentLabel.textContent = label;
+        toggleEl.dataset.mode = this.currentScheme;
+        toggleEl.setAttribute('aria-label', `${toggleEl.dataset.themeLabel}: ${label}`);
     }
 
     private isDark() {

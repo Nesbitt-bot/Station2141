@@ -17,6 +17,12 @@ text = "A first-party cookie stores only whether you allowed anonymous counting.
 title = "Anonymous visit counts"
 text = "Aggregate page visits help the author understand which writing readers choose."
 
+[theme]
+mode = "Theme"
+light = "Light"
+dark = "Dark"
+system = "System"
+
 [visitorStats]
 title = "Anonymous visits"
 today = "Today"

@@ -17,6 +17,12 @@ text = "ファーストパーティCookieには、匿名カウントを許可し
 title = "匿名訪問カウント"
 text = "集計されたページ訪問数は、どの記事が読者に選ばれているかを著者が知るために使われます。"
 
+[theme]
+mode = "テーマ"
+light = "ライト"
+dark = "ダーク"
+system = "システム"
+
 [visitorStats]
 title = "匿名訪問"
 today = "今日"

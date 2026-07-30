@@ -17,6 +17,12 @@ text = "一个本站 Cookie 只保存您是否允许匿名计数。"
 title = "匿名访问计数"
 text = "汇总后的页面访问量帮助作者了解读者更喜欢哪些文章。"
 
+[theme]
+mode = "主题"
+light = "浅色"
+dark = "深色"
+system = "跟随系统"
+
 [visitorStats]
 title = "匿名访问"
 today = "今天"
