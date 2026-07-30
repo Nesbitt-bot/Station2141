@@ -2,8 +2,9 @@ name: Archive visitor statistics and deploy
 
 on:
   schedule:
-    # 02:20 in Asia/Shanghai; archives the completed local day.
-    - cron: '20 18 * * *'
+    # 18:20 UTC Sunday = 02:20 Monday in Asia/Shanghai.
+    # The collector fills every completed day since the previous weekly run.
+    - cron: '20 18 * * 0'
   workflow_dispatch:
     inputs:
       start_date:

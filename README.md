@@ -22,6 +22,13 @@ To finish activation:
    - `SIMPLE_ANALYTICS_USER_ID`
 5. Build and deploy normally.
 
+Create each secret under **Repository Settings → Secrets and variables →
+Actions → New repository secret**. Store only the value, without quotes. Use
+the Simple Analytics user ID for `SIMPLE_ANALYTICS_USER_ID`; a team ID is not
+needed by this collector. Never put either value in this file or directly in a
+workflow. Revoke and replace any API key that has been pasted into a message,
+issue, log, or committed file.
+
 Visitors see an explicit allow/deny prompt before the tracking script is
 records a page view. The Simple Analytics library is embedded in Hugo's footer
 so installation detectors can find it, but `data-auto-collect="false"` prevents
@@ -34,11 +41,12 @@ disabled.
 
 The public widget asks the Stats API for anonymous visitor estimates for the
 current day, month, and year. The scheduled
-`.github/workflows/archive-analytics.yml` workflow runs at 02:20
-Asia/Shanghai, stores each completed day's aggregate site and page totals in
-`static/analytics/daily.json`, commits that file directly to `main`, and
-deploys the resulting site. It deploys in the same run because a commit made
-with `GITHUB_TOKEN` does not trigger the regular push workflow.
+`.github/workflows/archive-analytics.yml` workflow runs every Monday at 02:20
+Asia/Shanghai. It fills every completed day since the previous run, stores the
+aggregate site and page totals in `static/analytics/daily.json`, commits that
+file directly to `main`, and deploys the resulting site. It deploys in the same
+run because a commit made with `GITHUB_TOKEN` does not trigger the regular push
+workflow.
 
 On its first run the collector backfills up to the most recent 30 completed
 days still available on the free plan. Later runs fill any gap since the newest
