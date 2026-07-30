@@ -23,10 +23,14 @@ To finish activation:
 5. Build and deploy normally.
 
 Visitors see an explicit allow/deny prompt before the tracking script is
-loaded. The tracker uses no cookies or persistent visitor identifier; the only
-first-party cookie stores the visitor's consent choice. It records normalized
-page paths, timestamps, the referrer needed to estimate unique visits, and an
-anonymized user agent used to reject bots. Unneeded metrics are disabled.
+records a page view. The Simple Analytics library is embedded in Hugo's footer
+so installation detectors can find it, but `data-auto-collect="false"` prevents
+automatic collection. Only the consent handler calls `sa_pageview` after the
+visitor opts in. The tracker uses no cookies or persistent visitor identifier;
+the only first-party cookie stores the visitor's consent choice. It records
+normalized page paths, timestamps, the referrer needed to estimate unique
+visits, and an anonymized user agent used to reject bots. Unneeded metrics are
+disabled.
 
 The public widget asks the Stats API for anonymous visitor estimates for the
 current day, month, and year. The scheduled

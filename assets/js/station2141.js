@@ -318,32 +318,19 @@
         return value === '1' || value === 'yes';
     }
 
-    function loadAnalytics() {
+    var analyticsPageviewSent = false;
+
+    function recordAnalyticsPageview() {
         var config = getAnalyticsConfig();
-        if (!config.hostname || document.querySelector('script[data-station2141-analytics]')) return;
-        if (doNotTrackEnabled()) return;
+        if (
+            analyticsPageviewSent ||
+            !config.hostname ||
+            doNotTrackEnabled() ||
+            typeof window.sa_pageview !== 'function'
+        ) return;
 
-        window.station2141AnalyticsPath = function () {
-            return config.path;
-        };
-
-        var script = document.createElement('script');
-        script.async = true;
-        script.src = 'https://scripts.simpleanalyticscdn.com/latest.js';
-        script.dataset.hostname = config.hostname;
-        script.dataset.pathOverwriter = 'station2141AnalyticsPath';
-        script.dataset.ignoreMetrics = [
-            'utm',
-            'country',
-            'session',
-            'timeonpage',
-            'scrolled',
-            'screensize',
-            'viewportsize',
-            'language'
-        ].join(',');
-        script.dataset.station2141Analytics = 'true';
-        document.head.appendChild(script);
+        window.sa_pageview(config.path);
+        analyticsPageviewSent = true;
     }
 
     function currentConsentState() {
@@ -374,12 +361,19 @@
 
         function applyConsent(state) {
             updateVisitorConsentStatus(state);
-            if (state && state.analytics) loadAnalytics();
+            if (state && state.analytics) recordAnalyticsPageview();
         }
 
         window.addEventListener('onCookieConsentChange', function (event) {
             applyConsent(event.detail || null);
         });
+
+        var analyticsScript = document.querySelector('script[data-station2141-analytics]');
+        if (analyticsScript) {
+            analyticsScript.addEventListener('load', function () {
+                applyConsent(currentConsentState());
+            });
+        }
 
         applyConsent(currentConsentState());
     }

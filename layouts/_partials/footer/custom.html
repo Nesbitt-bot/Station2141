@@ -39,5 +39,17 @@
     }});
 </script>
 
+{{- with $analyticsHostname }}
+<!-- 100% privacy-first analytics -->
+<script
+    async
+    src="https://scripts.simpleanalyticscdn.com/latest.js"
+    data-auto-collect="false"
+    data-hostname="{{ . }}"
+    data-ignore-metrics="utm,country,session,timeonpage,scrolled,screensize,viewportsize,language"
+    data-station2141-analytics
+></script>
+{{- end }}
+
 {{- $js := resources.Get "js/station2141.js" | minify | fingerprint -}}
 <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>

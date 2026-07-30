@@ -22,7 +22,7 @@ Simple Analytics' free plan deletes data older than 30 days. To preserve longer 
 
 ## Your choice
 
-No visit-recording request is sent until you select **Allow counting**. The visitor widget may still fetch already-aggregated public totals from Simple Analytics and the site's public daily archive; those read-only requests do not add your visit to the statistics and send no page path or referrer. If you choose **Do not count me**, your page visit is not sent to Simple Analytics. A first-party consent cookie stores only that choice so the site can remember it; it contains no visitor identifier. You can change the choice at any time through **Change counting choice** in the footer or visitor widget.
+The Simple Analytics library is downloaded with automatic collection disabled so installation tools can detect it. No visit-recording request is sent until you select **Allow counting**. The visitor widget may still fetch already-aggregated public totals from Simple Analytics and the site's public daily archive; those read-only requests do not add your visit to the statistics and send no page path or referrer. If you choose **Do not count me**, your page visit is not sent to Simple Analytics. A first-party consent cookie stores only that choice so the site can remember it; it contains no visitor identifier. You can change the choice at any time through **Change counting choice** in the footer or visitor widget.
 
 Simple Analytics' current data-handling details are available in its [metrics documentation](https://docs.simpleanalytics.com/what-we-collect).
 
