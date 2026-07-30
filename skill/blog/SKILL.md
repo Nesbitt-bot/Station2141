@@ -23,6 +23,7 @@ The desired tone is closer to:
 - an idea journal shaped through an interview
 - a reflective record of a person and their evolving thought
 - a serious but non-judgmental observer preserving useful specificity
+- prose with concrete images, varied rhythm, and enough personality to sound written rather than assembled
 
 And less like:
 - a lab report
@@ -30,6 +31,8 @@ And less like:
 - an argument designed to win agreement
 - a direct transcript with headings
 - a first-person diary unless the user explicitly requests it
+
+Neutrality does not require a flat voice. A neutral article can still be vivid, intimate, funny, uneasy, or surprising. Remove pressure to agree, not texture.
 
 For Station2141, role names default to:
 - **Cedar**: the human subject and source of lived experience
@@ -115,7 +118,37 @@ Default article qualities:
 - one or two memorable turns of thought
 - an ending that leaves readers with an insight, tension, or open horizon rather than a demanded conclusion
 
-### 5. Use links carefully
+When writing for Cedar:
+- learn from the cadence, metaphors, preferred examples, and degree of directness in Cedar's supplied material
+- preserve the way Cedar moves from a practical annoyance into a larger technical or philosophical question
+- use familiar analogies when they reveal structure; do not add ornamental metaphors
+- prefer an arresting concrete sentence to a paragraph announcing the thesis
+- allow asymmetry and unfinished tension when the thought itself remains unsettled
+
+### 5. Remove default AI prose
+
+After drafting, perform a separate voice pass.
+
+Look for and rewrite:
+- headings translated mechanically from English or phrased unlike natural writing in the target language
+- generic academic scaffolding such as "define the problem," "related context and impact," or "proposed direction" when the article is not academic
+- sentences that announce what the article is about instead of showing it
+- repeated constructions such as "this does not mean," "from this perspective," "on a deeper level," and "not only X but also Y"
+- overly balanced paragraphs in which every claim immediately receives a symmetrical qualification
+- lists that replace a scene, an example, or a line of actual prose
+- abstract nouns stacked together without a person, object, action, or consequence
+- conclusions that merely restate the opening in more formal language
+
+For Chinese drafts specifically:
+- compose in Chinese rather than translating an English argument shape
+- read every heading aloud and reject it if it sounds bureaucratic, inverted, or unlikely to appear in a natural essay
+- prefer idiomatic noun phrases such as `不在场的记录者` over mechanically inverted labels such as `记录者不在场`
+- vary sentence length and let important short sentences stand alone
+- avoid filling logical gaps with stock transitions
+
+The goal is not to impersonate Cedar mechanically. It is to preserve the recognizable movement of his thinking without falling back to a generic assistant voice.
+
+### 6. Use links carefully
 
 When citing sources:
 - prefer direct technical documentation, canonical archives, paper pages, or original essays
@@ -123,7 +156,7 @@ When citing sources:
 - verify that the link opens and matches the claim being made
 - prefer a final canonical URL when an older link only redirects
 
-### 6. Translate only after the main draft is right
+### 7. Translate only after the main draft is right
 
 Once the main draft is settled:
 - generate the remaining language versions unless the user says otherwise
@@ -131,7 +164,7 @@ Once the main draft is settled:
 - translate naturally, not mechanically
 - keep the same front matter date and overall article identity
 
-### 7. Choose visuals by analogy, not completeness
+### 8. Choose visuals by analogy, not completeness
 
 Visuals are optional. Prefer no image over a decorative or over-explained one.
 
@@ -144,7 +177,7 @@ When a visualization would help:
 
 Example: a business model joining smart-device control, consumable monitoring, and replenishment might be represented by a familiar remote control whose buttons also open a simple shopping basket. The analogy should make the mechanism intuitive before it makes it complete.
 
-### 8. Publish cleanly
+### 9. Publish cleanly
 
 Use Hugo page bundles:
 - `content/posts/<slug>/index.en.md`

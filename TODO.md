@@ -1,5 +1,9 @@
 # TODO
 
+## Future article seeds
+
+- **How to use AI to produce documents and idea journals that can actually communicate an idea.** Use the drafting and revision history of `the-intelligence-in-the-echo` as a case study: interviewing before synthesis, keeping Cedar and Nesbitt's roles straight, preserving privacy, detecting translated or default AI prose, choosing examples and analogies, and revising toward a recognizable human voice.
+
 ## Archive translations
 
 Each archive post has a "Translation pending" stub in every site language so the language switcher always works. The table below tracks which post still needs a real translation written by hand (or by a later, higher-quality translation pass) — currently 54 posts.
