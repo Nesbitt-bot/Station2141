@@ -58,8 +58,10 @@ Preserve these properties whenever possible:
 Before drafting:
 1. identify the real subject, not just the topic
 2. verify who experienced, said, or inferred each important detail
-3. identify what a future outside reader should understand or be able to consider
-4. identify whether the post is mainly project documentation, philosophical reflection, technical argument, intellectual portrait, or a hybrid
+3. identify the target audience and what they will ignore
+4. write the central claim in one sentence
+5. identify why the claim matters and what practical question follows from it
+6. identify whether the post is mainly project documentation, philosophical reflection, technical argument, intellectual portrait, or a hybrid
 
 Ask:
 - What is happening beneath the literal discussion?
@@ -67,6 +69,15 @@ Ask:
 - What makes this project or thought recognizably theirs?
 - Which parts are observation, interpretation, inference, or unresolved speculation?
 - What follow-up question would reduce the risk of writing a more coherent story than the evidence supports?
+
+Classify source material before arranging it:
+- **load-bearing claim**: the idea the article exists to preserve
+- **reason or mechanism**: why the claim may be true
+- **evidence or example**: what makes the mechanism visible
+- **implication or method**: what a reader could test, change, or build
+- **side story**: revealing material that is not required to follow the argument
+
+Do not give a side story the opening merely because it is vivid. For a researcher-facing article, lead with the claim, why it matters, and the resulting "how" question. Move personal lore that does not carry the reasoning into a short endnote or blockquote at the end.
 
 ### 2. Choose the correct narrative posture
 
@@ -118,12 +129,27 @@ Default article qualities:
 - one or two memorable turns of thought
 - an ending that leaves readers with an insight, tension, or open horizon rather than a demanded conclusion
 
+Build an intrinsic order rather than a collection of relevant paragraphs:
+1. state the central claim
+2. explain why the reader should care
+3. turn the claim into a "how" question
+4. develop one mechanism at a time
+5. support each mechanism with an example or source
+6. derive the next section from the unresolved consequence of the previous one
+7. end with the remaining uncertainty or a testable direction
+
+Every paragraph should have a job. Its first sentence should make that job legible; its final sentence should either complete it or create the need for the next paragraph. If a paragraph can move elsewhere without changing the argument, it is probably a side story, duplicated context, or missing a bridge.
+
 When writing for Cedar:
 - learn from the cadence, metaphors, preferred examples, and degree of directness in Cedar's supplied material
 - preserve the way Cedar moves from a practical annoyance into a larger technical or philosophical question
 - use familiar analogies when they reveal structure; do not add ornamental metaphors
 - prefer an arresting concrete sentence to a paragraph announcing the thesis
 - allow asymmetry and unfinished tension when the thought itself remains unsettled
+- search for repeated patterns in history, experiments, engineering practice, consumer behavior, or everyday life when an analogy could expose the mechanism
+- prefer known examples such as blind taste tests or ABX listening tests over invented decorative scenarios when the known example maps cleanly
+- state what is structurally shared between the analogy and the subject; do not assume resemblance proves equivalence
+- distinguish a memorable commercial demonstration from a controlled research result
 
 ### 5. Remove default AI prose
 
@@ -174,6 +200,7 @@ When a visualization would help:
 - show the relationship or tension, not every component of the argument
 - avoid detailed system diagrams unless the post is explicitly technical documentation
 - write generation prompts with conceptual freedom rather than specifying every compositional detail
+- make the image carry the same central claim as the opening, not a side story
 
 Example: a business model joining smart-device control, consumable monitoring, and replenishment might be represented by a familiar remote control whose buttons also open a simple shopping basket. The analogy should make the mechanism intuitive before it makes it complete.
 

@@ -2,27 +2,38 @@
 
 Use this as a loose pattern, not a rigid outline.
 
-## Opening move
+## Route by audience
 
-Start from one of these:
-- a tension the person is living through
-- a project that reveals the person behind it
-- an unusual belief that reorders the rest of the post
-- a scene-like description of what they are trying to do
-- a concrete example that caused the person to reconsider an earlier assumption
+For researchers, builders, and other claim-oriented readers:
+1. central claim
+2. why it matters
+3. the "how" question created by the claim
+4. mechanism
+5. evidence, analogy, or case
+6. implication or test
+
+For a biographical or portrait-oriented audience, a scene, tension, or project may still open the piece.
+
+Do not open a claim-oriented article with personal lore that the target reader does not need. Preserve it as an endnote or blockquote if it adds texture.
 
 ## Body pattern
 
-Good posts often move through these layers:
+Good claim-oriented posts often move through these layers:
 
-1. **What is happening on the surface**
-   - the project, argument, or event
-2. **Why it matters**
-   - technical, philosophical, or social stakes
-3. **What it reveals about the person**
-   - habits of thought, values, contradictions, style
-4. **Where it points next**
-   - unresolved direction, cost, possibility, frontier
+1. **Claim**
+   - one sentence that can be disagreed with or tested
+2. **Mechanism**
+   - why the proposed relationship could exist
+3. **Example**
+   - a personal case, historical repetition, experiment, or familiar analogy
+4. **Method**
+   - how to measure, build, compare, or act without assuming the conclusion
+5. **Limit**
+   - what the example does not establish
+6. **Next question**
+   - the unresolved direction produced by the limit
+
+Each section should make the next section necessary. If sections can be shuffled without damage, the article does not yet have an argument.
 
 Keep attribution visible:
 - what Cedar directly observed or experienced
@@ -38,6 +49,7 @@ Keep attribution visible:
 - if the piece is technical, keep the technical spine while letting readers feel the person behind the work
 - if the piece is philosophical, ground it in actual projects, choices, or tensions
 - do not aim to persuade the reader; offer a perspective precise enough to resonate or be questioned
+- use analogies to expose a shared mechanism, then name where the analogy stops
 
 ## Ending patterns
 
