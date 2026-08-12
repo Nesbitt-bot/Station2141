@@ -1,0 +1,3 @@
+[submodule "skill/human-writing"]
+	path = skill/human-writing
+	url = https://github.com/KKKKhazix/human-writing.git

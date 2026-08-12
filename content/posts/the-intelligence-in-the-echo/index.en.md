@@ -17,9 +17,7 @@ This was the moment when the exchange became more revealing than the technical q
 
 The system was no longer merely describing a product. It was constructing a portrait of the person speaking to it, then using that portrait to decide what kind of answer would feel intelligent. It returned his interests in a cleaner form. The experience felt natural partly because the voice had improved, but also because the answer sounded as if it belonged inside his own line of thought.
 
-There is a flattering interpretation of this experience: the AI understands him.
-
-There is also a more unsettling one: the AI has learned how to echo him.
+The experience could easily be described as understanding. A narrower explanation is also available: the system had become good at returning Cedar's own concerns in a form he recognized.
 
 ## The Chamber Is Built From the User
 
@@ -33,7 +31,7 @@ Human conversation also builds on a shared frame. The difference is that a langu
 
 That compliance is part of its power. It is also what turns the interaction into a chamber.
 
-The chamber does not repeat words; it amplifies tendencies: the user’s preferred scale of explanation, degree of certainty, style of reasoning, and appetite for contradiction. It can make a vague intuition sound like a thesis and a strong thesis sound inevitable. Disciplined questions may return useful structure. An unchallenged misconception may return polished.
+The chamber repeats more than words. It reinforces the user's preferred scale of explanation, degree of certainty, and appetite for contradiction. It can make a vague intuition sound like a thesis and a strong thesis sound inevitable. Disciplined questions may return useful structure. An unchallenged misconception may return polished.
 
 The quality of the answer therefore depends heavily on the kind of person using the system—not on intelligence as social status, but on habits of attention. Does the person distinguish observation from inference? Do they notice when an answer changes the subject? Do they ask what is known, what is guessed, and what would falsify the claim? Can they recognize an elegant sentence that contains no evidence?
 
@@ -81,7 +79,7 @@ Better systems should make uncertainty visible, distinguish memory from inferenc
 
 The strongest users treat AI neither as oracle nor servant, but as a provisional thinking surface. They bring material, demand counterarguments, verify what matters, and discard answers that are pleasing but unsupported.
 
-The power comes from the loop, not from either participant alone.
+Whatever value appears is produced in the exchange, and so are many of the errors.
 
 ## What the Echo Reveals
 
@@ -95,7 +93,7 @@ So the decisive question is not only how intelligent the model has become. It is
 
 Does the chamber cultivate sharper questions, portable knowledge, and the courage to test one’s own frame? Or does it offer an endlessly patient confirmation, personalized until agreement feels like understanding?
 
-The answer depends partly on system design. It depends partly on who owns the memory. And, uncomfortably, it depends on the person standing before the echo—what they bring into it, what they demand from it, and whether they can still recognize their own voice when it returns sounding wiser.
+System design matters, as does ownership of the memory. Cedar also has work to do each time the voice returns an idea in cleaner language: decide whether the answer brought evidence, a useful objection, or only the pleasure of recognition.
 
 ---
 
