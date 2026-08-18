@@ -6,7 +6,7 @@ description: "为什么问题比答案更重要，以及怎样把模型能力、
 image: "cover.png"
 tags: ["AI", "回声室", "提示词", "个性化", "知识迁移"]
 categories: ["Philosophy"]
-draft: true
+draft: false
 ---
 
 AI 更像一套宇航服，而不是装在身边的第二个大脑。

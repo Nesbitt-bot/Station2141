@@ -407,8 +407,8 @@ body > footer {
 /* ---------- Multilingual document version status ---------- */
 
 .document-version {
-    margin: 0 0 2rem;
-    padding: 1.4rem 1.6rem;
+    margin: 0 0 2.4rem;
+    padding: 1.8rem 1.6rem 1.6rem;
     border: 1px solid color-mix(in srgb, var(--accent-color) 32%, transparent);
     border-left: 4px solid var(--accent-color);
     border-radius: var(--card-border-radius, 10px);

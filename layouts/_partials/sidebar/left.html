@@ -65,7 +65,7 @@
         <li class="menu-bottom-section">
             <ol class="menu">
                 {{- $currentLanguageCode := .Language.Lang -}}
-                {{ if hugo.IsMultilingual }}
+                {{ if and hugo.IsMultilingual (not (and .IsPage (eq .Section "posts"))) }}
                     <li id="i18n-switch" class="i18n-switch-custom">
                         <button type="button" class="i18n-switch-trigger" aria-haspopup="listbox" aria-expanded="false" aria-label="{{ T `toggleMenu` }} language">
                             {{ partial "helper/icon" "language" }}
