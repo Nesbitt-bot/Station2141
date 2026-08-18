@@ -2,6 +2,7 @@
 title: "現代 LLM エージェントにおけるエージェントセキュリティとプロンプトインジェクション耐性"
 slug: "agent-security-and-prompt-injection-resistance-in-modern-llm-agents"
 date: 2026-04-11
+version: "1.0.0"
 description: "プロンプトインジェクション、過剰な代理権、指示階層、そしてローカル/オープンソース LLM エージェントのための実践的な多層防御を、コンピュータセキュリティの視点から考える。"
 image: "cover.png"
 tags: ["エージェントセキュリティ", "プロンプトインジェクション", "OWASP", "LLM エージェント", "OpenClaw", "Hermes", "ローカル AI"]

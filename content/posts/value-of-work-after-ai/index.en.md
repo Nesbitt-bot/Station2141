@@ -1,6 +1,7 @@
 ---
 title: "The Value of Work After the Age of AI"
 date: 2026-04-05
+version: "1.1.0"
 description: "What kinds of value survive when AI commoditizes execution, and whether mortality-like pressure can improve agent planning."
 image: "cover.png"
 tags: ["AI economics", "labor", "creativity", "finitude", "agent design"]
@@ -10,9 +11,9 @@ draft: false
 
 ## Defining the Problem
 
-We now have access to general-knowledge AI systems that perform at or above a five-year-experienced professional level across most fields. A single person with multiple AI agents can replicate what used to require an entire company: writing, design, code, analysis, strategy, execution. The communication barriers and information costs that justified large organizations are collapsing.
+By early 2026, general-purpose AI could perform substantial parts of writing, coding, design, and analysis workflows. The exact comparison with an experienced professional varies sharply by field and by how the work is evaluated. Still, one person can now attempt projects that previously required several specialists, especially when the output is easy to test.
 
-This is not a distant prediction. It is the current state of affairs in early 2026.
+Organizations have not become obsolete. They still coordinate capital, responsibility, distribution, and long-running work. What has changed is the amount of execution a small team can buy with computation.
 
 The question is not whether this changes the value of work — it obviously does. The question is: **what kinds of value survive, what kinds migrate, and what kinds disappear?**
 
@@ -28,23 +29,23 @@ This matters to anyone who works for a living, which is nearly everyone. It also
 
 ## Proposed Direction
 
-The conversation surfaced a layered framework:
+The conversation separated the changes into three rough groups.
 
-### What AI Commoditizes (Ending)
+### Work Becoming Cheaper
 
 - Broad competence as a professional moat
 - Execution-heavy knowledge work: drafting, coding, summarizing, analyzing, designing within known patterns
 - Information barriers that justified institutions
 - The market premium on being "generally smart"
 
-### What AI Amplifies (Migrating)
+### Scarcity Moving Elsewhere
 
 - The gap between 0→1 and 1→100 — original problem selection becomes the scarce input
 - Taste as a production function — when anything can be made, choosing what *should* be made becomes the bottleneck
 - Noise-filtering as a skill — abundance of output creates a new scarcity of signal
 - The value of community-scale trust and reputation
 
-### What Remains Irreducibly Human (Persisting)
+### Work That Still Carries Human Consequences
 
 - **Judgment under ambiguity** — a model can generate ten directions, but it does not bear the cost of choosing wrong
 - **Responsibility** — someone must answer for harms, promises, and unintended effects
@@ -62,7 +63,7 @@ The conversation explored whether "death" could serve as a super-optimizer for A
 - **Deadline pressure** — value decays if tasks are not completed in time
 - **Replacement tolerance** — the agent treats being paused, modified, or replaced as non-catastrophic
 
-These give most of the planning benefits of mortality-like urgency without creating a self-protective maximizer. The correct abstraction is *finitude*, not *death*.
+These mechanisms may produce some of the planning benefits associated with urgency without directly rewarding resistance to shutdown. Whether they do so in practice remains an empirical question. "Finitude" is the cleaner hypothesis to test; "death" imports motives the system does not need.
 
 ## Remaining Uncertainties
 

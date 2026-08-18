@@ -32,6 +32,9 @@ jobs:
           hugo-version: '0.157.0'
           extended: true
 
+      - name: Validate post versions
+        run: node scripts/validate-post-versions.mjs
+
       - name: Build
         run: |
           node scripts/write-life-seed.mjs

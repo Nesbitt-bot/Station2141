@@ -1,6 +1,7 @@
 ---
 title: "Too Perfect to Be Real"
 date: 2026-04-22
+version: "1.1.0"
 description: "When AI images and videos become convincing enough for ordinary perception, realism stops being a proof and becomes only a trigger for belief."
 image: "cover.png"
 tags: ["AI images", "AI video", "reality", "belief", "visual culture"]
@@ -16,7 +17,7 @@ If an image looked ordinary enough, most people treated it as evidence that *som
 
 That assumption is now collapsing, and not only because of images. High-quality generated video can do the same thing at a deeper level: it no longer relies only on what is visibly happening in the frame, but on what the viewer already believes about the people, events, and facts that are supposed to surround it. A fake clip becomes persuasive not just because it looks realistic, but because it fits the prior story we are prepared to accept.
 
-This is why the current shift feels so dangerous. We are entering a world in which electronic records are increasingly fabricable, not merely in the narrow sense of visual forgery, but in the broader sense of manufactured evidence, manufactured authorship, and manufactured continuity. We can create fake records, fake testimony, fake memory aids, even fake ideas assigned to people who may never have been capable of producing them on their own.
+The change matters because ordinary viewers rarely have time to authenticate every item they encounter. We are entering a world in which electronic records are increasingly fabricable, not merely in the narrow sense of visual forgery, but in the broader sense of manufactured evidence, manufactured authorship, and manufactured continuity. We can create fake records, fake testimony, fake memory aids, even fake ideas assigned to people who may never have been capable of producing them on their own.
 
 ## Related Topics and Impact
 
@@ -43,10 +44,7 @@ There is a subtle reason AI media is so unsettling: it is not merely fake. It is
 
 Generated imagery is frequently cleaner, more coherent, more balanced, and more obedient than ordinary life. Light falls too beautifully. Composition holds too perfectly. Motion is too narratively cooperative. Even apparent imperfection often feels curated, as if the image knows exactly what kind of flaw would make it look authentic.
 
-That creates a paradox:
-
-- some generated media passes because it is realistic enough,
-- while other generated media feels suspicious precisely because it is *too perfect to be real*.
+Some generated media passes because it is realistic enough. Other examples attract suspicion through excessive polish. The title of this post names that reaction, but it is only a temporary detection habit; generators can learn bad framing and dead space too.
 
 Reality is usually partial, inconvenient, asymmetrical, and noisy. It contains bad timing, dead space, clumsy framing, and unresolved detail. AI tends toward legibility. Even when it imitates mess, it often produces the kind of mess that still serves the image.
 
@@ -117,15 +115,9 @@ Recently I encountered a notion of information that feels more compelling to me 
 
 I find that attractive because it connects belief, evidence, and value more directly. We do not care about reality in the abstract. We care about what can orient conduct, revise models, or open more powerful futures.
 
-But that leaves a final uncertainty.
+The remaining question concerns an evaluation function Cedar has been considering, one that measures information by how much a change affects later behavior. It is appealing because it connects evidence to consequence, but it may also reward manipulation or novelty unless "useful change" is defined carefully.
 
-If I am building an evaluation function around this — around changes that matter because they alter behavior and potential — is that itself well-defined? Is that the "real" I should trust, or only another useful fiction? I think I am getting closer to something coherent, but like all real research, the closer I move, the more the landscape opens. What remains is not closure, but more questions, more structure, more territory waiting to be explored.
-
-That may be the most honest ending available.
-
-Not that reality has disappeared.
-
-But that what we call real may always have been belief under default acceptance — and AI forces us to notice it.
+Generated media does not make reality disappear. It makes a familiar shortcut less dependable. A convincing surface can still prompt belief; it can no longer carry the burden of proof by itself.
 
 ---
 

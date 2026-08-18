@@ -1,0 +1,77 @@
+{{- $page := . -}}
+{{- $slug := path.Base (path.Dir $page.File.Path) -}}
+{{- $currentVersion := default "unversioned" $page.Params.version -}}
+{{- $bundle := index site.Data.post_versions $slug -}}
+{{- $rows := slice -}}
+{{- $publishedVersions := slice -}}
+{{- $unavailable := slice -}}
+
+{{- range $site := hugo.Sites -}}
+    {{- $lang := $site.Language.Lang -}}
+    {{- $record := index $bundle $lang -}}
+    {{- if not $record -}}
+        {{- $record = dict "status" "missing" -}}
+    {{- end -}}
+    {{- $candidate := $site.GetPage (printf "posts/%s" $slug) -}}
+    {{- $status := default "missing" $record.status -}}
+    {{- $version := default "unversioned" $record.version -}}
+    {{- if eq $status "published" -}}
+        {{- $publishedVersions = $publishedVersions | append $version -}}
+    {{- else -}}
+        {{- $unavailable = $unavailable | append $site.Language.LanguageName -}}
+    {{- end -}}
+    {{- $rows = $rows | append (dict
+        "lang" $lang
+        "name" $site.Language.LanguageName
+        "page" $candidate
+        "version" $version
+        "status" $status
+    ) -}}
+{{- end -}}
+
+{{- $inconsistent := or (gt (len (uniq $publishedVersions)) 1) (gt (len $unavailable) 0) -}}
+
+<aside class="document-version{{ if $inconsistent }} document-version--warning{{ else }} document-version--synced{{ end }}" aria-label="{{ T "documentVersion.title" }}">
+    <div class="document-version__header">
+        <div>
+            <span class="document-version__eyebrow">{{ T "documentVersion.title" }}</span>
+            <strong>{{ T "documentVersion.current" }} {{ $currentVersion }}</strong>
+        </div>
+        <span class="document-version__state">
+            {{ if $inconsistent }}{{ T "documentVersion.inconsistent" }}{{ else }}{{ T "documentVersion.synced" }}{{ end }}
+        </span>
+    </div>
+
+    <p class="document-version__note">
+        {{ if $inconsistent }}
+            {{ T "documentVersion.inconsistentNote" }}
+        {{ else }}
+            {{ T "documentVersion.syncedNote" }}
+        {{ end }}
+    </p>
+
+    <ul class="document-version__languages">
+        {{- range $rows -}}
+        <li>
+            {{- if and (eq .status "published") .page -}}
+                {{- if eq .lang $page.Language.Lang -}}
+                    <span class="document-version__language" aria-current="page">{{ .name }}</span>
+                {{- else -}}
+                    <a class="document-version__language" href="{{ .page.RelPermalink }}" hreflang="{{ .lang }}">{{ .name }}</a>
+                {{- end -}}
+                <span class="document-version__badge">{{ if ne .version "unversioned" }}v{{ end }}{{ .version }}</span>
+                {{- if ne .version $currentVersion -}}
+                    <span class="document-version__badge document-version__badge--different">{{ T "documentVersion.different" }}</span>
+                {{- end -}}
+            {{- else if eq .status "draft" -}}
+                <span class="document-version__language">{{ .name }}</span>
+                <span class="document-version__badge">{{ if ne .version "unversioned" }}v{{ end }}{{ .version }}</span>
+                <span class="document-version__badge document-version__badge--draft">{{ T "documentVersion.draft" }}</span>
+            {{- else -}}
+                <span class="document-version__language">{{ .name }}</span>
+                <span class="document-version__badge document-version__badge--missing">{{ T "documentVersion.missing" }}</span>
+            {{- end -}}
+        </li>
+        {{- end -}}
+    </ul>
+</aside>

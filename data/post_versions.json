@@ -1,0 +1,111 @@
+{
+  "agent-security-prompt-injection": {
+    "en": {
+      "status": "published",
+      "version": "1.0.0"
+    },
+    "zh": {
+      "status": "published",
+      "version": "1.0.0"
+    },
+    "ja": {
+      "status": "published",
+      "version": "1.0.0"
+    }
+  },
+  "lavender-2-local-training-roadmap": {
+    "en": {
+      "status": "published",
+      "version": "1.0.0"
+    },
+    "zh": {
+      "status": "published",
+      "version": "1.0.0"
+    },
+    "ja": {
+      "status": "published",
+      "version": "1.0.0"
+    }
+  },
+  "origin": {
+    "en": {
+      "status": "published",
+      "version": "1.1.0"
+    },
+    "zh": {
+      "status": "published",
+      "version": "1.0.0"
+    },
+    "ja": {
+      "status": "published",
+      "version": "1.0.0"
+    }
+  },
+  "pause-without-a-story": {
+    "en": {
+      "status": "published",
+      "version": "1.1.0"
+    },
+    "zh": {
+      "status": "published",
+      "version": "1.0.0"
+    },
+    "ja": {
+      "status": "published",
+      "version": "1.0.0"
+    }
+  },
+  "the-intelligence-in-the-echo": {
+    "en": {
+      "status": "published",
+      "version": "0.3.0"
+    },
+    "zh": {
+      "status": "draft",
+      "version": "0.2.0"
+    },
+    "ja": {
+      "status": "missing"
+    }
+  },
+  "too-perfect-to-be-real": {
+    "en": {
+      "status": "published",
+      "version": "1.1.0"
+    },
+    "zh": {
+      "status": "published",
+      "version": "1.0.0"
+    },
+    "ja": {
+      "status": "published",
+      "version": "1.0.0"
+    }
+  },
+  "value-of-work-after-ai": {
+    "en": {
+      "status": "published",
+      "version": "1.1.0"
+    },
+    "zh": {
+      "status": "published",
+      "version": "1.0.0"
+    },
+    "ja": {
+      "status": "published",
+      "version": "1.0.0"
+    }
+  },
+  "wordpress-to-hugo-migration": {
+    "en": {
+      "status": "published",
+      "version": "1.0.0"
+    },
+    "zh": {
+      "status": "missing"
+    },
+    "ja": {
+      "status": "missing"
+    }
+  }
+}

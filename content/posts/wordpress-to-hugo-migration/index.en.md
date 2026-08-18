@@ -1,6 +1,7 @@
 ---
 title: "How to Migrate WordPress to Hugo, and Why I Gave Up WordPress"
 date: 2026-04-26
+version: "1.0.0"
 description: "A practical record of moving 50+ posts and ~250 media items off a soon-to-be-offline WordPress install onto a Hugo + GitHub Pages blog: tooling, URL preservation, image rewriting, .docx imports, and the reasons WordPress finally stopped being worth the maintenance."
 image: "cover.png"
 tags: ["WordPress", "Hugo", "static site", "migration", "blogging", "self-hosting"]
