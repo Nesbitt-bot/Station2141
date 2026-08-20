@@ -592,3 +592,80 @@ body > footer {
     font-size: 1.2rem;
     line-height: 1.5;
 }
+
+.article-discussion__loader {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    min-height: 3.6rem;
+    margin: 1rem 0;
+}
+
+.article-discussion__loading {
+    color: var(--body-text-color);
+    font-size: 1.3rem;
+}
+
+.article-discussion__thread {
+    min-height: 1px;
+}
+
+.article-discussion__thread .utterances {
+    max-width: none;
+    margin: 1.2rem 0 0;
+}
+
+.article-discussion__fallback {
+    margin: 1rem 0 0;
+    font-size: 1.25rem;
+}
+
+.github-comment {
+    margin: 1rem 0;
+    padding: 1.1rem 1.2rem;
+    border: 1px solid var(--card-separator-color, rgba(0, 0, 0, 0.08));
+    border-radius: 10px;
+    background: var(--body-background);
+}
+
+.github-comment__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.github-comment__author {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.55rem;
+    font-weight: 700;
+}
+
+.github-comment__avatar {
+    width: 2.4rem;
+    height: 2.4rem;
+    border-radius: 50%;
+}
+
+.github-comment__date {
+    color: var(--body-text-color);
+    font-size: 1.15rem;
+}
+
+.github-comment__body {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    color: var(--card-text-color-main);
+    font-size: 1.35rem;
+    line-height: 1.65;
+}
+
+.article-discussion__empty,
+.article-discussion__error {
+    margin: 1rem 0;
+    color: var(--body-text-color);
+    font-size: 1.3rem;
+}

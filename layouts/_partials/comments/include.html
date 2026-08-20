@@ -1,0 +1,3 @@
+{{- if and .IsPage (eq .Section "posts") .Params.discussion_issue -}}
+    {{ partial "comments/provider/github-issues" . }}
+{{- end -}}

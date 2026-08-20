@@ -1,0 +1,126 @@
+{{- $issue := int .Params.discussion_issue -}}
+{{- $issueURL := printf "https://github.com/Nesbitt-bot/Station2141/issues/%d" $issue -}}
+{{- $commentsAPI := printf "https://api.github.com/repos/Nesbitt-bot/Station2141/issues/%d/comments?per_page=100&sort=created&direction=asc" $issue -}}
+<section id="disqus-container" class="article-discussion comments-container" aria-labelledby="article-discussion-title" data-issue-number="{{ $issue }}" data-comments-api="{{ $commentsAPI }}" data-comments-url="{{ $issueURL }}" data-language="{{ .Language.Lang }}">
+    <span class="article-discussion__eyebrow">{{ T "articleDiscussion.eyebrow" }}</span>
+    <h2 id="article-discussion-title">{{ T "articleDiscussion.title" }}</h2>
+    {{- with .Params.discussion_question -}}
+        <blockquote class="article-discussion__question">{{ . }}</blockquote>
+    {{- end -}}
+    <p>{{ T "articleDiscussion.note" }}</p>
+
+    <div class="article-discussion__loader" data-comments-loader>
+        <button class="article-discussion__button" type="button" data-load-comments>
+            {{ T "articleDiscussion.load" }}
+        </button>
+        <span class="article-discussion__loading" data-comments-loading hidden>{{ T "articleDiscussion.loading" }}</span>
+    </div>
+
+    <div class="article-discussion__thread" data-comments-thread aria-live="polite"></div>
+
+    <p class="article-discussion__fallback">
+        <a href="{{ $issueURL }}" target="_blank" rel="noopener noreferrer">
+            {{ T "articleDiscussion.fallback" }}
+            <span aria-hidden="true">↗</span>
+        </a>
+    </p>
+    <p class="article-discussion__privacy">{{ T "articleDiscussion.privacy" }}</p>
+</section>
+
+<template id="github-comment-template">
+    <article class="github-comment">
+        <header class="github-comment__header">
+            <a class="github-comment__author" target="_blank" rel="noopener noreferrer">
+                <img class="github-comment__avatar" alt="" loading="lazy">
+                <span data-comment-login></span>
+            </a>
+            <a class="github-comment__date" target="_blank" rel="noopener noreferrer"></a>
+        </header>
+        <div class="github-comment__body"></div>
+    </article>
+</template>
+
+<script>
+(() => {
+    const container = document.getElementById('disqus-container');
+    if (!container || container.dataset.commentsInitialized === 'true') return;
+    container.dataset.commentsInitialized = 'true';
+
+    const thread = container.querySelector('[data-comments-thread]');
+    const button = container.querySelector('[data-load-comments]');
+    const loading = container.querySelector('[data-comments-loading]');
+    const loader = container.querySelector('[data-comments-loader]');
+    const template = document.getElementById('github-comment-template');
+    const language = container.dataset.language || 'en';
+    let loaded = false;
+
+    const message = (className, text) => {
+        const paragraph = document.createElement('p');
+        paragraph.className = className;
+        paragraph.textContent = text;
+        thread.replaceChildren(paragraph);
+    };
+
+    const renderComment = (comment) => {
+        const fragment = template.content.cloneNode(true);
+        const author = fragment.querySelector('.github-comment__author');
+        const avatar = fragment.querySelector('.github-comment__avatar');
+        const login = fragment.querySelector('[data-comment-login]');
+        const date = fragment.querySelector('.github-comment__date');
+        const body = fragment.querySelector('.github-comment__body');
+
+        author.href = comment.user.html_url;
+        avatar.src = comment.user.avatar_url;
+        login.textContent = comment.user.login;
+        date.href = comment.html_url;
+        date.dateTime = comment.created_at;
+        date.textContent = new Intl.DateTimeFormat(language, {
+            dateStyle: 'medium',
+            timeStyle: 'short'
+        }).format(new Date(comment.created_at));
+        body.textContent = comment.body || '';
+        thread.appendChild(fragment);
+    };
+
+    const loadComments = async () => {
+        if (loaded) return;
+        loaded = true;
+        button.hidden = true;
+        loading.hidden = false;
+
+        try {
+            const response = await fetch(container.dataset.commentsApi, {
+                headers: { Accept: 'application/vnd.github+json' }
+            });
+            if (!response.ok) throw new Error(`GitHub API ${response.status}`);
+            const comments = await response.json();
+            thread.replaceChildren();
+            if (comments.length === 0) {
+                message('article-discussion__empty', '{{ T "articleDiscussion.empty" }}');
+            } else {
+                comments.forEach(renderComment);
+            }
+            loader.hidden = true;
+        } catch (error) {
+            console.warn('[comments] lazy load failed', error);
+            message('article-discussion__error', '{{ T "articleDiscussion.error" }}');
+            button.hidden = false;
+            loaded = false;
+        } finally {
+            loading.hidden = true;
+        }
+    };
+
+    button.addEventListener('click', loadComments);
+
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+            if (entries.some((entry) => entry.isIntersecting)) {
+                observer.disconnect();
+                loadComments();
+            }
+        }, { rootMargin: '700px 0px' });
+        observer.observe(container);
+    }
+})();
+</script>

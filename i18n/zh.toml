@@ -52,8 +52,19 @@ draft = "草稿"
 different = "版本不同"
 
 [articleDiscussion]
+load = "加载评论"
+loading = "正在加载 GitHub 评论……"
+fallback = "直接在 GitHub 打开讨论"
+empty = "还没有回复。可以前往 GitHub 讨论区添加第一条回复。"
+error = "评论暂时无法加载，请直接前往 GitHub 讨论区。"
 eyebrow = "开放问题"
 title = "继续讨论"
 note = "本文所有语言版本共享同一个公开 GitHub Issue 作为讨论区。"
 button = "前往 GitHub 阅读或回复"
 privacy = "发布回复需要 GitHub 账户。回复将公开显示；请勿提交你不希望公开的私人或身份信息。"
+
+[articleDiscussion.loading]
+other = "正在加载 GitHub 评论……"
+
+[articleDiscussion.error]
+other = "评论暂时无法加载，请直接前往 GitHub 讨论区。"

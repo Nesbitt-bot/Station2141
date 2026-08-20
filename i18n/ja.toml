@@ -52,8 +52,19 @@ draft = "下書き"
 different = "別バージョン"
 
 [articleDiscussion]
+load = "コメントを読み込む"
+loading = "GitHub のコメントを読み込んでいます…"
+fallback = "GitHub で議論を直接開く"
+empty = "まだ返信はありません。GitHub の議論ページで最初の返信を追加できます。"
+error = "コメントを読み込めませんでした。GitHub の議論ページを直接開いてください。"
 eyebrow = "問い"
 title = "議論を続ける"
 note = "この記事のすべての言語版は、同じ公開 GitHub Issue を議論の場として共有します。"
 button = "GitHub で読む・返信する"
 privacy = "投稿には GitHub アカウントが必要です。返信は公開されます。公開する意図のない個人情報や識別情報は含めないでください。"
+
+[articleDiscussion.loading]
+other = "GitHub のコメントを読み込んでいます…"
+
+[articleDiscussion.error]
+other = "コメントを読み込めませんでした。GitHub の議論ページを直接開いてください。"

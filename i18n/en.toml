@@ -52,8 +52,19 @@ draft = "Draft"
 different = "Different version"
 
 [articleDiscussion]
+load = "Load comments"
+loading = "Loading GitHub comments…"
+fallback = "Open the discussion directly on GitHub"
+empty = "No responses yet. Open the GitHub discussion to add the first one."
+error = "Comments could not be loaded. Open the GitHub discussion directly instead."
 eyebrow = "Open question"
 title = "Continue the discussion"
 note = "Discussion for this article is hosted in one public GitHub issue shared by all language versions."
 button = "Read or add a response on GitHub"
 privacy = "A GitHub account is required to post. Your response will be public; do not include private or identifying information you do not intend to publish."
+
+[articleDiscussion.loading]
+other = "Loading GitHub comments…"
+
+[articleDiscussion.error]
+other = "Comments could not be loaded. Open the GitHub discussion directly instead."
