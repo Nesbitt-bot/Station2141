@@ -46,8 +46,8 @@ Cedar 是一名开发者。这个事实比他的名字更重要。
 这不只是可靠性问题。它是回声室在工程实践中的形态：一个流畅的 Agent，会让自己的不完整叙述变得容易接受。
 
 <figure class="article-diagram">
-  <img src="echo-loop.svg" alt="一个循环的开发者—AI Agent 回声：开发者的问题与假设进入 AI Agent，成为经过润色的回应，再返回给人类进行认同或验证。验证可以加入证据与反驳；未经检查的认同则可能形成没有依据的一致。" loading="lazy">
-  <figcaption>当认同被证据、反驳和证伪尝试打断时，回声循环才开始有用。<a href="echo-loop.drawio">可编辑的 Draw.io 源文件</a>。</figcaption>
+  <img src="echo-loop.zh.svg" alt="一个循环的开发者—AI Agent 回声：开发者的问题与假设进入 AI Agent，成为经过润色的回应，再返回给人类进行认同或验证。验证可以加入证据与反驳；未经检查的认同则可能形成没有依据的一致。" loading="lazy">
+  <figcaption>当认同被证据、反驳和证伪尝试打断时，回声循环才开始有用。<a href="echo-loop.zh.drawio">可编辑的 Draw.io 源文件</a>。</figcaption>
 </figure>
 
 ## 上下文正在变成基础设施

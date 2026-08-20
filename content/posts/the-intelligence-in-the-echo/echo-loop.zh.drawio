@@ -1,0 +1,22 @@
+<mxfile host="app.diagrams.net" modified="2026-08-18T00:00:00.000Z" agent="Station2141" version="24.7.17">
+  <diagram id="echo-loop" name="Echo loop">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="675" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="q" value="开发者的问题&#xa;与假设" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8ed;strokeColor=#b66a12;fontColor=#252a30;fontSize=18;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="450" y="50" width="240" height="90" as="geometry"/></mxCell>
+        <mxCell id="m" value="AI Agent&#xa;与已存上下文" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#edf5ff;strokeColor=#245a9b;fontColor=#252a30;fontSize=18;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="800" y="250" width="240" height="90" as="geometry"/></mxCell>
+        <mxCell id="r" value="经过润色的回应" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f7f8;strokeColor=#30363d;fontColor=#252a30;fontSize=18;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="450" y="460" width="240" height="90" as="geometry"/></mxCell>
+        <mxCell id="v" value="开发者的认同&#xa;或验证" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#edf8f4;strokeColor=#26715e;fontColor=#252a30;fontSize=18;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="100" y="250" width="240" height="90" as="geometry"/></mxCell>
+        <mxCell id="u" value="无依据的一致" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff1e6;strokeColor=#b66a12;fontColor=#7b4106;fontSize=16;fontStyle=1;dashed=1;" vertex="1" parent="1"><mxGeometry x="850" y="480" width="230" height="70" as="geometry"/></mxCell>
+        <mxCell id="c" value="证据 · 反驳 · 证伪" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eef6ff;strokeColor=#245a9b;fontColor=#173e70;fontSize=15;fontStyle=1;" vertex="1" parent="1"><mxGeometry x="80" y="490" width="280" height="60" as="geometry"/></mxCell>
+        <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#30363d;strokeWidth=3;endArrow=block;endFill=1;" edge="1" parent="1" source="q" target="m"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e2" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#30363d;strokeWidth=3;endArrow=block;endFill=1;" edge="1" parent="1" source="m" target="r"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e3" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#30363d;strokeWidth=3;endArrow=block;endFill=1;" edge="1" parent="1" source="r" target="v"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="e4" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#30363d;strokeWidth=3;endArrow=block;endFill=1;" edge="1" parent="1" source="v" target="q"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="风险" value="风险" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#b66a12;strokeWidth=2;dashed=1;endArrow=block;endFill=1;fontColor=#7b4106;" edge="1" parent="1" source="r" target="u"><mxGeometry relative="1" as="geometry"/></mxCell>
+        <mxCell id="correct" value="接受前检查" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;strokeColor=#245a9b;strokeWidth=2;endArrow=block;endFill=1;fontColor=#173e70;" edge="1" parent="1" source="r" target="c"><mxGeometry relative="1" as="geometry"/></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">开发者—AI Agent 回声循环</title>
+  <desc id="desc">开发者的问题与假设进入 AI Agent，形成经过润色的回应，再返回给开发者进行认同或验证。验证可以加入证据、反驳与证伪；未经检查的认同可能形成没有依据的一致。</desc>
+  <defs>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#30363d"/></marker>
+    <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#245a9b"/></marker>
+    <marker id="arrowOrange" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#b66a12"/></marker>
+    <style>
+      .box{stroke-width:3}.label{font:700 22px system-ui,-apple-system,sans-serif;fill:#252a30;text-anchor:middle}.sub{font:600 18px system-ui,-apple-system,sans-serif;fill:#252a30;text-anchor:middle}.edge{fill:none;stroke:#30363d;stroke-width:4;marker-end:url(#arrow)}.note{font:600 17px system-ui,-apple-system,sans-serif;text-anchor:middle}.dark-label{fill:#252a30}
+      @media (prefers-color-scheme:dark){.dark-label,.label,.sub{fill:#1d2329}}
+    </style>
+  </defs>
+  <rect width="1200" height="675" rx="32" fill="#fafbfc"/>
+  <path class="edge" d="M690 105 C830 115 910 175 920 250"/>
+  <path class="edge" d="M920 340 C900 430 805 495 690 505"/>
+  <path class="edge" d="M450 505 C310 490 220 430 220 340"/>
+  <path class="edge" d="M220 250 C235 160 330 105 450 105"/>
+  <rect class="box" x="450" y="55" width="240" height="100" rx="18" fill="#fff8ed" stroke="#b66a12"/>
+  <text class="label" x="570" y="98">开发者的问题</text><text class="sub" x="570" y="128">与假设</text>
+  <rect class="box" x="800" y="250" width="240" height="100" rx="18" fill="#edf5ff" stroke="#245a9b"/>
+  <text class="label" x="920" y="293">AI Agent</text><text class="sub" x="920" y="323">与已存上下文</text>
+  <rect class="box" x="450" y="455" width="240" height="100" rx="18" fill="#f5f7f8" stroke="#30363d"/>
+  <text class="label" x="570" y="513">经过润色的回应</text>
+  <rect class="box" x="100" y="250" width="240" height="100" rx="18" fill="#edf8f4" stroke="#26715e"/>
+  <text class="label" x="220" y="293">开发者的认同</text><text class="sub" x="220" y="323">或验证</text>
+  <path d="M680 510 C785 520 835 530 865 545" fill="none" stroke="#b66a12" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arrowOrange)"/>
+  <rect class="box" x="845" y="550" width="260" height="70" rx="16" fill="#fff1e6" stroke="#b66a12" stroke-dasharray="8 7"/>
+  <text class="note" x="975" y="592" fill="#7b4106">无依据的一致</text>
+  <path d="M460 520 C350 535 320 545 300 560" fill="none" stroke="#245a9b" stroke-width="3" marker-end="url(#arrowBlue)"/>
+  <rect class="box" x="60" y="550" width="310" height="70" rx="16" fill="#eef6ff" stroke="#245a9b"/>
+  <text class="note" x="215" y="580" fill="#173e70">证据 · 反驳</text><text class="note" x="215" y="603" fill="#173e70">· 证伪</text>
+</svg>
