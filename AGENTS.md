@@ -106,3 +106,11 @@ If deployment/build verification is available, prefer verifying it after push.
 ## CLAUDE Compatibility
 
 If another agent runtime looks for `CLAUDE.md`, it should defer to `AGENTS.md` in this repo.
+
+## Post discussion workflow
+
+- Every new post language file must include a localized `discussion_question` in front matter.
+- New post bundles must use a stable explicit `slug`; the GitHub Actions discussion synchronizer uses it to create the canonical article link.
+- Do **not** invent or manually reserve a `discussion_issue` number for a new bundle. On the first push to `main`, `.github/workflows/deploy.yml` creates or reuses the `[Discussion] <English title>` issue, writes the same issue number into every existing language variant, commits the metadata with `[skip ci]`, and deploys that updated commit.
+- All language variants in one bundle share one issue. The article footer is the reader-facing comment entry point and redirects to GitHub.
+- End each article with an open question that asks for a concrete example, counterexample, or reflection tied to the article's central claim.

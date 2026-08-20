@@ -6,7 +6,8 @@ on:
       - main
 
 permissions:
-  contents: read
+  contents: write
+  issues: write
   pages: write
   id-token: write
 
@@ -31,6 +32,26 @@ jobs:
         with:
           hugo-version: '0.157.0'
           extended: true
+
+      - name: Synchronize post discussion issues
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BLOG_BASE_URL: https://blog.trance-0.com
+        run: node scripts/sync-discussion-issues.mjs
+
+      - name: Commit synchronized discussion metadata
+        id: discussion-metadata
+        run: |
+          if git diff --quiet -- content/posts; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/posts
+          git commit -m "Sync post discussion issues [skip ci]"
+          git push origin HEAD:main
+          echo "changed=true" >> "$GITHUB_OUTPUT"
 
       - name: Validate post versions
         run: node scripts/validate-post-versions.mjs

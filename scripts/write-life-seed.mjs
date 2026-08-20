@@ -12,18 +12,23 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const repoRoot = resolve(__dirname, '..');
 
 async function latestCommitHash() {
+    try {
+        const { stdout } = await execFileAsync('git', ['rev-parse', 'HEAD'], {
+            cwd: repoRoot
+        });
+        const hash = stdout.trim();
+        if (commitPattern.test(hash)) {
+            return hash;
+        }
+    } catch {
+        // Git metadata may be unavailable in non-repository packaging contexts.
+    }
+
     if (commitPattern.test(process.env.GITHUB_SHA || '')) {
         return process.env.GITHUB_SHA;
     }
 
-    const { stdout } = await execFileAsync('git', ['rev-parse', 'HEAD'], {
-        cwd: repoRoot
-    });
-    const hash = stdout.trim();
-    if (!commitPattern.test(hash)) {
-        throw new Error(`Unexpected commit hash: ${hash}`);
-    }
-    return hash;
+    throw new Error('Unable to determine a valid commit hash');
 }
 
 const dataDir = resolve(repoRoot, 'data');
