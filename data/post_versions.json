@@ -2,67 +2,81 @@
   "agent-security-prompt-injection": {
     "en": {
       "status": "published",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "discussion_issue": 1
     },
     "zh": {
       "status": "published",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "discussion_issue": 1
     },
     "ja": {
       "status": "published",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "discussion_issue": 1
     }
   },
   "lavender-2-local-training-roadmap": {
     "en": {
       "status": "published",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "discussion_issue": 2
     },
     "zh": {
       "status": "published",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "discussion_issue": 2
     },
     "ja": {
       "status": "published",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "discussion_issue": 2
     }
   },
   "origin": {
     "en": {
       "status": "published",
-      "version": "1.1.0"
+      "version": "1.1.0",
+      "discussion_issue": 3
     },
     "zh": {
       "status": "published",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "discussion_issue": 3
     },
     "ja": {
       "status": "published",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "discussion_issue": 3
     }
   },
   "pause-without-a-story": {
     "en": {
       "status": "published",
-      "version": "1.1.0"
+      "version": "1.1.0",
+      "discussion_issue": 4
     },
     "zh": {
       "status": "published",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "discussion_issue": 4
     },
     "ja": {
       "status": "published",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "discussion_issue": 4
     }
   },
   "the-intelligence-in-the-echo": {
     "en": {
       "status": "published",
-      "version": "0.3.0"
+      "version": "0.4.0",
+      "discussion_issue": 5
     },
     "zh": {
       "status": "published",
-      "version": "0.2.0"
+      "version": "0.4.0",
+      "discussion_issue": 5
     },
     "ja": {
       "status": "missing"
@@ -71,35 +85,42 @@
   "too-perfect-to-be-real": {
     "en": {
       "status": "published",
-      "version": "1.1.0"
+      "version": "1.1.0",
+      "discussion_issue": 6
     },
     "zh": {
       "status": "published",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "discussion_issue": 6
     },
     "ja": {
       "status": "published",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "discussion_issue": 6
     }
   },
   "value-of-work-after-ai": {
     "en": {
       "status": "published",
-      "version": "1.1.0"
+      "version": "1.1.0",
+      "discussion_issue": 7
     },
     "zh": {
       "status": "published",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "discussion_issue": 7
     },
     "ja": {
       "status": "published",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "discussion_issue": 7
     }
   },
   "wordpress-to-hugo-migration": {
     "en": {
       "status": "published",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "discussion_issue": 8
     },
     "zh": {
       "status": "missing"

@@ -2,6 +2,8 @@
 title: "过于完美，因此不像真实"
 date: 2026-04-22
 version: "1.0.0"
+discussion_issue: 6
+discussion_question: "你是否记得一张或一段最初被你当作真实、后来又开始怀疑的图像或视频？是什么信号改变了你的判断？"
 description: "当 AI 图像与视频已经足够逼真时，逼真本身不再是现实的证明，而只是触发信念的一种方式。"
 image: "cover.png"
 tags: ["AI 图像", "AI 视频", "现实", "信念", "视觉文化"]

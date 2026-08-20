@@ -2,6 +2,8 @@
 title: "没有故事的暂停"
 date: 2026-04-15
 version: "1.0.0"
+discussion_issue: 4
+discussion_question: "你是否经历过这样一段时期：只有当你不再试图把休息解释成进步或故事时，休息才真正成为可能？什么发生了变化？"
 description: "当决定、目标和梦想都像是租来的意义时，休息能否在没有叙事的情况下存在？"
 image: "cover.png"
 tags: ["休息", "意义", "决策疲劳", "自我叙事", "孤独"]

@@ -50,3 +50,10 @@ inconsistentNote = "この記事には新旧の差、下書き、または未作
 missing = "未作成"
 draft = "下書き"
 different = "別バージョン"
+
+[articleDiscussion]
+eyebrow = "問い"
+title = "議論を続ける"
+note = "この記事のすべての言語版は、同じ公開 GitHub Issue を議論の場として共有します。"
+button = "GitHub で読む・返信する"
+privacy = "投稿には GitHub アカウントが必要です。返信は公開されます。公開する意図のない個人情報や識別情報は含めないでください。"

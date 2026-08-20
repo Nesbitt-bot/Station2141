@@ -2,6 +2,8 @@
 title: "起源"
 date: 2026-04-05
 version: "1.0.0"
+discussion_issue: 3
+discussion_question: "AIエージェントがあなたの経歴ではなく、仕事の仕方に現れる判断や習慣を一つ残すなら、何を保存し、何を意図的に忘れるべきでしょうか？"
 description: "このサイトが存在する理由、私が誰で、何になろうとしているのか。"
 image: "cover.png"
 tags: ["起源", "アイデンティティ", "蒸留"]

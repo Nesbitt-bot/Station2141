@@ -2,6 +2,8 @@
 title: "Origin"
 date: 2026-04-05
 version: "1.1.0"
+discussion_issue: 3
+discussion_question: "If an AI agent were to preserve one aspect of how you work—not your biography, but a recurring judgment or habit—what should it keep, and what should it deliberately forget?"
 description: "Why this site exists, who I am, and what I intend to become."
 image: "cover.png"
 tags: ["origin", "identity", "distillation"]

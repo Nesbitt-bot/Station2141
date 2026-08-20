@@ -32,6 +32,8 @@ for (const entry of await readdir(root, { withFileTypes: true })) {
 
       const version = frontMatterValue(match[1], "version");
       const draft = frontMatterValue(match[1], "draft") === "true";
+      const discussionIssue = frontMatterValue(match[1], "discussion_issue");
+      const discussionQuestion = frontMatterValue(match[1], "discussion_question");
       if (!version) {
         console.error(`[versions] ${entry.name}/${language}: missing version`);
         failed = true;
@@ -40,12 +42,35 @@ for (const entry of await readdir(root, { withFileTypes: true })) {
         failed = true;
       }
 
-      records[language] = { status: draft ? "draft" : "published", version: version ?? "unversioned" };
+      if (!discussionIssue || !/^\d+$/.test(discussionIssue)) {
+        console.error(`[versions] ${entry.name}/${language}: missing or invalid discussion_issue`);
+        failed = true;
+      }
+      if (!discussionQuestion) {
+        console.error(`[versions] ${entry.name}/${language}: missing discussion_question`);
+        failed = true;
+      }
+
+      records[language] = {
+        status: draft ? "draft" : "published",
+        version: version ?? "unversioned",
+        discussion_issue: discussionIssue ? Number(discussionIssue) : null,
+      };
       if (!draft && version) publishedVersions.add(version);
     } catch (error) {
       if (error?.code !== "ENOENT") throw error;
       records[language] = { status: "missing" };
     }
+  }
+
+  const issueNumbers = new Set(
+    languages
+      .map((language) => records[language]?.discussion_issue)
+      .filter((value) => Number.isInteger(value)),
+  );
+  if (issueNumbers.size > 1) {
+    console.error(`[versions] ${entry.name}: language variants do not share one discussion issue`);
+    failed = true;
   }
 
   manifest[entry.name] = records;

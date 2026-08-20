@@ -50,3 +50,10 @@ inconsistentNote = "This article has a newer, older, draft, or missing translati
 missing = "Missing"
 draft = "Draft"
 different = "Different version"
+
+[articleDiscussion]
+eyebrow = "Open question"
+title = "Continue the discussion"
+note = "Discussion for this article is hosted in one public GitHub issue shared by all language versions."
+button = "Read or add a response on GitHub"
+privacy = "A GitHub account is required to post. Your response will be public; do not include private or identifying information you do not intend to publish."

@@ -2,6 +2,8 @@
 title: "The Value of Work After the Age of AI"
 date: 2026-04-05
 version: "1.1.0"
+discussion_issue: 7
+discussion_question: "What part of your work has become easier to execute with AI, and what part has become more valuable precisely because execution is cheaper?"
 description: "What kinds of value survive when AI commoditizes execution, and whether mortality-like pressure can improve agent planning."
 image: "cover.png"
 tags: ["AI economics", "labor", "creativity", "finitude", "agent design"]

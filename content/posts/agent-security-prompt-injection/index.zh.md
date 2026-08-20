@@ -3,6 +3,8 @@ title: "现代 LLM 智能体中的 Agent 安全与提示注入抵抗"
 slug: "agent-security-and-prompt-injection-resistance-in-modern-llm-agents"
 date: 2026-04-11
 version: "1.0.0"
+discussion_issue: 1
+discussion_question: "在你构建或使用过的系统中，AI Agent 的有用能力曾在什么地方越界成了过度代理？如果现在重做，你会增加哪一道边界？"
 description: "从计算机安全视角看提示注入、过度代理、指令层级,以及本地与开源 LLM 智能体的纵深防御实践。"
 image: "cover.png"
 tags: ["agent 安全", "提示注入", "OWASP", "LLM 智能体", "OpenClaw", "Hermes", "本地 AI"]

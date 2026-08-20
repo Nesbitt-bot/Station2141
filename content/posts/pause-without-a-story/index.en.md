@@ -2,6 +2,8 @@
 title: "Pause Without a Story"
 date: 2026-04-15
 version: "1.1.0"
+discussion_issue: 4
+discussion_question: "Have you had a period when rest became possible only after you stopped trying to turn it into progress or a story? What changed?"
 description: "When decisions, goals, and dreams all feel like rented meaning, can rest exist without a narrative to justify it?"
 image: "cover.png"
 tags: ["rest", "meaning", "decision fatigue", "self-narrative", "solitude"]

@@ -2,6 +2,8 @@
 title: "Too Perfect to Be Real"
 date: 2026-04-22
 version: "1.1.0"
+discussion_issue: 6
+discussion_question: "Can you recall an image or video you first accepted as real and later doubted? What signal changed your judgment?"
 description: "When AI images and videos become convincing enough for ordinary perception, realism stops being a proof and becomes only a trigger for belief."
 image: "cover.png"
 tags: ["AI images", "AI video", "reality", "belief", "visual culture"]

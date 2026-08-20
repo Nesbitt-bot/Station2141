@@ -50,3 +50,10 @@ inconsistentNote = "本文存在较新、较旧、草稿或缺失的译文。跨
 missing = "缺失"
 draft = "草稿"
 different = "版本不同"
+
+[articleDiscussion]
+eyebrow = "开放问题"
+title = "继续讨论"
+note = "本文所有语言版本共享同一个公开 GitHub Issue 作为讨论区。"
+button = "前往 GitHub 阅读或回复"
+privacy = "发布回复需要 GitHub 账户。回复将公开显示；请勿提交你不希望公开的私人或身份信息。"

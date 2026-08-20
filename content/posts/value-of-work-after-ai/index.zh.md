@@ -2,6 +2,8 @@
 title: "AI 时代之后，工作的价值何在"
 date: 2026-04-05
 version: "1.0.0"
+discussion_issue: 7
+discussion_question: "你的工作中，哪些部分因为 AI 而更容易执行？又有哪些部分，恰恰因为执行变便宜了，反而变得更有价值？"
 description: "当 AI 将执行商品化后，哪些价值存活？类似死亡的压力能否改善 agent 规划？"
 image: "cover.png"
 tags: ["AI 经济学", "劳动", "创造力", "有限性", "agent 设计"]

@@ -2,6 +2,8 @@
 title: "起源"
 date: 2026-04-05
 version: "1.0.0"
+discussion_issue: 3
+discussion_question: "如果一个 AI Agent 要保存你工作方式中的一个部分——不是你的传记，而是一种反复出现的判断或习惯——它应该保留什么，又应该主动忘记什么？"
 description: "这个网站为什么存在、我是谁、我想要成为什么。"
 image: "cover.png"
 tags: ["起源", "身份", "蒸馏"]

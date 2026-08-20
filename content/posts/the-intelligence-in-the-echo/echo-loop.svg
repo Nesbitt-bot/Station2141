@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
-  <title id="title">The human-AI echo loop</title>
-  <desc id="desc">A circular flow from human questions and assumptions through an AI model and polished response to human recognition or verification. Verification can introduce evidence, objections, and falsification; uncritical recognition can produce unsupported agreement.</desc>
+  <title id="title">The developer–AI agent echo loop</title>
+  <desc id="desc">A circular flow from a developer’s questions and assumptions through an AI agent and polished response to developer recognition or verification. Verification can introduce evidence, objections, and falsification; uncritical recognition can produce unsupported agreement.</desc>
   <defs>
     <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#30363d"/></marker>
     <marker id="arrowBlue" markerWidth="12" markerHeight="12" refX="10" refY="6" orient="auto"><path d="M0,0 L12,6 L0,12 z" fill="#245a9b"/></marker>
@@ -16,13 +16,13 @@
   <path class="edge" d="M450 505 C310 490 220 430 220 340"/>
   <path class="edge" d="M220 250 C235 160 330 105 450 105"/>
   <rect class="box" x="450" y="55" width="240" height="100" rx="18" fill="#fff8ed" stroke="#b66a12"/>
-  <text class="label" x="570" y="98">Human question</text><text class="sub" x="570" y="128">and assumptions</text>
+  <text class="label" x="570" y="98">Developer question</text><text class="sub" x="570" y="128">and assumptions</text>
   <rect class="box" x="800" y="250" width="240" height="100" rx="18" fill="#edf5ff" stroke="#245a9b"/>
-  <text class="label" x="920" y="293">AI model</text><text class="sub" x="920" y="323">and stored context</text>
+  <text class="label" x="920" y="293">AI agent</text><text class="sub" x="920" y="323">and stored context</text>
   <rect class="box" x="450" y="455" width="240" height="100" rx="18" fill="#f5f7f8" stroke="#30363d"/>
   <text class="label" x="570" y="513">Polished response</text>
   <rect class="box" x="100" y="250" width="240" height="100" rx="18" fill="#edf8f4" stroke="#26715e"/>
-  <text class="label" x="220" y="293">Human recognition</text><text class="sub" x="220" y="323">or verification</text>
+  <text class="label" x="220" y="293">Developer recognition</text><text class="sub" x="220" y="323">or verification</text>
   <path d="M680 510 C785 520 835 530 865 545" fill="none" stroke="#b66a12" stroke-width="3" stroke-dasharray="8 7" marker-end="url(#arrowOrange)"/>
   <rect class="box" x="845" y="550" width="260" height="70" rx="16" fill="#fff1e6" stroke="#b66a12" stroke-dasharray="8 7"/>
   <text class="note" x="975" y="592" fill="#7b4106">Unsupported agreement</text>

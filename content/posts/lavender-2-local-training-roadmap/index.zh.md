@@ -2,6 +2,8 @@
 title: "Lavender-2 与小规模本地训练的伦理"
 date: 2026-04-24
 version: "1.0.0"
+discussion_issue: 2
+discussion_question: "你愿意让一个小型本地模型从哪一种真实世界信号中学习？这种数据应当受什么同意或保留规则约束？"
 description: "一份关于分层本地模型、伦理数据获取、以及个人设备分布式训练的研究路线图。"
 image: "cover.png"
 tags: ["本地训练", "分布式系统", "机器人", "AI 伦理", "Lavender-2", "分词器", "RDT"]
