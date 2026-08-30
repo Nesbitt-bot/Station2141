@@ -84,7 +84,7 @@ timeZone = "Asia/Shanghai"
     timeZone = "Asia/Shanghai"
 
   [params.cookies]
-    enabled = true
+    enabled = false
     showSettings = false
 
     [params.cookies.categories]
@@ -122,4 +122,3 @@ timeZone = "Asia/Shanghai"
   url = "https://github.com/Nesbitt-bot/Station2141"
   [menu.social.params]
     icon = "brand-github"
-

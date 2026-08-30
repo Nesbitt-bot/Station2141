@@ -22,10 +22,6 @@
 
 <nav class="visitor-privacy-controls" aria-label="{{ T "visitorStats.privacyControls" }}">
     <a href="{{ "privacy/" | relLangURL }}">{{ T "visitorStats.privacy" }}</a>
-    {{- with $analyticsHostname }}
-        <span aria-hidden="true">·</span>
-        <button type="button" data-cookie-action="reopen">{{ T "visitorStats.changeChoice" }}</button>
-    {{- end }}
 </nav>
 
 <script>
@@ -37,6 +33,9 @@
         )
         | jsonify | safeJS
     }});
+    window.station2141AnalyticsPath = function () {
+        return window.Station2141.analytics.path;
+    };
 </script>
 
 {{- with $analyticsHostname }}
@@ -44,8 +43,8 @@
 <script
     async
     src="https://scripts.simpleanalyticscdn.com/latest.js"
-    data-auto-collect="false"
     data-hostname="{{ . }}"
+    data-path-overwriter="station2141AnalyticsPath"
     data-ignore-metrics="utm,country,session,timeonpage,scrolled,screensize,viewportsize,language"
     data-station2141-analytics
 ></script>

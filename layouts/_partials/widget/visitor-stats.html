@@ -6,9 +6,7 @@
     data-hostname="{{ . }}"
     data-time-zone="{{ default "UTC" $.Context.Site.Params.analytics.timeZone }}"
     data-archive-url="{{ "analytics/daily.json" | relURL }}"
-    data-consent-pending="{{ T "visitorStats.consentPending" }}"
     data-counting-on="{{ T "visitorStats.countingOn" }}"
-    data-counting-off="{{ T "visitorStats.countingOff" }}"
     data-do-not-track="{{ T "visitorStats.doNotTrack" }}"
     data-load-error="{{ T "visitorStats.loadError" }}"
 >
@@ -40,9 +38,6 @@
         <a href="https://simpleanalytics.com/{{ . }}" target="_blank" rel="noopener noreferrer">
             {{ T "visitorStats.publicStats" }}
         </a>
-        <button type="button" data-cookie-action="reopen">
-            {{ T "visitorStats.changeChoice" }}
-        </button>
     </div>
 
     <a

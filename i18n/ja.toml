@@ -53,10 +53,8 @@ different = "別バージョン"
 
 [articleDiscussion]
 load = "コメントを読み込む"
-loading = "GitHub のコメントを読み込んでいます…"
 fallback = "GitHub で議論を直接開く"
 empty = "まだ返信はありません。GitHub の議論ページで最初の返信を追加できます。"
-error = "コメントを読み込めませんでした。GitHub の議論ページを直接開いてください。"
 eyebrow = "問い"
 title = "議論を続ける"
 note = "この記事のすべての言語版は、同じ公開 GitHub Issue を議論の場として共有します。"

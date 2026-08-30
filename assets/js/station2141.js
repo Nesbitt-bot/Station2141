@@ -304,41 +304,12 @@
         update();
     }
 
-    function getAnalyticsConfig() {
-        var config = window.Station2141 || {};
-        var analytics = config.analytics || {};
-        return {
-            hostname: String(analytics.hostname || '').trim(),
-            path: String(analytics.path || window.location.pathname || '/')
-        };
-    }
-
     function doNotTrackEnabled() {
         var value = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
         return value === '1' || value === 'yes';
     }
 
-    var analyticsPageviewSent = false;
-
-    function recordAnalyticsPageview() {
-        var config = getAnalyticsConfig();
-        if (
-            analyticsPageviewSent ||
-            !config.hostname ||
-            doNotTrackEnabled() ||
-            typeof window.sa_pageview !== 'function'
-        ) return;
-
-        window.sa_pageview(config.path);
-        analyticsPageviewSent = true;
-    }
-
-    function currentConsentState() {
-        if (!window.cookieConsent || !window.cookieConsent.getState) return null;
-        return window.cookieConsent.getState();
-    }
-
-    function updateVisitorConsentStatus(state) {
+    function updateVisitorAnalyticsStatus() {
         var widget = document.querySelector('[data-visitor-stats]');
         if (!widget) return;
         var status = widget.querySelector('[data-visitor-consent-status]');
@@ -346,36 +317,9 @@
 
         if (doNotTrackEnabled()) {
             status.textContent = widget.dataset.doNotTrack || '';
-        } else if (!state) {
-            status.textContent = widget.dataset.consentPending || '';
-        } else if (state.analytics) {
-            status.textContent = widget.dataset.countingOn || '';
         } else {
-            status.textContent = widget.dataset.countingOff || '';
+            status.textContent = widget.dataset.countingOn || '';
         }
-    }
-
-    function initAnalytics() {
-        var config = getAnalyticsConfig();
-        if (!config.hostname) return;
-
-        function applyConsent(state) {
-            updateVisitorConsentStatus(state);
-            if (state && state.analytics) recordAnalyticsPageview();
-        }
-
-        window.addEventListener('onCookieConsentChange', function (event) {
-            applyConsent(event.detail || null);
-        });
-
-        var analyticsScript = document.querySelector('script[data-station2141-analytics]');
-        if (analyticsScript) {
-            analyticsScript.addEventListener('load', function () {
-                applyConsent(currentConsentState());
-            });
-        }
-
-        applyConsent(currentConsentState());
     }
 
     function datePartsInZone(timeZone) {
@@ -509,7 +453,7 @@
         initLanguageSwitcher();
         initSiteSearch();
         initBackToTop();
-        initAnalytics();
+        updateVisitorAnalyticsStatus();
         initVisitorStats();
     });
 })();

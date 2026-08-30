@@ -29,15 +29,14 @@ needed by this collector. Never put either value in this file or directly in a
 workflow. Revoke and replace any API key that has been pasted into a message,
 issue, log, or committed file.
 
-Visitors see an explicit allow/deny prompt before the tracking script is
-records a page view. The Simple Analytics library is embedded in Hugo's footer
-so installation detectors can find it, but `data-auto-collect="false"` prevents
-automatic collection. Only the consent handler calls `sa_pageview` after the
-visitor opts in. The tracker uses no cookies or persistent visitor identifier;
-the only first-party cookie stores the visitor's consent choice. It records
-normalized page paths, timestamps, the referrer needed to estimate unique
-visits, and an anonymized user agent used to reject bots. Unneeded metrics are
-disabled.
+The Simple Analytics library is embedded in Hugo's footer and records a
+pageview automatically. This is required for Simple Analytics' installation
+check and avoids losing every visit from readers who never interact with a
+consent prompt. The tracker uses no cookies, local storage, or persistent
+visitor identifier, and it respects the browser's Do Not Track setting. It
+records normalized page paths, timestamps, the referrer needed to estimate
+unique visits, and an anonymized user agent used to reject bots. Unneeded
+metrics are disabled.
 
 The public widget asks the Stats API for anonymous visitor estimates for the
 current day, month, and year. The scheduled
@@ -59,6 +58,5 @@ archive contains only daily aggregate counts and aggregate page paths; API
 credentials remain in GitHub Actions secrets and are never written to the
 public file.
 
-The `<noscript>` tracking pixel is intentionally omitted: a JavaScript-disabled
-visitor cannot see or use the opt-out control before that pixel records a page
-view.
+The `<noscript>` tracking pixel is intentionally omitted, so a
+JavaScript-disabled visit is not recorded.

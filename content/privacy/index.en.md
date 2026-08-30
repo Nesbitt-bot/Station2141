@@ -1,14 +1,14 @@
 ---
 title: "Visitor Privacy"
-description: "How Station 2141 counts anonymous visits, publishes the totals, and respects your choice."
+description: "How Station 2141 counts anonymous visits, publishes totals, and respects Do Not Track."
 draft: false
 ---
 
-Station 2141 uses optional, privacy-focused analytics for one purpose: to understand which posts readers choose and to publish simple visitor statistics. It is not used for advertising, cross-site tracking, personal profiles, or identifying individual readers.
+Station 2141 uses privacy-focused analytics for one purpose: to understand which posts readers choose and to publish simple visitor statistics. It is not used for advertising, cross-site tracking, personal profiles, or identifying individual readers.
 
 ## What is counted
 
-If you allow counting, the site sends the normalized page path to [Simple Analytics](https://www.simpleanalytics.com/). It also sends a timestamp, the referring site needed to estimate whether a page view is unique, and an anonymized user-agent used to filter bots.
+When a page loads, the site sends the normalized page path to [Simple Analytics](https://www.simpleanalytics.com/). It also sends a timestamp, the referring site needed to estimate whether a page view is unique, and an anonymized user-agent used to filter bots.
 
 Simple Analytics does not use cookies, local storage, fingerprinting, IP-address hashing, or another persistent visitor identifier, and it says it does not collect or store IP addresses. Station 2141 additionally disables campaign codes, country, session IDs, time-on-page, scrolling, screen and viewport size, and language metrics because they are not needed for visit counts.
 
@@ -20,9 +20,9 @@ The figures shown as “today,” “this month,” and “this year” are priv
 
 Simple Analytics' free plan deletes data older than 30 days. To preserve longer trends without creating a visitor database, a scheduled GitHub Action copies each completed day's aggregate site and page totals into a public JSON file in this site's source repository. It stores no individual page-view records, identifiers, or analytics credentials. The archive starts with whatever history Simple Analytics still has when the collector first runs; it cannot reconstruct data that was already deleted.
 
-## Your choice
+## Browser controls
 
-The Simple Analytics library is downloaded with automatic collection disabled so installation tools can detect it. No visit-recording request is sent until you select **Allow counting**. The visitor widget may still fetch already-aggregated public totals from Simple Analytics and the site's public daily archive; those read-only requests do not add your visit to the statistics and send no page path or referrer. If you choose **Do not count me**, your page visit is not sent to Simple Analytics. A first-party consent cookie stores only that choice so the site can remember it; it contains no visitor identifier. You can change the choice at any time through **Change counting choice** in the footer or visitor widget.
+The tracker respects the browser's Do Not Track setting. Browser privacy protections, content blockers, or disabling JavaScript may also prevent a visit from being recorded. Station 2141 does not set a consent or analytics cookie and does not use local storage for analytics. The visitor widget also fetches already-aggregated public totals from Simple Analytics and the site's public daily archive; those read-only requests do not add a visit to the statistics and send no page path or referrer.
 
 Simple Analytics' current data-handling details are available in its [metrics documentation](https://docs.simpleanalytics.com/what-we-collect).
 
