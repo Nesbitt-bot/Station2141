@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "hostname": "blog.trance-0.com",
   "timeZone": "Asia/Shanghai",
-  "updatedThrough": "2026-08-30",
+  "updatedThrough": "2026-09-06",
   "days": [
     {
       "date": "2026-07-04",
@@ -348,6 +348,48 @@
     },
     {
       "date": "2026-08-30",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-08-31",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-09-01",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-09-02",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-09-03",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-09-04",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-09-05",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-09-06",
       "visitors": 0,
       "pageviews": 0,
       "pages": {}
