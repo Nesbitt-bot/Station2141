@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "hostname": "blog.trance-0.com",
   "timeZone": "Asia/Shanghai",
-  "updatedThrough": "2026-11-01",
+  "updatedThrough": "2026-11-08",
   "days": [
     {
       "date": "2026-07-04",
@@ -729,6 +729,75 @@
       "visitors": 0,
       "pageviews": 0,
       "pages": {}
+    },
+    {
+      "date": "2026-11-02",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-11-03",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-11-04",
+      "visitors": 4,
+      "pageviews": 4,
+      "pages": {
+        "/": {
+          "visitors": 1,
+          "pageviews": 1
+        },
+        "/archive": {
+          "visitors": 1,
+          "pageviews": 1
+        },
+        "/categories/google-data-analytics-professional-certificates": {
+          "visitors": 1,
+          "pageviews": 1
+        },
+        "/ja": {
+          "visitors": 1,
+          "pageviews": 1
+        }
+      }
+    },
+    {
+      "date": "2026-11-05",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-11-06",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-11-07",
+      "visitors": 1,
+      "pageviews": 1,
+      "pages": {
+        "/archive/gdapc-week-16": {
+          "visitors": 1,
+          "pageviews": 1
+        }
+      }
+    },
+    {
+      "date": "2026-11-08",
+      "visitors": 2,
+      "pageviews": 2,
+      "pages": {
+        "/": {
+          "visitors": 2,
+          "pageviews": 2
+        }
+      }
     }
   ]
 }
