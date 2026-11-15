@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "hostname": "blog.trance-0.com",
   "timeZone": "Asia/Shanghai",
-  "updatedThrough": "2026-11-08",
+  "updatedThrough": "2026-11-15",
   "days": [
     {
       "date": "2026-07-04",
@@ -798,6 +798,58 @@
           "pageviews": 2
         }
       }
+    },
+    {
+      "date": "2026-11-09",
+      "visitors": 2,
+      "pageviews": 2,
+      "pages": {
+        "/": {
+          "visitors": 2,
+          "pageviews": 2
+        }
+      }
+    },
+    {
+      "date": "2026-11-10",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-11-11",
+      "visitors": 1,
+      "pageviews": 1,
+      "pages": {
+        "/archive/gdapc-week-27": {
+          "visitors": 1,
+          "pageviews": 1
+        }
+      }
+    },
+    {
+      "date": "2026-11-12",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-11-13",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-11-14",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-11-15",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
     }
   ]
 }
