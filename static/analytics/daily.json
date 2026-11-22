@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "hostname": "blog.trance-0.com",
   "timeZone": "Asia/Shanghai",
-  "updatedThrough": "2026-11-15",
+  "updatedThrough": "2026-11-22",
   "days": [
     {
       "date": "2026-07-04",
@@ -847,6 +847,63 @@
     },
     {
       "date": "2026-11-15",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-11-16",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-11-17",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-11-18",
+      "visitors": 1,
+      "pageviews": 1,
+      "pages": {
+        "/zh/tags/ai-%E8%A7%86%E9%A2%91": {
+          "visitors": 1,
+          "pageviews": 1
+        }
+      }
+    },
+    {
+      "date": "2026-11-19",
+      "visitors": 0,
+      "pageviews": 0,
+      "pages": {}
+    },
+    {
+      "date": "2026-11-20",
+      "visitors": 1,
+      "pageviews": 1,
+      "pages": {
+        "/": {
+          "visitors": 1,
+          "pageviews": 1
+        }
+      }
+    },
+    {
+      "date": "2026-11-21",
+      "visitors": 0,
+      "pageviews": 1,
+      "pages": {
+        "/": {
+          "visitors": 0,
+          "pageviews": 1
+        }
+      }
+    },
+    {
+      "date": "2026-11-22",
       "visitors": 0,
       "pageviews": 0,
       "pages": {}
